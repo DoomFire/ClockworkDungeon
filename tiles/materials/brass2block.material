@@ -1,0 +1,14 @@
+{
+  "materialId" : 312,
+  "materialName" : "brass2block",
+  "frames" : "brass2.png",
+  "particleColor" : [226, 179, 124, 255],
+  "variants" : 5,
+  "itemDrop" : "brass2block",
+  "description" : "A solid Brass block.",
+  "shortdescription" : "Brass Block",
+  "glitchDescription" : "Statement. Brass.",
+  "floranDescription" : "Metal like Glitch.",
+  "footstepSound" : "/sfx/blocks/footstep_composite.wav",
+  "health" : 30
+}

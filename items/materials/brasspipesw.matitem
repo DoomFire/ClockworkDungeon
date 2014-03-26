@@ -1,0 +1,12 @@
+{
+  "itemName" : "brasspipesw",
+  "rarity" : "Common",
+  "inventoryIcon" : "brasspipesw.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A solid Brass pipe.",
+  "shortdescription" : "Brass Pipe South West",
+  "glitchdescription" : "Statement. Brass Pipe.",
+  "florandescription" : "Metal like Glitch.",
+
+  "materialId" : 308
+}

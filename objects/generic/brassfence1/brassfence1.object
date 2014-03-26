@@ -1,0 +1,31 @@
+{
+  "objectName" : "brassfence1",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 300,
+
+  "description" : "...",
+  "shortdescription" : "Brass Fence",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "brassfence1icon.png",
+  "orientations" : [
+    {
+      "image" : "brassfence1.png:<color>",
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

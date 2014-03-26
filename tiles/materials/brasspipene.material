@@ -1,0 +1,16 @@
+{
+  "materialId" : 307,
+  "materialName" : "brasspipene",
+  "frames" : "brasspipene.png",
+  "particleColor" : [84, 127, 73, 255],
+  "variants" : 1,
+  "itemDrop" : "brasspipene",
+  "shortdescription" : "Brass Pipe exiting north and east.",
+  "description" : "North and east exits of a section of a Brass Pipe.",
+  "glitchDescription" : "North and east exits of a section of a Brass Pipe.",
+  "floranDescription" : "North and east exits of a section of a Brass Pipe.",
+  "multicolored" : true,
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "drawBackground" : true,
+  "health" : 10
+}

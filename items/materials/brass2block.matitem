@@ -1,0 +1,12 @@
+{
+  "itemName" : "brass2block",
+  "rarity" : "Common",
+  "inventoryIcon" : "brass2.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A solid Brass block.",
+  "shortdescription" : "Brass Block",
+  "glitchdescription" : "Statement. Brass.",
+  "florandescription" : "Metal like Glitch.",
+
+  "materialId" : 312
+}

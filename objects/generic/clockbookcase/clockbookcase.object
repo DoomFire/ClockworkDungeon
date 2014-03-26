@@ -1,0 +1,40 @@
+{
+  "objectName" : "clockbookcase",
+  "rarity" : "Common",
+  "category" : "furniture",
+  "objectType" : "container",
+  "price" : 800,
+  "description" : "If you wind the key at the back, it throws books at you!",
+  "shortdescription" : "Clockwork Bookcase",
+  "race" : "generic",
+
+  "apexDescription" : "Most of the books seem to be stuck down somehow.",
+  "avianDescription" : "Why does a bookcase need machinery?.",
+  "floranDescription" : "Floran spin thing, book with Floran fall out.",
+  "glitchDescription" : "Amazement. When turning the key, a book of my exact model fell out!",
+  "humanDescription" : "There are some pretty boring looking books in there.",
+  "hylotlDescription" : "This seems to posses a vast amount of information on the Hylotl How did they manage to gather all this?",
+
+  "inventoryIcon" : "clockbookcaseicon.png",
+  "orientations" : [
+    {
+      "leftImage" : "clockbookcaseleft.png:<color>",
+      "rightImage" : "clockbookcaseright.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+  
+  "openSounds" : [ "/sfx/objects/locker_open.wav" ],
+  "closeSounds" : [ "/sfx/objects/locker_close.wav" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest%slots%.config",
+  "frameCooldown" : 67,
+  "autoCloseCooldown" : 3600
+  
+}

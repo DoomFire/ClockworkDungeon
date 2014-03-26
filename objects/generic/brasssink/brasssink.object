@@ -1,0 +1,30 @@
+{
+  "objectName" : "brasssink",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 800,
+  "description" : "Don't forget to wash your hands thoroughly!",
+  "shortdescription" : "Brass Sink",
+  "race" : "generic",
+
+  "apexDescription" : "A metal sink. This one looks very clean.",
+  "avianDescription" : "A water dispenser... perhaps a drinking fountain?",
+  "floranDescription" : "Ssssweet nourishing water.",
+  "glitchDescription" : "Scanning. Water purity 100%. Almost obsessively clean.",
+  "humanDescription" : "I should wash my hands once in a while.",
+  "hylotlDescription" : "This water is not fit to swim in.",
+
+  "inventoryIcon" : "brasssinkicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "brasssink.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

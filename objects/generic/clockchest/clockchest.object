@@ -1,0 +1,37 @@
+{
+  "objectName" : "clockchest",
+  "rarity" : "Common",
+  "objectType" : "container",
+
+  "category" : "storage",
+  "price" : 500,
+  "description" : "A chest with a clockwork mechanism.",
+  "shortdescription" : "Clockwork Chest",
+  "race" : "generic",
+
+  
+  "avianDescription" : "I can hear tiny gears whirring inside it.",
+  "floranDescription" : "Floran make small box open with button.",
+  "glitchDescription" : ".",
+  "humanDescription" : "This chest is pretty nifty.",
+  "hylotlDescription" : "The opening mechanism is an amusing novelty.",
+
+  "inventoryIcon" : "clockchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockchest.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.25,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+
+  ],
+
+  "openSounds" : [ "/sfx/objects/metalslidingdoor_open.wav" ],
+  "closeSounds" : [ "/sfx/objects/metalslidingdoor_close.wav" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest%slots%.config",
+  "frameCooldown" : 20,
+  "autoCloseCooldown" : 3600
+}

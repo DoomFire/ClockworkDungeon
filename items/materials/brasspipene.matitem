@@ -1,0 +1,12 @@
+{
+  "itemName" : "brasspipene",
+  "rarity" : "Common",
+  "inventoryIcon" : "brasspipene.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A solid Brass pipe.",
+  "shortdescription" : "Brass Pipe North East",
+  "glitchdescription" : "Statement. Brass Pipe.",
+  "florandescription" : "Metal like Glitch.",
+
+  "materialId" : 307
+}

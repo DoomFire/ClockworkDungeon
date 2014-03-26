@@ -1,0 +1,15 @@
+{
+  "materialId" : 305,
+  "materialName" : "brasspipehorizontal",
+  "frames" : "brasspipehorizontal.png",
+  "particleColor" : [84, 127, 73, 255],
+  "variants" : 4,
+  "itemDrop" : "brasspipehorizontal",
+  "shortdescription" : "Horizontal Brass Pipe",
+  "description" : "A horizontal pipe.",
+  "glitchDescription" : "Statement. A horizontal pipe.",
+  "floranDescription" : "Lying down pipe.",
+  "multicolored" : true,
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "health" : 10
+}

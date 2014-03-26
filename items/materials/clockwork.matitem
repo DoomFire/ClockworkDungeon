@@ -1,0 +1,10 @@
+{
+  "itemName" : "clockwork",
+  "rarity" : "Common",
+  "inventoryIcon" : "clockwork.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Clockwork",
+  "description" : "Cogs and gears running in union.",
+
+  "materialId" : 302
+}

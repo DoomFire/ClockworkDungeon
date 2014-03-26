@@ -1,0 +1,14 @@
+{
+  "materialId" : 68,
+  "materialName" : "steelplatform",
+  "platform" : true,
+  "transparent" : true,
+  "stairVariants" : 1,
+  "stairImage" : "steelstairs.png",
+  "platformVariants" : 3,
+  "platformImage" : "steelplatform.png",
+  "itemDrop" : "steelplatform",
+  "shortdescription" : "Steel Platform",
+  "description" : "Strong steel platforms.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav"
+}

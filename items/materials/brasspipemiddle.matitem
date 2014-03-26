@@ -1,0 +1,12 @@
+{
+  "itemName" : "brasspipemiddle",
+  "rarity" : "Common",
+  "inventoryIcon" : "brasspipemiddle.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A solid Brass pipe.",
+  "shortdescription" : "Brass Pipe Middle",
+  "glitchdescription" : "Statement. Brass pipe.",
+  "florandescription" : "Metal like Glitch.",
+
+  "materialId" : 306
+}

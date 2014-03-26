@@ -1,0 +1,12 @@
+{
+  "itemName" : "brasstech",
+  "rarity" : "Common",
+  "inventoryIcon" : "brasstech.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Brass Tech",
+  "description" : "Useless scrap metal, mostly remnants of outmoded technology.",
+  "glitchdescription" : "Disregard. A pile of Brass.",
+  "florandescription" : "Messsss.",
+
+  "materialId" : 304
+}

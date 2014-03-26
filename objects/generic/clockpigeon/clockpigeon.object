@@ -1,0 +1,34 @@
+{
+  "objectName" : "clockpigeon",
+  "rarity" : "Common",
+  "description" : "A small metal pigeon.",
+  "shortdescription" : "Clockwork Pigeon",
+  "race" : "generic",
+
+  "category" : "decorative",
+  "price" : 500,
+  
+  "apexDescription" : "These appear to be system diagnostics. I don't understand them.",
+  "avianDescription" : "This screen describes the state of nearby crystals. Only stargazers understand it.",
+  "floranDescription" : "Birdman technology. Floran not understand.",
+  "glitchDescription" : "Nostalgia. This reminds me of the bird life back home.",
+  "humanDescription" : "This looks like complex stuff. Perhaps it describes the state of Avian tech.",
+  "hylotlDescription" : "The Hylotl can not read these. They appear to be system stats. ",
+
+  "inventoryIcon" : "clockpigeonicon.png",
+  "orientations" : [
+    {
+      "image" : "clockpigeon.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 20,
+      "animationCycle" : 3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+ "soundEffect" : "/sfx/objects/lightticking.wav",
+   "soundEffectRadius" : 5
+
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "clock",
+  "rarity" : "Common",
+  "inventoryIcon" : "clock.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "clock",
+  "description" : "clock.",
+
+  "materialId" : 303
+}

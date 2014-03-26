@@ -1,0 +1,30 @@
+{
+  "objectName" : "clockpod",
+  "rarity" : "Common",
+  "price" : 2500,
+  "description" : "Is he okay...?",
+  "shortdescription" : "Kleinklok Pod",
+  "race" : "generic",
+  "category" : "decorative",
+
+  "apexDescription" : "This fellow looks a little thin... actually all of these guys do.",
+  "avianDescription" : "He looks very sick...",
+  "floranDescription" : "Floran don't need to ssstab weak naked man.",
+  "glitchDescription" : "Alarmed. This man is rapidly deterorating from a disease. He would be dead if not for this pod.",
+  "humanDescription" : "These guys are so creepy...",
+  "hylotlDescription" : "Ugly as well as crude.",
+
+  "inventoryIcon" : "clockpodicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockpod.png:<color>.<frame>",
+      "imagePosition" : [-32, 0],
+      "frames" : 20,
+      "animationCycle" : 3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

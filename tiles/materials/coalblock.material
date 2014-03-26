@@ -1,0 +1,14 @@
+{
+  "materialId" : 313,
+  "materialName" : "coalblock",
+  "frames" : "coalblock.png",
+  "particleColor" : [255, 255, 255, 255],
+  "variants" : 5,
+  "itemDrop" : "coalore",
+  "description" : "A pile of coal.",
+  "shortdescription" : "Coal blockk",
+  "glitchDescription" : "Statement. Brass.",
+  "floranDescription" : "Metal like Glitch.",
+  "footstepSound" : "/sfx/blocks/footstep_composite.wav",
+  "health" : 10
+}

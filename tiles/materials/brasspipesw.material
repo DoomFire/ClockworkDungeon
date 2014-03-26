@@ -1,0 +1,16 @@
+{
+  "materialId" : 308,
+  "materialName" : "brasspipesw",
+  "frames" : "brasspipesw.png",
+  "particleColor" : [84, 127, 73, 255],
+  "variants" : 1,
+  "itemDrop" : "brasspipesw",
+  "shortdescription" : "Brass Pipe exiting south and west.",
+  "description" : "South and west exits of a section of a Brass Pipe.",
+  "glitchDescription" : "South and west exits of a section of a Brass Pipe.",
+  "floranDescription" : "South and west exits of a section of a Brass Pipe.",
+  "multicolored" : true,
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "drawBackground" : true,
+  "health" : 10
+}

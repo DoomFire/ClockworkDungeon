@@ -1,0 +1,39 @@
+{
+  "objectName" : "clockcupboard",
+  "rarity" : "Common",
+  "objectType" : "container",
+  "category" : "storage",
+  "price" : 1500,
+  "description" : "...",
+  "shortdescription" : "Clockwork Cupboard",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockcupboardicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockcupboard.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/locker_open.wav" ],
+  "closeSounds" : [ "/sfx/objects/locker_close.wav" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest%slots%.config",
+  "frameCooldown" : 67,
+  "autoCloseCooldown" : 3600
+}

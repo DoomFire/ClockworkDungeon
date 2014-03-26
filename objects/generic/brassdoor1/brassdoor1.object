@@ -1,0 +1,41 @@
+{
+  "objectName" : "brassdoor1",
+  "rarity" : "Common",
+  "objectType" : "wire",
+
+  "category" : "door",
+  "price" : 750,
+  "description" : "A clockwork door",
+  "shortdescription" : "Brass Door",
+  "race" : "glitch",
+
+  "apexDescription" : "A brass door.",
+  "avianDescription" : "A brass door.",
+  "floranDescription" : "Floran think this 'food door'.",
+  "glitchDescription" : "Statement. A brass door.",
+  "humanDescription" : "This brass door looks a bit useless.",
+  "hylotlDescription" : "A brass door.",
+
+  "inventoryIcon" : "brassdoor1icon.png",
+  "orientations" : [
+    {
+      "image" : "brassdoor1.png:default",
+      "imagePosition" : [ -12, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationParts" : {
+    "door" : "brassdoor1.png"
+  },
+  "animationPosition" : [-12, 0],
+
+  "inboundNodes" : [ [-1, 4] ],
+  "outboundNodes" : [ [1, 0] ]
+}

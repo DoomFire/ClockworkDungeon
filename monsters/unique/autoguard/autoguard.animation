@@ -1,0 +1,363 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "priority" : 0,
+        "default" : "idle",
+
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "mode" : "loop",
+            "cycle" : 1
+          },
+		  "idleStart" : {
+            "frames" : 4,
+            "mode" : "transition",
+            "transition" : "idle",
+            "cycle" : 0.5
+          },
+		  "idleEnd" : {
+            "frames" : 3,
+            "mode" : "transition",
+            "transition" : "move",
+            "cycle" : 0.6
+          },
+          "move" : {
+            "frames" : 8,
+            "mode" : "loop",
+            "cycle" : 0.5
+          },
+		  "run" : {
+            "frames" : 8,
+            "mode" : "loop",
+            "cycle" : 0.25
+          },
+          "shieldStart" : {
+            "frames" : 6,
+            "mode" : "transition",
+            "transition" : "shield",
+            "cycle" : 0.4
+          },
+          "shield" : {
+            "frames" : 1,
+            "mode" : "loop",
+            "cycle" : 1
+          },
+          "shieldEnd" : {
+            "frames" : 6,
+            "mode" : "transition",
+            "transition" : "idle",
+            "cycle" : 0.4
+          },
+          "jump" : {
+            "frames" : 3,
+            "mode" : "end",
+            "cycle" : 0.4
+          },
+          "attack" : {
+            "frames" : 1,
+            "mode" : "loop",
+            "cycle" : 0.25
+          }
+        }
+      },
+
+      "portrait" : {
+        "priority" : -1,
+        "default" : "portrait",
+        "states" : {
+          "portrait" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+			            "idleStart" : {
+              "properties" : {
+                "image" : "<partImage>:idleStart.<frame>"
+              }
+            },
+			            "idleEnd" : {
+              "properties" : {
+                "image" : "<partImage>:idleEnd.<frame>"
+              }
+            },
+            "move" : {
+              "properties" : {
+                "image" : "<partImage>:move.<frame>"
+              }
+            },
+			   "run" : {
+              "properties" : {
+                "image" : "<partImage>:move.<frame>"
+              }
+            },
+            "shieldStart" : {
+              "properties" : {
+                "image" : "<partImage>:shieldStart.<frame>"
+              }
+            },
+            "shield" : {
+              "properties" : {
+                "image" : "<partImage>:shield.<frame>"
+              }
+            },
+            "shieldEnd" : {
+              "properties" : {
+                "image" : "<partImage>:shieldEnd.<frame>"
+              }
+			},
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:jump.<frame>"
+              }
+			},
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:attack.<frame>"
+              }
+            }
+          },
+
+          "portrait" : {
+            "portrait" : {
+              "properties" : {
+                "image" : "<partImage>:idle.1"
+              }
+            }
+          }
+        }
+      },
+
+      "arm" : {
+        "properties" : {
+          "rotationGroup" : "arm",
+          "zLevel" : 2
+        },
+
+        "partStates" : {
+          "movement" : {
+            "shield" : {
+              "properties" : {
+                "image" : "<partImage>:arm"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "arm" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 1.5
+    }
+  },
+
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/puff2c/puff2c.animation",
+            "size" : 1,
+            "angularVelocity" : 35,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [1, 1],
+            "timeToLive" : 0.4,
+            "layer" : "middle"
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz1/fizz1.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz1/fizz1.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz2/fizz2.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz2/fizz2.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz3/fizz3.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz3/fizz3.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz4/fizz4.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz4/fizz4.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 7,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

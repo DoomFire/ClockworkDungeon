@@ -1,0 +1,31 @@
+{
+  "objectName" : "gramaphonesingle",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 400,
+
+  "description" : "A great way to speak to dirty lowerclass without being anywhere near them!",
+  "shortdescription" : "Gramaphone Intercom",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "gramaphonesingleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "gramaphonesingle.png:<color>",
+      "imagePosition" : [-7, 3],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

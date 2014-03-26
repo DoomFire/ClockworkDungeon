@@ -1,0 +1,45 @@
+{
+  "objectName" : "clocklantern",
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 300,
+
+  "description" : "A pretty clockwork lantern.",
+  "shortdescription" : "Clockwork Lantern",
+  "race" : "generic",
+  "printable" : false,
+  "hydrophobic" : true,
+
+  "apexDescription" : "A lantern burning oil as fuel.",
+  "avianDescription" : "Fuel keeps the flame alight.",
+  "floranDescription" : "Flame eatsss liquid insside.",
+  "glitchDescription" : "That's a lot of gears just to burn oil.",
+  "humanDescription" : "A beautiful oil lantern.",
+  "hylotlDescription" : "The fuel in this lantern would not burn under the sea.",
+
+  "statusEffects" : [
+    {
+      "kind" : "Warmth",
+      "amount" : 10,
+      "range" : 2
+    } ],
+
+  "lightColor" : [204, 189, 173],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.1,
+
+  "inventoryIcon" : "clocklanternicon.png",
+  "orientations" : [
+
+    {
+      "dualImage" : "clocklantern.png:<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 2,
+      "animationCycle" : 0.5,
+
+       "spaceScan" : 0.1,
+      "background" : [ [0, 0] ]
+    }
+  ]
+
+}

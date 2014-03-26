@@ -1,0 +1,29 @@
+{
+  "objectName" : "clockdesk",
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 800,
+  "description" : "A desk with clockwork parts within it.",
+  "shortdescription" : "Clockwork Desk",
+  "race" : "generic",
+  "apexDescription" : "It appears the clockwork within is to automatically extend the table. This one is broken though.",
+  "avianDescription" : "Why does it have so much machinery in it?",
+  "floranDescription" : "Floran like ssspinning things in table.",
+  "glitchDescription" : "Observation. The table seems to be fully operational, though simply doesn't have an activation mechanism. A simple oversight perhaps?",
+  "humanDescription" : "This table is really shiny. I wonder what it does.",
+  "hylotlDescription" : ".",
+  "inventoryIcon" : "clockdeskicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockdesk.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

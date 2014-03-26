@@ -1,0 +1,12 @@
+{
+  "materialId" : 302,
+  "materialName" : "clockwork",
+  "frames" : "clockwork.png",
+  "particleColor" : [226, 179, 124, 255],
+  "variants" : 5,
+  "itemDrop" : "clockwork",
+  "shortdescription" : "Clockwork",
+  "description" : "Cogs and gears running in union.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "health" : 20
+}

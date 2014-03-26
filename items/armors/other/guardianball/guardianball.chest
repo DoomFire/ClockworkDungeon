@@ -1,0 +1,40 @@
+{
+  "itemName" : "guardianball",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Press 'F' to enter sphere mode.",
+  "shortdescription" : "Guardian's Breastplate",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "Protection",
+      "amount" : 7.5
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 15
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+
+
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "materialId" : 304,
+  "materialName" : "brasstech",
+  "frames" : "brasstech.png",
+  "particleColor" : [226, 179, 124, 255],
+  "variants" : 5,
+  "itemDrop" : "brasstech",
+  "shortdescription" : "Brass Tech",
+  "description" : "Useless scrap metal, mostly remnants of outmoded technology.",
+  "glitchDescription" : "Disregard. A pile of junk.",
+  "floranDescription" : "Messsss.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "health" : 20
+}

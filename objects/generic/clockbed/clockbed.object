@@ -1,0 +1,45 @@
+{
+  "objectName" : "clockbed",
+  "printable" : true,
+  "rarity" : "Common",
+  "description" : "A coffin bed. The hottest in undead comfort.",
+  "shortdescription" : "Clockwork Bed",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1200,
+
+  "apexDescription" : "This bed looks small and claustrophobic. It has a lid!",
+  "avianDescription" : "Sleeping in this bed would be very overwhelming.",
+  "floranDescription" : "Floran use bed for guessst. Guessst go to sssleep. Not wake up.",
+  "glitchDescription" : "Shudder. This bed is styled after a coffin.",
+  "humanDescription" : "Maybe space vampires use this bed. Are space vampires real? I hope so!",
+  "hylotlDescription" : "Something about this bed sets me on edge.",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, 18],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/generic/clockbed/clockbedcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    { "kind" : "Nude" },
+    { "kind" : "Health", "amount" : 0.06 }
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "clockbedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockbed.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

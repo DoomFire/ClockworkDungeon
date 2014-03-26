@@ -1,0 +1,44 @@
+{
+  "objectName" : "walllight",
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 300,
+
+  "description" : "...",
+  "shortdescription" : "Wall-mounted Light",
+  "race" : "generic",
+  "hydrophobic" : true,
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "statusEffects" : [
+    {
+      "kind" : "Warmth",
+      "amount" : 10,
+      "range" : 2
+    } ],
+
+  "lightColor" : [204, 189, 173],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.1,
+
+  "inventoryIcon" : "walllighticon.png",
+  "orientations" : [
+
+    {
+      "dualImage" : "walllight.png:<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 2,
+      "animationCycle" : 0.5,
+
+       "spaceScan" : 0.1,
+      "background" : [ [0, 0] ]
+    }
+  ]
+
+}

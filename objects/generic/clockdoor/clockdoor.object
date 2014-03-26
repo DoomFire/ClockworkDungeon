@@ -1,0 +1,49 @@
+{
+  "objectName" : "clockdoor",
+  "rarity" : "Common",
+  "objectType" : "wire",
+
+  "category" : "door",
+  "price" : 2000,
+  "description" : "...",
+  "shortdescription" : "Clockwork Door",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockdooricon.png",
+  "orientations" : [
+    {
+      "image" : "clockdoor.png:default",
+      "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ],
+      "direction" : "left"
+    },
+    {
+      "image" : "clockdoor.png:default",
+      "imagePosition" : [-20, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ],
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationParts" : {
+    "door" : "clockdoor.png"
+  },
+  "animationPosition" : [-20, 0],
+
+  "inboundNodes" : [ [0, 4] ],
+  "outboundNodes" : [ [0, 0] ]
+}

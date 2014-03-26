@@ -1,0 +1,2187 @@
+{
+  "metadata": {
+    "name": "template",
+    "species": "dummy",
+    "rules": [],
+    "maxRadius": 20000,
+    "maxParts": 50,
+    "anchor": [
+      "entrance"
+    ],
+    "gravity": 80
+  },
+  "tiles": [
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "DEFAULT --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "nothing",
+      "connector": false
+    },
+    {
+      "value": [
+        111,
+        111,
+        111,
+        255
+      ],
+      "comment": "empty space",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        222,
+        222,
+        222,
+        255
+      ],
+      "comment": "empty space, overwriteable",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "comment": "genMustContainAirBackground, overwritable",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "rules": [
+        [
+          "worldGenMustContainAirBackground"
+        ],
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "comment": "genMustContainSolidBackground, overwritable",
+      "brush": [
+        [
+          "surface"
+        ]
+      ],
+      "rules": [
+        [
+          "worldGenMustContainSolidBackground"
+        ],
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "CONNECTORS --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        0,
+        0,
+        255
+      ],
+      "comment": "Large, vertical",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        200,
+        0,
+        255
+      ],
+      "comment": "Large, horizontal",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        0,
+        200,
+        255
+      ],
+      "comment": "Entrance #1",
+      "connector": true
+    },
+    {
+      "value": [
+        150,
+        0,
+        0,
+        255
+      ],
+      "comment": "Med, vertical",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        150,
+        0,
+        255
+      ],
+      "comment": "Med, horizontal",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        0,
+        150,
+        255
+      ],
+      "comment": "Entrance #2",
+      "connector": true
+    },
+    {
+      "value": [
+        100,
+        0,
+        0,
+        255
+      ],
+      "comment": "small, vertical",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        100,
+        0,
+        255
+      ],
+      "comment": "Small, horizontal",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        0,
+        100,
+        255
+      ],
+      "comment": "connector #9",
+      "connector": true
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "BIOME --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        200,
+        200,
+        255
+      ],
+      "comment": "biome, front",
+      "brush": [
+        [
+          "surface"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        100,
+        100,
+        100,
+        255
+      ],
+      "comment": "biome, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "surfacebackground"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "MATERIALS --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        0,
+        255,
+        255
+      ],
+      "comment": "brassblock, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "front",
+          "brassblock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        200,
+        255,
+        255
+      ],
+      "comment": "brassblock, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        10,
+        255,
+        255
+      ],
+      "comment": "brassblock, front overwrite",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "front",
+          "brassblock"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        210,
+        255,
+        255
+      ],
+      "comment": "brassblock, back overwrite",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+	    {
+      "value": [
+        50,
+        255,
+        255,
+        255
+      ],
+      "comment": "brass2, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        125,
+        255,
+        255
+      ],
+      "comment": "brass2, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ],
+        [
+          "front",
+          "brass2block"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        100,
+        0,
+        255,
+        255
+      ],
+      "comment": "clockwork, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clockwork"
+        ],
+        [
+          "front",
+          "clockwork"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        100,
+        200,
+        255,
+        255
+      ],
+      "comment": "clockwork, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clockwork"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        0,
+        255,
+        255
+      ],
+      "comment": "brassstech, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasstech"
+        ],
+        [
+          "front",
+          "brasstech"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        200,
+        255,
+        255
+      ],
+      "comment": "brasstech, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasstech"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        0,
+        255,
+        255
+      ],
+      "comment": "clock, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clock"
+        ],
+        [
+          "front",
+          "clock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        50,
+        255,
+        255
+      ],
+      "comment": "clock, front, overwritable",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clock"
+        ],
+        [
+          "front",
+          "clock"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        200,
+        255,
+        255
+      ],
+      "comment": "clock, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        250,
+        255,
+        255
+      ],
+      "comment": "clock, back, overwritable",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clock"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        100,
+        110,
+        255
+      ],
+      "comment": "Books, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "bookpiles"
+        ],
+        [
+          "front",
+          "bookpiles"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        120,
+        255
+      ],
+      "comment": "Books, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "bookpiles"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        10,
+        255
+      ],
+      "comment": "Pipe Horizontal, Front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipehorizontal"
+        ],
+        [
+          "front",
+          "brasspipehorizontal"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        10,
+        255
+      ],
+      "comment": "Pipe Horizontal, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipehorizontal"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        20,
+        255
+      ],
+      "comment": "Pipe Vertical, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipevertical"
+        ],
+        [
+          "front",
+          "brasspipevertical"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        20,
+        255
+      ],
+      "comment": "Pipe Vertical, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipevertical"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        30,
+        255
+      ],
+      "comment": "Pipe ne, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipene"
+        ],
+        [
+          "front",
+          "brasspipene"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        30,
+        255
+      ],
+      "comment": "Pipe ne, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipene"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        40,
+        255
+      ],
+      "comment": "Pipe nw, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipenw"
+        ],
+        [
+          "front",
+          "brasspipenw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        40,
+        255
+      ],
+      "comment": "Pipe nw, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipenw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        50,
+        255
+      ],
+      "comment": "Pipe se, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipese"
+        ],
+        [
+          "front",
+          "brasspipese"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        50,
+        255
+      ],
+      "comment": "Pipe se, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipese"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        60,
+        255
+      ],
+      "comment": "Pipe sw, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipesw"
+        ],
+        [
+          "front",
+          "brasspipesw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        60,
+        255
+      ],
+      "comment": "Pipe sw, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipesw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        70,
+        255
+      ],
+      "comment": "Pipe Middle, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipemiddle"
+        ],
+        [
+          "front",
+          "brasspipemiddle"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        50,
+        70,
+        255
+      ],
+      "comment": "Pipe Middle, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipemiddle"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+	    {
+      "value": [
+        245,
+        112,
+        98,
+        255
+      ],
+      "comment": "Coal",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "front",
+          "coalblock"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "OBJECTS (objectLayer)--------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        134,
+        0,
+        255,
+        255
+      ],
+      "comment": "copperplatform",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "front",
+          "copperplatform"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        165,
+        255,
+        3,
+        255
+      ],
+      "comment": "clocklantern",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklantern",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        64,
+        64,
+        255,
+        255
+      ],
+      "comment": "brassdoor1",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassdoor1"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        30,
+        30,
+        30,
+        255
+      ],
+      "comment": "oil pool, block1",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "tarliquid"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        30,
+        0,
+        30,
+        255
+      ],
+      "comment": "oil pool, block2",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ],
+        [
+          "tarliquid"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "NPCS all --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        45,
+        64,
+        64,
+        255
+      ],
+      "comment": "autoguard1",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "monster",
+            "typeName": "autoguard1"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        48,
+        132,
+        64,
+        255
+      ],
+      "comment": "human wizardmerchant",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "npc",
+            "species": "human",
+            "typeName": "wizardmerchant",
+            "parameters": {
+              "dropPools": [],
+              "scriptConfig": {
+                "guard": {
+                  "patrolDistance": 1,
+                  "noticeDistance": 30,
+                  "hailDistance": -1,
+                  "stopDistance": -1,
+                  "attackDistance": 20
+                },
+                "returnToPost": {
+                  "moveTime": 20,
+                  "minDistance": 1
+                }
+              }
+            }
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "END (3451 values) --------------------------------------------------",
+      "connector": false
+    }
+  ],
+  "parts": [
+    {
+      "def": [
+        "image",
+        [
+          "entrance-backgroundtiles.png",
+          "entrance-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "9",
+            "5",
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4",
+            "endS1",
+            "endS2"
+          ]
+        ]
+      ],
+      "name": "entrance"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "clock-backgroundtiles.png",
+          "clock-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ]
+      ],
+      "name": "clock"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Corridor1-backgroundtiles.png",
+          "Corridor1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "Corridor1"
+          ]
+        ]
+      ],
+      "name": "Corridor1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Corridor2-backgroundtiles.png",
+          "Corridor2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "entrance",
+            "Corridor2"
+          ]
+        ]
+      ],
+      "name": "Corridor2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend1-backgroundtiles.png",
+          "bend1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "bend1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend2-backgroundtiles.png",
+          "bend2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "bend2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend3-backgroundtiles.png",
+          "bend3-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "bend3"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend4-backgroundtiles.png",
+          "bend4-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "bend4"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "upperhall-backgroundtiles.png",
+          "upperhall-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "upperhall"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "upper1-backgroundtiles.png",
+          "upper1-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "upper1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "upper2-backgroundtiles.png",
+          "upper2-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "upper2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "upper3-backgroundtiles.png",
+          "upper3-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "upper3"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "upper4-backgroundtiles.png",
+          "upper4-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "upper4"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "2b-backgroundtiles.png",
+          "2b-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "5",
+            "6",
+            "2",
+            "3",
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "2b"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "3b-backgroundtiles.png",
+          "3b-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "5",
+            "6",
+            "2",
+            "3",
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "3b"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "pitfall-backgroundtiles.png",
+          "pitfall-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "pitfall"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "1-backgroundtiles.png",
+          "1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "pitfall"
+          ]
+        ]
+      ],
+      "name": "1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "2-backgroundtiles.png",
+          "2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "5",
+            "6",
+            "2",
+            "3",
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "3-backgroundtiles.png",
+          "3-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "5",
+            "7",
+            "2",
+            "3",
+            "bend1",
+            "bend2",
+            "bend3",
+            "bend4"
+          ]
+        ]
+      ],
+      "name": "3"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "4-backgroundtiles.png",
+          "4-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "4",
+            "3",
+            "2"
+          ]
+        ]
+      ],
+      "name": "4"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "5-backgroundtiles.png",
+          "5-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "5",
+            "7",
+            "6",
+            "8",
+            "11",
+            "12"
+          ]
+        ]
+      ],
+      "name": "5"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "6-backgroundtiles.png",
+          "6-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "1",
+            "7",
+            "14",
+            "16",
+            "18",
+            "20"
+          ]
+        ]
+      ],
+      "name": "6"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "7-backgroundtiles.png",
+          "7-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "1",
+            "6",
+            "13",
+            "15",
+            "17",
+            "19"
+          ]
+        ]
+      ],
+      "name": "7"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "8-backgroundtiles.png",
+          "8-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "8"
+          ]
+        ]
+      ],
+      "name": "8"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "9-backgroundtiles.png",
+          "9-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "1",
+            "entrance"
+          ]
+        ]
+      ],
+      "name": "9"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "10-backgroundtiles.png",
+          "10-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [
+            "Corridor1",
+            "Corridor2"
+          ]
+        ]
+      ],
+      "name": "10"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "11-backgroundtiles.png",
+          "11-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            4
+          ]
+        ]
+      ],
+      "name": "11"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "12-backgroundtiles.png",
+          "12-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "12"
+          ]
+        ]
+      ],
+      "name": "12"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "13-backgroundtiles.png",
+          "13-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotCombineWith",
+          [
+            "14"
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "12",
+            "11",
+            "8",
+            "7",
+            "6"
+          ]
+        ]
+      ],
+      "name": "13"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "14-backgroundtiles.png",
+          "14-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ],
+        [
+          "doNotCombineWith",
+          [
+            "13"
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "12",
+            "11",
+            "8",
+            "7",
+            "6",
+            "9"
+          ]
+        ]
+      ],
+      "name": "14"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "15-backgroundtiles.png",
+          "15-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ]
+      ],
+      "name": "15"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "16-backgroundtiles.png",
+          "16-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ]
+      ],
+      "name": "16"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "17-backgroundtiles.png",
+          "17-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ]
+      ],
+      "name": "17"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "18-backgroundtiles.png",
+          "18-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ]
+      ],
+      "name": "18"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "19-backgroundtiles.png",
+          "19-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "20",
+            "14",
+            "13",
+            "9"
+          ]
+        ]
+      ],
+      "name": "19"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "20-backgroundtiles.png",
+          "20-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            2
+          ]
+        ],
+        [
+          "doNotConnectToPart",
+          [
+            "19",
+            "14",
+            "13",
+            "9"
+          ]
+        ]
+      ],
+      "name": "20"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "21-backgroundtiles.png",
+          "21-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "21"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "22-backgroundtiles.png",
+          "22-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "22"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endN1-backgroundtiles.png",
+          "endN1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endN1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endN2-backgroundtiles.png",
+          "endN2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endN2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endW1-backgroundtiles.png",
+          "endW1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endW1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endW2-backgroundtiles.png",
+          "endW2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endW2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endE1-backgroundtiles.png",
+          "endE1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endE1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endE2-backgroundtiles.png",
+          "endE2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endE2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endS1-backgroundtiles.png",
+          "endS1-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endS1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endS2-backgroundtiles.png",
+          "endS2-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endS2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endE3-backgroundtiles.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endE3"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endE4-backgroundtiles.png",
+          "endE4-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endE4"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endW3-backgroundtiles.png",
+          "endW3-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endW3"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "endW4-backgroundtiles.png",
+          "endW4-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "ignorePartMaximumRule"
+        ]
+      ],
+      "chance": 0.0,
+      "name": "endW4"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "boiler-backgroundtiles.png",
+          "boiler-objects.png"
+        ]
+      ],
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ]
+      ],
+      "name": "boiler"
+    }
+  ]
+}

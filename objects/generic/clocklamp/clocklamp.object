@@ -1,0 +1,33 @@
+{
+  "objectName" : "clocklamp",
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Clockwork Lamp",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "category" : "light",
+  "price" : 400,
+  "lightColor" : [217, 217, 190],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.1,
+
+  "inventoryIcon" : "clocklampicon.png",
+  "orientations" : [
+    {
+      "image" : "clocklamp.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 2,
+      "animationCycle" : 0.7,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

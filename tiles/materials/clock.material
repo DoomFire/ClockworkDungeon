@@ -1,0 +1,14 @@
+{
+  "materialId" : 303,
+  "materialName" : "clock",
+  "frames" : "clock.png",
+  "particleColor" : [237, 254, 255, 255],
+  "variants" : 1,
+  "transparent" : true,
+  "description" : "This is one BIG clock!",
+  "shortdescription" : "Clock Block",
+  "glitchDescription" : "Observation. The clock is moving very slowly.",
+  "floranDescription" : "BIG clock!.",
+  "footstepSound" : "/sfx/blocks/footstep_glass.wav",
+  "health" : 10
+}

@@ -1,0 +1,16 @@
+{
+  "materialId" : 310,
+  "materialName" : "brasspipese",
+  "frames" : "brasspipese.png",
+  "particleColor" : [84, 127, 73, 255],
+  "variants" : 1,
+  "itemDrop" : "brasspipese",
+  "shortdescription" : "Brass Pipe exiting south and east.",
+  "description" : "South and east exits of a section of a Brass Pipe.",
+  "glitchDescription" : "South and east exits of a section of a Brass Pipe.",
+  "floranDescription" : "South and east exits of a section of a Brass Pipe.",
+  "multicolored" : true,
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "drawBackground" : true,
+  "health" : 10
+}

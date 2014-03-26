@@ -1,0 +1,15 @@
+{
+  "materialId" : 306,
+  "materialName" : "brasspipemiddle",
+  "frames" : "brasspipemiddle.png",
+  "particleColor" : [84, 127, 73, 255],
+  "variants" : 3,
+  "itemDrop" : "brasspipemiddle",
+  "shortdescription" : "Brass Pipe Middle.",
+  "description" : "Brass Pipe Middle.",
+  "glitchDescription" : "Statement. A middle section of a brass pipe.",
+  "floranDescription" : "Lying down pipe.",
+  "multicolored" : false,
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.wav",
+  "health" : 10
+}
