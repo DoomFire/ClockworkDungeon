@@ -36,7 +36,6 @@
  []	- shower head
  [x]	- piping hatches
  [x]	- bookshelf
- []	 Valve
  []	- metal pots
  []	- Storage shelves
  []	- metal crates
@@ -46,6 +45,7 @@
  []		- wall mounted button
  []		- wall mounted lever
  [x]		- Large lever
+ []		- valve
  []	- hung up towels
  [x]	- lamps
  [x]	- gramaphone intercom
@@ -55,11 +55,12 @@
  []	- Food vendor
  []	- metal bucket and cleaning equipment
  [x]	- Kleinklok in a pod.
+
+ [] FIX OBJECT DESCRIPTIONS
  
  [] Create hostile NPCs.
  []	- Generic Lowerclass
  []	- Generic Upperclass
- []	- brain in a jar sentry.
  []	- Guardian Automatons. ( shooty, stabby, slammy. )
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
@@ -69,7 +70,7 @@
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
  []			- change the projectile he fires
- []		- Make him able to be spawned from activating an object
+ []			- Make him able to be spawned from activating an object
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
  []			- Change treasure pool to be more fitting
@@ -81,7 +82,30 @@
  []		- Slam Automaton
  []			- decide on the look. ( snake? flying? )
  []			- decide on attached item ( hammer? )
- []	- engineer boss in boiler room
+ []	- Engineer Boss ( Boiler Room Boss )
+ [] 		- Create sprites
+ []			- Large mech-like body with exposed gears and motor at the back
+ []			- Small exhaust with smoke particles
+ []			- Front arm with Flame thrower
+ []			- Back arm with large knife / spade thing
+ []			- Two legs, each possibly with tread on them
+ []		- Attack States
+ []			- Flame thrower
+ []			- Charge
+ []			- Slam
+ []			- Fire molten
+ []			- Fire Automatons
+ []	- Incinerator Boss ( Pipes Boss )
+ []		- Create Sprites
+ []			- Flying enemy with propellor ontop
+ []		- Attack States
+ []			- Swoop
+ []			- Fire Molten
+ []			- Possibly small bouncing projectiles with a low velocity
+ []		- Movement
+ []			- Avoiding walls
+ []			- Landing on walls or ceiling
+ []			- Staying a certain distance from the player
 
  [] Add loot
  []	- Helicopter / wings back item
