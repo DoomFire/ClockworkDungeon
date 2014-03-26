@@ -2,58 +2,46 @@
   "animatedParts" : {
     "stateTypes" : {
       "switchState" : {
-        "default" : "test",
+        "default" : "poster1",
         "states" : {
-          "off" : {
-            "frames" : 1
-          },
-          "on" : {
-            "frames" : 1
-          }
-		  ,
-          "test" : {
-            "frames" : 1
-          } ,
-          "test2" : {
-            "frames" : 1
-          }
-        }
+		  "poster1" : {"frames" : 1,"cycle" : 0.15},
+          "poster2" : {"frames" : 1,"cycle" : 0.15},
+          "poster3" : {"frames" : 1,"cycle" : 0.15},
+		  "Lposter1" : {"frames" : 1,"cycle" : 0.15},
+          "Lposter2" : {"frames" : 1,"cycle" : 0.15},
+          "Lposter3" : {"frames" : 1,"cycle" : 0.15} 
+       }
       }
     },
 
+	
     "parts" : {
       "switch" : {
-        "properties" : {
-          "centered" : false
-        },
+        "properties" : {"centered" : false},
 
         "partStates" : {
+		
           "switchState" : {
-            "off" : {
-              "properties" : {
-                "image" : "<partImage>:off"
-              }
-            },
+			"poster1" : {"properties" : {"image" : "<partImage>:poster1"}},
+			"poster2" : {"properties" : {"image" : "<partImage>:poster2"}},
+			"poster3" : {"properties" : {"image" : "<partImage>:poster3"}},
+			"Lposter1" : {"properties" : {"image" : "<partImage>:Lposter1"}},
 
-            "on" : {
+            "Lposter2" : {
               "properties" : {
-                "image" : "<partImage>:on"
+                "image" : "<partImage>:Lposter2"
+              }
+            }
+			,
+
+            "Lposter3" : {
+              "properties" : {
+                "image" : "<partImage>:Lposter3"
               }
             }
 			
-			,
-
-            "test" : {
-              "properties" : {
-                "image" : "<partImage>:test"
-              }
-            },
-
-            "test2" : {
-              "properties" : {
-                "image" : "<partImage>:test2"
-              }
-            }
+			
+			
 			
           }
         }

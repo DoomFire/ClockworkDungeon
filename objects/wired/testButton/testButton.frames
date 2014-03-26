@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [32, 42],
+    "dimensions" : [3,2],
+    "names" : [
+      [ "poster1", "poster2","poster3" ],
+	  [ "Lposter1", "Lposter2","Lposter3" ]
+	  
+    ]
+  }
+ 
+}

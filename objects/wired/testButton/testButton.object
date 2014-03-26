@@ -1,0 +1,34 @@
+{
+  "objectName" : "testButton",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "At least the inventory works...",
+  "shortdescription" : "TestPoster",
+  "race" : "generic",
+
+  "floranDescription" : "Floran just push button!",
+  "glitchDescription" : "Temptation. A button, begging to be pressed.",
+
+  "category" : "wire",
+  "price" : 300,
+
+  "inventoryIcon" : "testButtonicon.png",
+  "orientations" : [
+    {
+      "image" : "testButton.png:poster1",
+      "imagePosition" : [-16,-12],
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/testButton/testButton.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/testButton/testButton.animation",
+
+  "animationParts" : {"switch" : "testButton.png"},
+  "animationPosition" : [-16, -12],
+
+  "interval" : 13
+}
