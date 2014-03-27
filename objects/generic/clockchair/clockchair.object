@@ -7,20 +7,19 @@
   "category" : "furniture",
   "price" : 1200,
 
-  "apexDescription" : "This is style gone mad.",
-  "avianDescription" : "An egg-shaped chair. I feel like a child.",
-  "floranDescription" : "Egg chair look tassty.",
-  "glitchDescription" : "Consider. Chance of back pain very high.",
-  "humanDescription" : "It's not very practical, but it looks cool!",
-  "hylotlDescription" : "Style over substance.",
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
 
   "inventoryIcon" : "clockchairicon.png",
   "orientations" : [
     {
       "dualImage" : "clockchair.png:default",
 
-      "imagePosition" : [-11,0],
-      "frames" : 1,
+      "imagePosition" : [-12,0],
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
 
@@ -29,6 +28,6 @@
 
   "objectType" : "loungeable",
   "sitFlipDirection" : false,
-  "sitPosition" : [4, 24]
+  "sitPosition" : [2, 23]
 
 }

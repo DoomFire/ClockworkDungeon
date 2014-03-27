@@ -42,7 +42,7 @@
   "animationParts" : {
     "door" : "brassdoor1.png"
   },
-  "animationPosition" : [-12, 0],
+  "animationPosition" : [-4, 0],
 
   "inboundNodes" : [ [-1, 4] ],
   "outboundNodes" : [ [1, 0] ]
