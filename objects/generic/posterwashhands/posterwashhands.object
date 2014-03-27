@@ -19,9 +19,7 @@
   "orientations" : [
     {
 	  "image" : "posterwashhands.png:state1",
-      "imagePosition" : [0, 0],
-	  "flipImages" : false,
-
+      "imagePosition" : [-16, -12],
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
 
@@ -32,7 +30,7 @@
   "animationParts" : {
     "switch" : "posterwashhands.png"
   },
-  "animationPosition" : [-16, 0],
+  "animationPosition" : [-16, -12],
 
   "scripts" : [ "/objects/wired/posterwashhands/posterwashhands.lua" ],
   "scriptDelta" : 5  
