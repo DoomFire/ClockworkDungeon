@@ -25,11 +25,11 @@
 
     "damageTeam" : 1,
 
-    "metaBoundBox" : [-1.5625, -1.375, 1.5625, 1.375],
+    "metaBoundBox" : [-1.0, -1.375, 2.5625, 1.375],
     "scale" : 1.0,
 
     "movementSettings" : {
-	"collisionPoly" : [ [-1.041, -1.0], [2.082, -1.0], [2.082, 1.0], [-1.041, 1.0] ],
+	"collisionPoly" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
 
       "mass" : 0.2,
       "walkSpeed" : 6,
@@ -39,8 +39,8 @@
       "airFriction" : 0.25,
       "airForce" : 50.0
     },
-    "blockedSensors" : [ [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
-    "fallSensors" : [ [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
+    "blockedSensors" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
+    "fallSensors" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
 	
     "knockoutTime" : 1,
     "knockoutEffect" : "blink",
@@ -49,7 +49,7 @@
     "turnHostileNoise" : [ ],
 
     "touchDamage" : {
-      "poly" : [ [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
+      "poly" : [  [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
       "damage" : 15,
 
       "teamType" : "enemy",
@@ -88,8 +88,8 @@
 
     "shieldHealthRatio" : 0.25,
 
-    "armBaseOffset" : [-1.125, -0.5],
-    "armTipOffset" : [1.125, -0.5],
+    "armBaseOffset" : [-0.5, 0.6],
+    "armTipOffset" : [0.2, 0.6],
     "aimCorrectionOffset" : [0, -1]
   }
 }

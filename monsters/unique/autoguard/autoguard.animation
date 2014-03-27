@@ -165,7 +165,7 @@
 
   "rotationGroups" : {
     "arm" : {
-      "rotationCenter" : [0.5, 0.5],
+      "rotationCenter" : [0.5, 0.9],
       "angularVelocity" : 1.5
     }
   },

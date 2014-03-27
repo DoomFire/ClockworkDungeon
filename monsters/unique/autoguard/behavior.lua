@@ -52,12 +52,12 @@ function move(toTarget)
 		setAnimation("jump")
     end
     entity.setFacingDirection(toTarget[1])
+	entity.setRunning(true)
     if toTarget[1] < 0 then
       entity.moveLeft()
     else
       entity.moveRight()
-    end
-	
+	  end
 	-- if setAnimation == "move" or "run" or "jump" then
 	-- FIX THIS V
 	-- entity.configParameter("movementSettings")
@@ -109,19 +109,19 @@ function setAnimation(desiredAnimation)
 			end
 		end
 		
-	if desiredAnimation ~= "shield" and animation ~= "shield" then
-		if desiredAnimation == "idle" then
-			if animation ~= "idle" and animation ~= "idleStart" then
-			entity.setAnimationState("movement", "idleStart")
-			end
-		else
-			if animation == "idle" or animation == "idleStart" then
-			entity.setAnimationState("movement", "idleEnd")
-			elseif animation ~= "idleEnd" then
-			entity.setAnimationState("movement", desiredAnimation)
-			end
-		end
-	end
+--	if desiredAnimation ~= "shield" and animation ~= "shield" then
+--		if desiredAnimation == "idle" then
+--			if animation ~= "idle" and animation ~= "idleStart" then
+--			entity.setAnimationState("movement", "idleStart")
+--			end
+--		else
+--			if animation == "idle" or animation == "idleStart" then
+--			entity.setAnimationState("movement", "idleEnd")
+--			elseif animation ~= "idleEnd" then
+--			entity.setAnimationState("movement", desiredAnimation)
+--			end
+--		end
+--	end
 
   return false
 end
@@ -142,12 +142,13 @@ end
 moveState = {}
 
 function moveState.enter()
-entity.setRunning(false)
   local direction
   if math.random(100) > 50 then
     direction = 1
+	entity.setRunning(false)
   else
     direction = -1
+	entity.setRunning(false)
   end
 --  if setAnimation == "move" or "run" or "jump" then
 -- entity.configParameter("movementSettings") = entity.configParameter("otherMovementSettings")
@@ -160,8 +161,7 @@ end
 
 function moveState.update(dt, stateData)
   if self.sensors.collisionSensors.collision.any(true) then
-		entity.jump()
-		setAnimation("jump")
+	direction = -direction
   end
 
   if isOnPlatform() then
@@ -204,6 +204,7 @@ function attackState.update(dt, stateData)
       end
     else
 	move(toTarget)
+	entity.setRunning(true)
     end
   end
 
