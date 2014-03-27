@@ -5,8 +5,7 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 1,
-            "cycle" : 0.15
+            "frames" : 1
           },
           "active" : {
             "frames" : 12,
