@@ -64,8 +64,9 @@
  []	- Guardian Automatons. ( shooty, stabby, slammy. )
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
+ []			- Fix ability to run left ( Currently only runs right )
  []			- Glitch with animation, causing attackdown to skip
- []			- Make his collision box smaller ( 2 x 2 tiles )
+ [x]			- Make his collision box smaller ( 2 x 2 tiles )
  []			- adjust other numbers in monstertype file
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
