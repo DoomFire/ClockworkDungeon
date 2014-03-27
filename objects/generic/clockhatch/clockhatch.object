@@ -1,49 +1,36 @@
 {
-  "objectName" : "clockhatch",
-  "rarity" : "Common",
-  "objectType" : "wire",
-
-  "category" : "door",
-  "price" : 750,
-  "description" : "A clockwork hatch",
-  "shortdescription" : "Clockwork Hatch",
-  "race" : "generic",
-
-  "apexDescription" : "A brass door.",
-  "avianDescription" : "A brass door.",
-  "floranDescription" : "Floran think this 'food door'.",
-  "glitchDescription" : "Statement. A brass door.",
-  "humanDescription" : "This brass door looks a bit useless.",
-  "hylotlDescription" : "A brass door.",
-
-  "inventoryIcon" : "clockhatchicon.png",
-  "orientations" : [
-    {
-      "image" : "clockhatchhorizontal.png:default",
-      "imagePosition" : [ -4, 0],
-
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom", "top" ]
-    },
-    {
-      "image" : "clockhatchverticle.png:default",
-      "imagePosition" : [ 0, -4],
-
-      "spaceScan" : 0.1,
-      "anchors" : [ "left", "right" ]
-    }
+    "objectName": "clockhatch",
+    "rarity": "Common",
+    "objectType": "wire",
+    "category": "door",
+    "price": 750,
+    "description": "A clockwork hatch",
+    "shortdescription": "Clockwork Hatch",
+    "race": "generic",
 	
-  ],
-
-  "scripts" : [ "/objects/wired/door/door.lua" ],
-  "scriptDelta" : 5,
-
-  "animation" : "/objects/wired/door/door.animation",
-  "animationParts" : {
-    "door" : "brassdoor1.png"
-  },
-  "animationPosition" : [-4, 0],
-
-  "inboundNodes" : [ [-1, 4] ],
-  "outboundNodes" : [ [1, 0] ]
+    "apexDescription": "A brass door.",
+    "avianDescription": "A brass door.",
+    "floranDescription": "Floran think this 'food door'.",
+    "glitchDescription": "Statement. A brass door.",
+    "humanDescription": "This brass door looks a bit useless.",
+    "hylotlDescription": "A brass door.",
+	
+    "inventoryIcon": "clockhatchicon.png",
+	
+    "orientations": [
+        {
+            "image": "clockhatch.png:default",
+            "imagePosition": [ 0, 0 ],
+			"spaces" : [  [1, 0], [1, 1] ],
+            "anchors": ["bottom","top"]
+        }
+    ],
+	
+    "scripts": [ "/objects/wired/door/door.lua"],
+    "scriptDelta": 5,
+    "animation": "/objects/wired/door/door.animation",
+	"animationParts" : { "door" : "clockhatch.png" },
+    "animationPosition": [ -2,0 ],
+    "inboundNodes": [[ -1,4 ]],
+    "outboundNodes": [[ 1,0 ]]
 }

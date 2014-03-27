@@ -15,13 +15,13 @@
 
   "aliases" : {
     "default" : "closed",
-    "closeLeft.1" : "halfLeft",
-    "closeLeft.2" : "closed",
-    "closeRight.1" : "halfRight",
-    "closeRight.2" : "closed",
-    "openLeft.1" : "halfLeft",
-    "openLeft.2" : "left",
-    "openRight.1" : "halfRight",
-    "openRight.2" : "right"
+    "closeUp.1" : "halfLeft",
+    "closeUp.2" : "closed",
+    "closeDown.1" : "halfRight",
+    "closeDown.2" : "closed",
+    "openUp.1" : "halfLeft",
+    "openUp.2" : "left",
+    "openDown.1" : "halfRight",
+    "openDown.2" : "right"
   }
 }
