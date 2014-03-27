@@ -72,10 +72,12 @@
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
  []			- change the projectile he fires
- []			- Make him able to be spawned from activating an object
+ [x]		- Make him able to be spawned from activating an object
+ []			- Make the drop spawner only work during the idle animation
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
  []			- Change treasure pool to be more fitting
+ []			- fix the falling behavior
  []			- create ball tech as well as attached armour
  []		- Charging Automaton
  []			- Charge attack state

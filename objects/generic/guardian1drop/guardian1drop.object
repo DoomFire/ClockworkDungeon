@@ -1,0 +1,36 @@
+{
+  "objectName" : "guardian1drop",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "A distress beacon. Who knows who might hear it?",
+  "shortdescription" : "Guardian dropper",
+  "race" : "generic",
+  "category" : "tools",
+  "printable" : false,
+
+  "inventoryIcon" : "guardian1dropicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "guardian1drop.png:<color>.<frame>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ],
+
+  "inboundNodes" : [ [-1,1] ],  
+  "animation" : "/objects/wired/guardian1drop/guardian1drop.animation",
+  "animationParts" : {
+    "beacon" : "guardian1drop.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/guardian1drop/guardian1drop.lua" ],
+  "scriptDelta" : 5
+
+}
