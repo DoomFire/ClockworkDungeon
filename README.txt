@@ -50,7 +50,7 @@
  [x]	- lamps
  [x]	- gramaphone intercom
  [o]	- Blackboard with chalk
- []	- Interacting will draw something then scrub it off.
+ []		- Interacting will draw something then scrub it off.
  [x]	- Typewriter
  []	- Food vendor
  []	- metal bucket and cleaning equipment
@@ -78,7 +78,6 @@
  []		- Charging Automaton
  []			- Charge attack state
  []			- Lance drop 
-
  []		- Slam Automaton
  []			- decide on the look. ( snake? flying? )
  []			- decide on attached item ( hammer? )
