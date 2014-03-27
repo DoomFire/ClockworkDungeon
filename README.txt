@@ -55,7 +55,8 @@
  []	- Food vendor
  []	- metal bucket and cleaning equipment
  [x]	- Kleinklok in a pod.
-
+ []	-Change clockchair descriptions
+ 
  [] FIX OBJECT DESCRIPTIONS
  
  [] Create hostile NPCs.
