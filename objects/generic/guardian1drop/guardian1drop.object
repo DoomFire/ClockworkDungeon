@@ -14,7 +14,7 @@
       "dualImage" : "guardian1drop.png:<color>.<frame>",
 
       "imagePosition" : [-16, 0],
-      "frames" : 12,
+      "frames" : 16,
       "animationCycle" : 2,
 
       "spaceScan" : 0.1,

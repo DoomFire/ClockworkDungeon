@@ -8,7 +8,7 @@
             "frames" : 1
           },
           "active" : {
-            "frames" : 11,
+            "frames" : 15,
             "cycle" : 2,
            "mode" : "transition",
             "transition" : "idle"
