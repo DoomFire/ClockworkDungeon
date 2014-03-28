@@ -2,7 +2,7 @@
   "objectName" : "guardian1",
   "rarity" : "Common",
   "objectType" : "wire",
-  "description" : "A distress beacon. Who knows who might hear it?",
+  "description" : "Make cute little killing machines of ultimate death!",
   "shortdescription" : "Guardian spawner",
   "race" : "generic",
   "category" : "tools",
@@ -11,11 +11,10 @@
   "inventoryIcon" : "guardian1icon.png",
   "orientations" : [
     {
-      "dualImage" : "guardian1.png:<color>.<frame>",
+      "dualImage" : "guardian1.png:<color>",
 
-      "imagePosition" : [-16, 0],
-      "frames" : 12,
-      "animationCycle" : 2,
+      "imagePosition" : [0, 0],
+      "frames" : 1,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -28,7 +27,7 @@
   "animationParts" : {
     "beacon" : "guardian1.png"
   },
-  "animationPosition" : [-16, 0],
+  "animationPosition" : [0, 0],
 
   "scripts" : [ "/objects/wired/guardian1/guardian1.lua" ],
   "scriptDelta" : 5

@@ -8,9 +8,7 @@
             "frames" : 1
           },
           "active" : {
-            "frames" : 12,
-            "cycle" : 0.7,
-            "mode" : "loop"
+            "frames" : 1
           }
         }
       }
@@ -26,13 +24,13 @@
           "beaconState" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:default.default"
+                "image" : "guardian1.png"
               }
             },
 
             "active" : {
               "properties" : {
-                "image" : "<partImage>:default.<frame>"
+                "image" : "guardian1.png"
               }
             }
           }
