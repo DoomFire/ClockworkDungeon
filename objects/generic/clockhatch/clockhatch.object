@@ -20,7 +20,7 @@
     "orientations": [
         {
             "image": "clockhatch.png:default",
-            "imagePosition": [ 0, 0 ],
+            "imagePosition": [ -4, 0 ],
 			"spaces" : [  [1, 0], [1, 1] ],
             "anchors": ["bottom","top"]
         }
@@ -31,6 +31,6 @@
     "animation": "/objects/wired/door/door.animation",
 	"animationParts" : { "door" : "clockhatch.png" },
     "animationPosition": [ -4,0 ],
-    "inboundNodes": [[ -1,4 ]],
+    "inboundNodes": [[1,2 ]],
     "outboundNodes": [[ 1,0 ]]
 }

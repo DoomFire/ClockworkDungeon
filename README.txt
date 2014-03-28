@@ -77,11 +77,10 @@
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
  []			- Change treasure pool to be more fitting
- []			- fix the falling behavior
  []			- create ball tech as well as attached armour
  []		- Charging Automaton
  []			- Charge attack state
- []			- Lance drop 
+ []			- Lance drop
  []		- Slam Automaton
  []			- decide on the look. ( snake? flying? )
  []			- decide on attached item ( hammer? )
