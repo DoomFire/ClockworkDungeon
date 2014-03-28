@@ -7,6 +7,7 @@
 
 
 ~~~~~~~~~~] CHECK LIST [~~~~~~~~~~
+ []  tweak guard drop delay/cooldown
  [x] Ficks generation
  
  [o] Add more rooms
