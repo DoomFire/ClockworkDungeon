@@ -8,12 +8,12 @@
     "shortdescription": "Clockwork Hatch",
     "race": "generic",
 	
-    "apexDescription": "A brass door.",
-    "avianDescription": "A brass door.",
-    "floranDescription": "Floran think this 'food door'.",
-    "glitchDescription": "Statement. A brass door.",
-    "humanDescription": "This brass door looks a bit useless.",
-    "hylotlDescription": "A brass door.",
+    "apexDescription": "...",
+    "avianDescription": "...",
+    "floranDescription": "...",
+    "glitchDescription": "...",
+    "humanDescription": "...",
+    "hylotlDescription": "...",
 	
     "inventoryIcon": "clockhatchicon.png",
 	
@@ -30,7 +30,7 @@
     "scriptDelta": 5,
     "animation": "/objects/wired/door/door.animation",
 	"animationParts" : { "door" : "clockhatch.png" },
-    "animationPosition": [ -2,0 ],
+    "animationPosition": [ -4,0 ],
     "inboundNodes": [[ -1,4 ]],
     "outboundNodes": [[ 1,0 ]]
 }

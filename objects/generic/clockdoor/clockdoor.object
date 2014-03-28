@@ -20,18 +20,9 @@
   "orientations" : [
     {
       "image" : "clockdoor.png:default",
-      "flipImages" : true,
-      "imagePosition" : [-16, 0],
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom", "top" ],
-      "direction" : "left"
-    },
-    {
-      "image" : "clockdoor.png:default",
-      "imagePosition" : [-20, 0],
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom", "top" ],
-      "direction" : "right"
+      "imagePosition" : [-3, 0],
+	  "spaces" : [  [1, 0], [1, 1], [1, 2], [1, 3], [1, 4] ],
+      "anchors" : [ "bottom", "top" ]
     }
   ],
 
@@ -42,7 +33,7 @@
   "animationParts" : {
     "door" : "clockdoor.png"
   },
-  "animationPosition" : [-20, 0],
+  "animationPosition" : [-4, 0],
 
   "inboundNodes" : [ [0, 4] ],
   "outboundNodes" : [ [0, 0] ]
