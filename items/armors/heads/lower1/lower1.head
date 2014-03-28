@@ -1,0 +1,25 @@
+{
+  "itemName" : "lower1",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The mask of one of the poorer Kleinkloks. This filter isn't the best, but it will protect you from the most harmful elements.",
+  "shortdescription" : "Kleinklok Mask",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : 1
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+  ]
+}

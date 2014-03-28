@@ -1,0 +1,25 @@
+{
+  "itemName" : "upper2",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A mask used by the richest of Kleinkloks. The filter is quite complicated, as well as containing various cleansing herbs",
+  "shortdescription" : "Plain Hood",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : 1
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+]
+}
