@@ -1,0 +1,34 @@
+{
+  "itemName" : "upperklokpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "These pants are worn by the richest of Kleinkloks. They seal off the legs, using advanced clockwork machinery to move the wearer around.",
+  "shortdescription" : "Scavenger's Greaves",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "coldprotection",
+      "amount" : 1
+    },
+
+    {
+      "kind" : "protection",
+      "amount" : 3
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 0.15
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+  ]
+}

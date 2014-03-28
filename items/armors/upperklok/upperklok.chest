@@ -1,0 +1,43 @@
+{
+  "itemName" : "upperklokchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The breastplate worn by the richest of Kleinkloks. It serves great protection against any pathogens.",
+  "shortdescription" : "Upperclassman's Breastplate",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : 2.5
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 7.5
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 15
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+  ]
+}
