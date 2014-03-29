@@ -21,8 +21,7 @@
  []	- Medic chambers
  
  [] Add tiles and objects
-	- Crack in clock
-	- Furniture
+ []	- Furniture
  [x]	- gears
  []	- Large Furnace
  []	- Metal statues
@@ -56,7 +55,7 @@
  []	- Food vendor
  []	- metal bucket and cleaning equipment
  [x]	- Kleinklok in a pod.
- []	-Change clockchair descriptions
+ []	- Change clockchair descriptions
  
  [] FIX OBJECT DESCRIPTIONS
  
@@ -73,8 +72,8 @@
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
  []			- change the projectile he fires
- [x]		- Make him able to be spawned from activating an object
- []			- Make the drop spawner only work during the idle animation
+ [x]			- Make him able to be spawned from activating an object
+ []				- Make the drop spawner only work during the idle animation
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
  []			- Change treasure pool to be more fitting
@@ -116,3 +115,5 @@
  []	- Centurian Collosus tech
  []	- Ore -> coal machine
  []	- Chalk (?)
+ 
+ [] ADD SOUNDS TO, LIKE, EVERYTHING.
