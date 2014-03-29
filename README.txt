@@ -129,3 +129,4 @@ Player spawned Automatons:
          - Perhaps return to the spawner after a certain time idle (?)
          - could easily be linked to an in-game motion sensor to come out when monsters are around, automtatically.
          
+test
