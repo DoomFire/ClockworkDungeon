@@ -6,11 +6,12 @@ function init(args)
 end
 
 function onInboundNodeChange(args)
-	if self.spawnCooldown==0 then
-	--entity.smash()
-	self.spawnDelay=5
-    entity.setAnimationState("beaconState", "active")
-    end
+	
+	if self.spawnDelay<0 and self.spawnCooldown==-1 then
+		self.spawnDelay=5
+		self.spawnCooldown=25
+		entity.setAnimationState("beaconState", "active")
+	 end
 end
 
 function onInteraction(args)
@@ -19,9 +20,7 @@ function onInteraction(args)
 		self.spawnDelay=5
 		self.spawnCooldown=25
 		entity.setAnimationState("beaconState", "active")
-	else
-	
-	return { "ShowPopup", { message = "delay: ".. self.spawnDelay .." cooldown: " .. self.spawnCooldown } }
+--	return { "ShowPopup", { message = "delay: ".. self.spawnDelay .." cooldown: " .. self.spawnCooldown } }
 		
    end
    
@@ -35,7 +34,7 @@ function main()
 			
 		if self.spawnDelay == 0 then
 			
-			world.spawnMonster("autoguard", entity.toAbsolutePosition({ -0.7, -1 }), { level = 1 })
+			world.spawnMonster("autoguard", entity.toAbsolutePosition({ -0.7, -4 }), { level = 1 })
 			self.spawnDelay =-1
 			
 		end
