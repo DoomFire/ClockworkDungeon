@@ -9,7 +9,7 @@
   "colors" : "/monsters/colors.config",
   "reversed" : true,
 
-  "dropPools" : [ "bunkerSerpentDroidTreasure" ],
+  "dropPools" : [ "AutoguardTreasure" ],
 
   "baseParameters" : {
     "scripts" : [

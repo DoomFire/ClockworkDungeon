@@ -1,0 +1,10 @@
+{
+  "codexId" : "lunaScience",
+  "title" : "luna Science!!",
+  "inventoryIcon" : "Sciencebook.png",
+  "codexkind" : "codex",
+  "itemName" : "lunaScience",
+  "rarity" : "common",
+  "description" : "A very important book",
+  "shortdescription" : "Luna science"
+}
