@@ -35,7 +35,7 @@ function main()
 			
 		if self.spawnDelay == 0 then
 			
---			world.spawnMonster("autoguard", entity.toAbsolutePosition({ -0.7, -1 }), { level = 1 })
+			world.spawnMonster("autoguard", entity.toAbsolutePosition({ -0.7, -1 }), { level = 1 })
 			self.spawnDelay =-1
 			
 		end
