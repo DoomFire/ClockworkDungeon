@@ -25,7 +25,7 @@
 
     "damageTeam" : 1,
 
-    "metaBoundBox" : [-1.0, -1.375, 2.5625, 1.375],
+    "metaBoundBox" : [-1.0, -1.375, 3.5625, 1.375],
     "scale" : 1.0,
 
     "movementSettings" : {

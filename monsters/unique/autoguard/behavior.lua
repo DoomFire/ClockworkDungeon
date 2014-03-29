@@ -204,7 +204,6 @@ function attackState.update(dt, stateData)
       end
     else
 	move(toTarget)
-	entity.setRunning(true)
     end
   end
 
