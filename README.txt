@@ -117,3 +117,15 @@
  []	- Chalk (?)
  
  [] ADD SOUNDS TO, LIKE, EVERYTHING.
+
+
+~~~~~~~~~~] IDEAS [~~~~~~~~~~
+
+Feel free to add anything you think of to the list, so we can all discuss it and go over how we might implement things.
+
+Player spawned Automatons:
+         - Automaton dropper will spawn player side automatons when placed by the player.
+           Only a single automaton can be spawned at a time. and will remain in the vacinity of the spawner
+         - Perhaps return to the spawner after a certain time idle (?)
+         - could easily be linked to an in-game motion sensor to come out when monsters are around, automtatically.
+         
