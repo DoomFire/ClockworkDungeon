@@ -6,6 +6,7 @@
         "states" : {
           "idle" : {
             "frames" : 1
+			
           },
           "active" : {
             "frames" : 15,

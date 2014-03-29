@@ -13,7 +13,7 @@
     {
       "dualImage" : "guardian1drop.png:<color>.<frame>",
 
-      "imagePosition" : [-16, 0],
+      "imagePosition" : [-10, -24],
       "frames" : 16,
       "animationCycle" : 2,
 
@@ -28,7 +28,7 @@
   "animationParts" : {
     "beacon" : "guardian1drop.png"
   },
-  "animationPosition" : [-16, 0],
+  "animationPosition" : [-10, -24],
 
   "scripts" : [ "/objects/wired/guardian1drop/guardian1drop.lua" ],
   "scriptDelta" : 5
