@@ -21,8 +21,7 @@
  []	- Medic chambers
  
  [] Add tiles and objects
-	- Crack in clock
-	- Furniture
+ []	- Furniture
  [x]	- gears
  []	- Large Furnace
  []	- Metal statues
@@ -56,14 +55,15 @@
  []	- Food vendor
  []	- metal bucket and cleaning equipment
  [x]	- Kleinklok in a pod.
- []	-Change clockchair descriptions
+ []	- Change clockchair descriptions
  
  [] FIX OBJECT DESCRIPTIONS
  
  [] Create hostile NPCs.
  []	- Generic Lowerclass
  []	- Generic Upperclass
- []	- Guardian Automatons. ( shooty, stabby, slammy. )
+ []	- Guardian Automatons. ( shooty, stabby, slammy. )\
+ []  - Stop and wait when idle sometimes
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
  []			- Fix ability to run left ( Currently only runs right )
@@ -73,8 +73,8 @@
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
  []			- change the projectile he fires
- [x]		- Make him able to be spawned from activating an object
- []			- Make the drop spawner only work during the idle animation
+ [x]			- Make him able to be spawned from activating an object
+ []				- Make the drop spawner only work during the idle animation
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
  []			- Change treasure pool to be more fitting
@@ -116,3 +116,18 @@
  []	- Centurian Collosus tech
  []	- Ore -> coal machine
  []	- Chalk (?)
+ 
+ [] ADD SOUNDS TO, LIKE, EVERYTHING.
+
+
+~~~~~~~~~~] IDEAS [~~~~~~~~~~
+
+Feel free to add anything you think of to the list, so we can all discuss it and go over how we might implement things.
+
+Player spawned Automatons:
+         - Automaton dropper will spawn player side automatons when placed by the player.
+           Only a single automaton can be spawned at a time. and will remain in the vacinity of the spawner
+         - Perhaps return to the spawner after a certain time idle (?)
+         - could easily be linked to an in-game motion sensor to come out when monsters are around, automtatically.
+         
+test
