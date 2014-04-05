@@ -1,0 +1,129 @@
+{
+  "type" : "lowerclass",
+  "baseType" : "guard",
+
+  "disableWornArmor" : true,
+  "inateStatusEffects" : [
+    {
+      "kind" : "Protection",
+      "amount" : 1.0
+    }
+  ],
+
+  "damageTeam" : 1,
+
+  "levelVariance" : [0.5, 0.5],
+
+  "scripts" : [
+    "/npcs/main.lua",
+    "/npcs/timers.lua",
+    "/scripts/sensors.lua",
+    "/scripts/stateMachine.lua",
+    "/scripts/util.lua",
+    "/scripts/vec2.lua",
+
+    "/npcs/meleeAttackState.lua",
+    "/npcs/rangedAttackState.lua",
+
+    "/npcs/guard/guardState.lua",
+    "/npcs/guard/returnToPostState.lua"
+  ],
+
+  "scriptConfig" : {
+    "attackerLimit" : 6,
+    "attackerLimitCooldown" : 3,
+    "noticePlayersRadius" : 30,
+
+    "guard" : {
+      "patrolDistance" : 5,
+      "noticeDistance" : 30,
+      "hailDistance" : -1,
+      "stopDistance" : -1,
+      "attackDistance" : 30,
+
+      "attackSayingPercent" : 25,
+
+      "dialog" : {
+        "hail" : {
+          "default" : [ "Shoo! Git away from 'ere. Keep yer plagues to ye self!" ]
+        },
+        "stop" : {
+          "default" : [ "This is me last warnin'! Scurry back to ye slum or I'll Throw ya' in the Salt Box!" ]
+        },
+        "attack" : {
+          "default" : [ "Plague Rat!"
+          ],
+          "glitch" : {
+            "default" : [
+              "Plague Rat!",
+              "Looks like its time t' take out the trash!",
+              "Get 'em!",
+			  "Get that pest outta 'ere!",
+			  "Take 'em out before they spread plague!"
+            ],
+			"hylotl" : [
+			"Scum sucker!",
+			"Get 'em!",
+			"Get that fish outta 'ere!"
+			],
+			"glitch" : [
+			"Junk Heap!",
+			"Take it out before it spreads plague!",
+			"Take out that Rust bucket!",
+			"Get 'em!"
+			]
+          }
+        }
+      }
+    },
+
+    "returnToPost" : {
+      "moveTime" : 20,
+      "minDistance" : 2
+    },
+
+    "meleeAttack" : {
+      "switchDistance" : 10,
+      "runThreshold" : 0
+    },
+
+    "rangedAttack" : {
+      "minDistance" : 5,
+      "maxDistance" : 18
+    }
+  },
+
+  "items" : {
+    "glitch" : [
+      [0, [
+          {
+            "head" : [ { "name" : "lower1" } ],
+            "chest" : [ { "name" : "upperklokchest" } ],
+            "legs" : [ { "name" : "upperklokpants" } ],
+			"sheathedprimary" : [
+              { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
+            ]
+          },
+          {
+            "head" : [ { "name" : "lower2" } ],
+            "chest" : [ { "name" : "upperklokchest" } ],
+            "legs" : [ { "name" : "upperklokpants" } ],
+			"sheathedprimary" : [
+              { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "dropPools" : [ "labguardtreasure" ],
+
+  "statusParameters" : {
+    "baseMaxHealth" : 40,
+    "baseMaxEnergy" : 40,
+    "bodyMaterialKind" : "robotic",
+    "damageConfig" : "/damage/damageresponse/npcs.config",
+    "invulnerabilityTime" : 0,
+    "energyReplenishmentRate" : 10.0
+  }
+}

@@ -1,36 +1,60 @@
 {
-  "objectName" : "organ",
-  "rarity" : "Common",
-  "interactAction" : "OpenSongbookInterface",
-  "category" : "decorative",
-  "price" : 2000,
-  "description" : "There's some sheet music here.",
-  "shortdescription" : "Pipe Organ",
-  "race" : "generic",
-
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
-
-  "inventoryIcon" : "organicon.png",
-  "orientations" : [
-    {
-      "dualImage" : "organ.png:<color>",
-      "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
-
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+    "objectName": "organ",
+    "rarity": "Common",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingtable.config",
+    "filter" : [ "craftingtable", "plain" ]
+  },
+    "category": "decorative",
+    "price": 2000,
+    "description": "There's some sheet music here.",
+    "shortdescription": "Pipe Organ",
+    "race": "generic",
+    "apexDescription": "...",
+    "avianDescription": "...",
+    "floranDescription": "...",
+    "glitchDescription": "...",
+    "humanDescription": "...",
+    "hylotlDescription": "...",
+    "inventoryIcon": "organicon.png",
+    "orientations": [
+        {
+            "dualImage": "organ.png:<color>",
+            "imagePosition": [
+                -16,
+                0
+            ],
+            "frames": 1,
+            "animationCycle": 0.5,
+            "spaceScan": 0.1,
+            "anchors": [
+                "bottom"
+            ]
+        }
+    ],
+    "scripts": [
+        "/objects/wired/organ/organ.lua"
+    ],
+    "scriptDelta": 5,
+    "dialog": {
+        "start": {
+            "default": [
+                "Got any chocolate eggs? Love those things.",
+                "See anything you like?",
+                "What can I do ya for?"
+            ]
+        },
+        "end": {
+            "default": [
+                "See ya next time!",
+                "Come again.",
+                "Your pixels are always good here.",
+                "Pleasure doing business with you!",
+                "Thanks for visiting my store.",
+                "Great to see you!",
+                "Let's do business again."
+            ]
+        }
     }
-  ],
-  
-    "scripts" : [ "/objects/wired/organ/organ.lua" ],
-  "scriptDelta" : 5,
-  "inspectionKind" : "tool",
-  "kind" : "reedorgan"
-  
 }

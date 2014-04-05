@@ -1,0 +1,196 @@
+{
+  "type" : "guard",
+
+  "disableWornArmor" : true,
+  "inateStatusEffects" : [
+    {
+      "kind" : "Protection",
+      "amount" : 1.0
+    }
+  ],
+
+  "damageTeam" : 1,
+
+  "levelVariance" : [0.25, 0.5],
+
+  "scripts" : [
+    "/npcs/main.lua",
+    "/npcs/timers.lua",
+    "/scripts/sensors.lua",
+    "/scripts/stateMachine.lua",
+    "/scripts/util.lua",
+    "/scripts/vec2.lua",
+
+    "/npcs/meleeAttackState.lua",
+    "/npcs/rangedAttackState.lua",
+
+    "/npcs/guard/guardState.lua"
+  ],
+  "scriptDelta" : 5,
+  "scriptConfig" : {
+    "attackerLimit" : 4,
+    "attackerLimitCooldown" : 3,
+
+    "deathNoticed" : {
+      "chance" : 0.5,
+      "dialog" : {
+        "default" : [
+          "You killed <name>!",
+          "<name>! I will avenge you!"
+        ]
+      }
+    },
+
+    "guard" : {
+      "noticeDistance" : 25,
+      "hailDistance" : 20,
+      "stopDistance" : 10,
+      "attackDistance" : 5,
+      "wallCheckDistance" : 5,
+      "changeDirectionTimeRange" : [10, 20],
+
+      "dialog" : {
+        "hail" : {
+          "default" : [ "Halt! Who goes there?" ]
+        },
+        "stop" : {
+          "default" : [ "You may go no further." ]
+        }
+      }
+    },
+
+    "meleeAttack" : {
+      "swingDistance" : 5,
+      "swingTime" : 0.4,
+      "swingCooldownTime" : 0.6,
+      "switchDistance" : 15,
+      "runThreshold" : 0,
+      "searchTime" : 10,
+      "backoffDistanceRange" : [8.0, 12.0],
+      "repositionCooldownTimeRange" : [2.0, 3.0]
+    },
+
+    "rangedAttack" : {
+      "minDistance" : 10,
+      "maxDistance" : 30,
+      "coverYOffset" : -1.5,
+      "coverYClearanceOffset" : 0.5,
+      "coverDistance" : 2.5,
+      "coverHideTimeRange" : [0.5, 1.0],
+      "coverFireTimeRange" : [1.0, 3.0],
+      "attackerSpacing" : 2.5,
+      "searchTime" : 10
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "humantier1head" } ],
+            "chest" : [ { "name" : "humantier1chest" } ],
+            "legs" : [ { "name" : "humantier1pants" } ],
+            "primary" : [
+              [ "generatedgun", 1, { "definition" : "commonassaultrifle" } ]
+            ],
+            "sheathedprimary" : [
+              { "name" : "generatedsword", "data" : { "definition" : "commonbroadsword" } }
+            ]
+          },
+          {
+            "head" : [ { "name" : "humantier1head" } ],
+            "chest" : [ { "name" : "humantier1chest" } ],
+            "legs" : [ { "name" : "humantier1pants" } ],
+            "primary" : [
+              { "name" : "generatedsword", "data" : { "definition" : "commonbroadsword" } }
+            ],
+            "sheathedprimary" : [
+              [ "generatedgun", 1, { "definition" : "commonassaultrifle" } ]
+            ]
+          }
+        ] ]
+    ],
+    "glitch" : [
+      [0, [
+          {
+            "head" : [ { "name" : "glitchtier1head" } ],
+            "chest" : [ { "name" : "glitchtier1chest" } ],
+            "legs" : [ { "name" : "glitchtier1pants" } ],
+            "primary" : [
+              { "name" : "generatedsword", "data" : { "definition" : "commonshortsword" } },
+              { "name" : "generatedsword", "data" : { "definition" : "commondagger" } }
+            ],
+            "alt" : [
+              [ "generatedshield", 1, { "definition" : "tier1shield" } ]
+            ]
+          }
+        ] ]
+    ],
+    "avian" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aviantier1head" } ],
+            "chest" : [ { "name" : "aviantier1chest" } ],
+            "legs" : [ { "name" : "aviantier1pants" } ],
+            "primary" : [
+              [ "generatedgun", 1, { "definition" : "commonassaultrifle" } ]
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "movementControllerSettings" : {
+    "standingPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+    "crouchingPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, -0.5], [0.35, 0], [-0.35, 0], [-0.75, -0.5] ],
+
+    "mass" : 0.6
+  },
+
+  "humanoidTiming" : {
+    // Idle, Walk, Run, Jump, Fall, Swim, SwimIdle, Duck, Sit, Lay
+    "stateCycle" : [1.0, 0.75, 0.75, 0.25, 0.25, 0.50, 0.50, 1.0, 1.0, 1.0],
+    "stateFrames" : [1, 8, 8, 4, 4, 7, 2, 1, 1, 1],
+
+    // EmoteIdle, Blabbering, Shouting, Happy, Sad, NEUTRAL, Laugh, Annoyed, Oh, OOOH, Blink, Wink, Eat, Sleep
+    //          , normal    , caps    , :)   , :'(, :|     , :D   ,        , :o, :O  ,      , ;)
+    "emoteCycle" : [1.0, 0.3, 0.3, 0.3, 1.0, 0.3, 0.5, 1.0, 1.0, 1.0, 1.0, 0.5, 0.3, 1],
+    "emoteFrames" : [1, 2, 2, 2, 5, 2, 2, 2, 2, 3, 3, 5, 2, 2]
+  },
+
+  "statusParameters" : {
+    "baseMaxHealth" : 40,
+    "baseMaxEnergy" : 40,
+    "bodyMaterialKind" : "organic",
+    "damageConfig" : "/damage/damageresponse/npcs.config",
+    "invulnerabilityTime" : 0,
+    "energyReplenishmentRate" : 10.0
+  },
+
+  "persistent" : true,
+
+  "splashConfig" : {
+    "splashSpeedMin" : 10.0,
+    "splashMinWaterLevel" : 0.4,
+    "splashBottomSensor" : [0, -2.0],
+    "splashTopSensor" : [0, 2.0],
+    "numSplashParticles" : 8,
+    "splashYVelocityFactor" : 0.2,
+
+    "splashParticle" : {
+      "type" : "ember",
+      "position" : [0, -1],
+      "finalVelocity" : [0, -20],
+      "approach" : [0, 50],
+      "color" : [60, 150, 224, 100],
+      "size" : 4.0,
+      "timeToLive" : 0.5,
+      "destructionAction" : "shrink",
+      "destructionTime" : 0.2
+    },
+
+    "splashParticleVariance" : {
+      "velocity" : [10, 0]
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "type" : "upperclass",
+  "baseType" : "villager",
+
+  "damageTeam" : 1,
+  "levelVariance" : [0, 0],
+
+  "disableWornArmor" : true,
+  "inateStatusEffects" : [
+    {
+      "kind" : "Protection",
+      "amount" : 1.0
+    }
+  ],
+
+  "scriptConfig" : {
+
+    "noticePlayersRadius" : 30,
+
+    "converse" : {
+      "waitTime" : 0.5,
+      "dialog" : {
+        "default" : [ "Get this disgusting creature away from me!" ],
+
+        "glitch" : {
+          "default" : [
+            "Eck. Get away, whatever you are."
+          ],
+          "human" : [
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..."
+          ],
+          "apex" : [
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..."
+          ],
+          "avian" : [
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..."
+          ],
+          "floran" : [
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..."
+          ],
+          "glitch" : [
+            "...",
+            "...",
+            "..",
+            "...",
+            "...",
+            "..."
+          ],
+          "hylotl" : [
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..."
+          ]
+        }
+      }
+    },
+
+    "flee" : {
+      "reactionTimeRange" : [0.2, 1.0],
+      "safeDistance" : 100,
+      "safeDistanceWithGuards" : 40,
+      "safeTimer" : 10,
+      "stuckTime" : 4,
+      "stuckCooldown" : 10,
+      "dialogTimeRange" : [4, 10],
+
+      "dialog" : {
+        "helpme" : {
+          "default" : [
+            "Help me at once!",
+            "Get this filthy demon off me!",
+            "Don't let it touch me!",
+			"Activate the Automatons! Quickly!",
+			"Oh god it breathed on me!"
+          ]
+        },
+        "helpthem" : {
+          "default" : [
+            "What have you done!?"
+          ],
+          "glitch" : [
+            "Fear. Guards!",
+            "Intimidated. Please don't hurt me!",
+            "Afraid. Leave me be! Guards!",
+            "Terrified. Save me!",
+            "Shocked. What have you done?!"
+          ],
+          "floran" : [
+            "Ssstabby time for me!",
+            "Floran being hurted!",
+            "Floran not ready for hunt!",
+            "Greenguard help Floran!"
+          ]
+        },
+        "encourage" : {
+          "default" : [
+            "Get 'em!",
+            "Avenge me!",
+            "Stick 'em once for me!",
+            "Don't let 'em get away!"
+          ],
+          "glitch" : [
+            "Encourage. Put 'em to the sword!",
+            "Excitement. Avenge me!",
+            "Aggressive. Strike him down!",
+            "Vengeful. Don't let 'em get away!"
+          ],
+          "floran" : [
+            "Ssstabb the intruders!",
+            "Floran get revenge now!",
+            "Ssslice them!",
+            "Greenguard destroy it!"
+          ]
+        },
+        "safe" : {
+          "default" : [
+            "Phew, I think I got away.",
+            "I've escaped with my life!",
+            "Is this the safe zone?"
+          ],
+          "glitch" : [
+            "Relieved. Phew, I think I got away.",
+            "Thankful. I've escaped with my life!",
+            "Wishful. If only I could afford a keep.",
+            "Hopeful. Am I safe?",
+            "Embarrassed. I think I leaked a little oil."
+          ],
+          "floran" : [
+            "Floran sssafe now.",
+            "Floran not get ssstabbed after all.",
+            "Them lucky Floran not have weapon.",
+            "Sssalvation!"
+          ]
+        }
+      }
+    },
+
+    "sit" : {
+      "timeOfDayRanges" : [ [0.6, 1.0], [0.0, 0.2] ],
+      "moveTimeLimit" : 30,
+      "searchRadius" : 10,
+      "sitRadius" : 3,
+      "cooldown" : 60,
+      "timeRange" : [15, 240]
+    },
+
+    "sleep" : {
+      "searchRadius" : 15,
+      "lieDownRadius" : 3,
+      "moveToBedTimeLimit" : 10.0,
+      "timeOfDayRanges" : [ [ [0.7, 0.75], [0.95, 1.0] ] ],
+      "cooldown" : 30
+    },
+
+    "chat" : {
+      "distanceRange" : [2.0, 4.0],
+      "conversations" : [
+        [
+          [2, "blabbering", "idle" ],
+          [1, "idle", "laugh" ],
+          [2, "idle", "blabbering" ],
+          [1, "sad", "idle" ]
+        ],
+        [
+          [2, "idle", "blabbering" ],
+          [2, "blabbering", "happy" ],
+          [1, "wink", "laugh" ],
+          [2, "happy", "happy" ]
+        ],
+        [
+          [2, "idle", "blabbering" ],
+          [2, "blabbering", "blabbering" ],
+          [2, "blabbering", "annoyed" ],
+          [3, "shouting", "shouting" ],
+          [2, "annoyed", "annoyed" ]
+        ]
+      ],
+      "cooldown" : 10
+    }
+  },
+
+  "items" : {
+    "glitch" : [
+      [0, [
+          {
+		    "head" : [ { "name" : "upper1" } ],
+            "chest" : [ { "name" : "upperklokchest" } ],
+            "legs" : [ { "name" : "upperklokpants"} ]
+          },
+          {
+		    "head" : [ { "name" : "upper2" } ],
+            "chest" : [ { "name" : "upperklokchest" } ],
+            "legs" : [ { "name" : "upperklokpants"} ]
+          },
+          {
+		    "head" : [ { "name" : "upper3" } ],
+            "chest" : [ { "name" : "upperklokchest" } ],
+            "legs" : [ { "name" : "upperklokpants"} ]
+          }
+        ] ]
+    ]
+  },
+
+  "movementControllerSettings" : {
+    "standingPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+    "crouchingPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, -0.5], [0.35, 0], [-0.35, 0], [-0.75, -0.5] ],
+
+    "mass" : 0.6,
+    "jumpSpeed" : 24.0
+  },
+
+  "humanoidTiming" : {
+    // Idle, Walk, Run, Jump, Fall, Swim, SwimIdle, Duck, Sit, Lay
+    "stateCycle" : [1.0, 0.75, 0.75, 0.25, 0.25, 0.50, 0.50, 1.0, 1.0, 1.0],
+    "stateFrames" : [1, 8, 8, 4, 4, 7, 2, 1, 1, 1],
+
+    // EmoteIdle, Blabbering, Shouting, Happy, Sad, NEUTRAL, Laugh, Annoyed, Oh, OOOH, Blink, Wink, Eat, Sleep
+    //          , normal    , caps    , :)   , :'(, :|     , :D   ,        , :o, :O  ,      , ;)
+    "emoteCycle" : [1.0, 0.3, 0.3, 0.3, 1.0, 0.3, 0.5, 1.0, 1.0, 1.0, 1.0, 0.5, 0.3, 1],
+    "emoteFrames" : [1, 2, 2, 2, 5, 2, 2, 2, 2, 3, 3, 5, 2, 2]
+  },
+
+  "statusParameters" : {
+    "baseMaxHealth" : 10,
+    "baseMaxEnergy" : 40,
+    "bodyMaterialKind" : "robotic",
+    "damageConfig" : "/damage/damageresponse/npcs.config",
+    "invulnerabilityTime" : 0
+  },
+
+  "splashConfig" : {
+    "splashSpeedMin" : 10.0,
+    "splashMinWaterLevel" : 0.4,
+    "splashBottomSensor" : [0, -2.0],
+    "splashTopSensor" : [0, 2.0],
+    "numSplashParticles" : 8,
+    "splashYVelocityFactor" : 0.2,
+
+    "splashParticle" : {
+      "type" : "ember",
+      "position" : [0, -1],
+      "finalVelocity" : [0, -20],
+      "approach" : [0, 50],
+      "color" : [60, 150, 224, 100],
+      "size" : 4.0,
+      "timeToLive" : 0.5,
+      "destructionAction" : "shrink",
+      "destructionTime" : 0.2
+    },
+
+    "splashParticleVariance" : {
+      "velocity" : [10, 0]
+    }
+  }
+}

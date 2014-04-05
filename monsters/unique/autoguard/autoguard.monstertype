@@ -13,7 +13,6 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/groundMovement.lua",
       "/monsters/unique/autoguard/behavior.lua",
       "/scripts/sensors.lua",
       "/scripts/stateMachine.lua",

@@ -1,0 +1,46 @@
+{
+  "objectName" : "upperclass",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "Make cute little killing machines of ultimate death!",
+  "shortdescription" : "Guardian spawner",
+  "race" : "generic",
+  "category" : "tools",
+  "printable" : false,
+
+  "inventoryIcon" : "upperclassicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "upperclass.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "inboundNodes" : [ [-1,1] ],  
+  "animation" : "/objects/spawners/upperclass/upperclass.animation",
+  "animationParts" : {
+    "beacon" : "upperclass.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/spawners/upperclass/upperclass.lua" ],
+  "scriptDelta" : 5,
+  
+    "spawner" : {
+    "searchRadius" : 32.0,
+    "npcSpeciesOptions" : [ "glitch" ],
+    "npcTypeOptions" : [ "upperclass" ],
+    "npcParameterOptions" : [
+      {
+        "dropPools" : [ ]
+      }
+    ]
+  }
+
+}

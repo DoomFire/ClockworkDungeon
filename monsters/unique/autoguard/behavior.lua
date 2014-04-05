@@ -1,6 +1,5 @@
 function init(args)
   self.sensors = sensors.create()
-  self.movement = groundMovement.create(1, 1, setAnimationState)
   
   self.state = stateMachine.create({
     "moveState",
@@ -195,7 +194,6 @@ function attackState.update(dt, stateData)
     if distance < entity.configParameter("attackDistance") and entity.onGround(true) then
 
         setAnimation("shield")
-        entity.setDamageOnTouch(true)
 
       entity.setFacingDirection(toTarget[1])
 
