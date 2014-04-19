@@ -1,0 +1,31 @@
+{
+  "objectName" : "dragonposter",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 100,
+
+  "description" : "scrappy crappy biege dragon with blue fire ~Luna",
+  "shortdescription" : "dragonposter",
+  "race" : "generic",
+
+  "apexDescription" : "Impressive",
+  "avianDescription" : "Impressive",
+  "floranDescription" : "Impressssssssive",
+  "glitchDescription" : "Impressive",
+  "humanDescription" : "Impressive",
+  "hylotlDescription" : "Impressive",
+
+  "inventoryIcon" : "dragonpostericon.png",
+  "orientations" : [
+    {
+      "image" : "dragonposter.png:<color>",
+      "imagePosition" : [-50, -50],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [  [0, 0]  ]
+
+    }
+  ]
+}
