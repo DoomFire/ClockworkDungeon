@@ -149,7 +149,7 @@
         200,
         255
       ],
-      "comment": "Entrance #1",
+      "comment": "Upperhalls, Enterance",
       "connector": true
     },
     {
@@ -179,7 +179,7 @@
         150,
         255
       ],
-      "comment": "Entrance #2",
+      "comment": "Upperhalls Outer",
       "connector": true
     },
     {
@@ -209,7 +209,7 @@
         100,
         255
       ],
-      "comment": "connector #9",
+      "comment": "Upperhalls, Pitdrop",
       "connector": true
     },
     {
@@ -359,7 +359,7 @@
       ],
       "connector": false
     },
-	    {
+    {
       "value": [
         50,
         255,
@@ -943,7 +943,7 @@
       "rules": [],
       "connector": false
     },
-	    {
+    {
       "value": [
         245,
         112,
@@ -1155,6 +1155,16 @@
       ],
       "comment": "END (3451 values) --------------------------------------------------",
       "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        50,
+        255
+      ],
+      "comment": "Lowerhalls, Pitdrop",
+      "connector": true
     }
   ],
   "parts": [
@@ -1206,127 +1216,6 @@
         ]
       ],
       "name": "clock"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "Corridor1-backgroundtiles.png",
-          "Corridor1-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "Corridor1"
-          ]
-        ]
-      ],
-      "name": "Corridor1"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "Corridor2-backgroundtiles.png",
-          "Corridor2-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "entrance",
-            "Corridor2"
-          ]
-        ]
-      ],
-      "name": "Corridor2"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "bend1-backgroundtiles.png",
-          "bend1-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "bend1",
-            "bend2",
-            "bend3",
-            "bend4"
-          ]
-        ]
-      ],
-      "name": "bend1"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "bend2-backgroundtiles.png",
-          "bend2-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "bend1",
-            "bend2",
-            "bend3",
-            "bend4"
-          ]
-        ]
-      ],
-      "name": "bend2"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "bend3-backgroundtiles.png",
-          "bend3-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "bend1",
-            "bend2",
-            "bend3",
-            "bend4"
-          ]
-        ]
-      ],
-      "name": "bend3"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "bend4-backgroundtiles.png",
-          "bend4-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "doNotConnectToPart",
-          [
-            "bend1",
-            "bend2",
-            "bend3",
-            "bend4"
-          ]
-        ]
-      ],
-      "name": "bend4"
     },
     {
       "def": [
@@ -1557,32 +1446,6 @@
         ]
       ],
       "name": "3"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "4-backgroundtiles.png",
-          "4-objects.png"
-        ]
-      ],
-      "rules": [
-        [
-          "maxSpawnCount",
-          [
-            2
-          ]
-        ],
-        [
-          "doNotConnectToPart",
-          [
-            "4",
-            "3",
-            "2"
-          ]
-        ]
-      ],
-      "name": "4"
     },
     {
       "def": [
@@ -2182,6 +2045,32 @@
         ]
       ],
       "name": "boiler"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend1-backgroundtiles.png",
+          "bend1-foregroundtiles.png",
+          "bend1-objects.png",
+          "bend1-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "bend1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "bend2-backgroundtiles.png",
+          "bend2-foregroundtiles.png",
+          "bend2-objects.png",
+          "bend2-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "bend2"
     }
   ]
 }
