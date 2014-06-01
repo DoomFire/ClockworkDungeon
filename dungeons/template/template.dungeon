@@ -2051,9 +2051,7 @@
         "image",
         [
           "bend1-backgroundtiles.png",
-          "bend1-foregroundtiles.png",
-          "bend1-objects.png",
-          "bend1-wires.png"
+          "bend1-objects.png"
         ]
       ],
       "rules": [],
@@ -2064,13 +2062,22 @@
         "image",
         [
           "bend2-backgroundtiles.png",
-          "bend2-foregroundtiles.png",
-          "bend2-objects.png",
-          "bend2-wires.png"
+          "bend2-objects.png"
         ]
       ],
       "rules": [],
       "name": "bend2"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "main1-backgroundtiles.png",
+          "main1-objects.png"
+        ]
+      ],
+      "rules": [],
+      "name": "main1"
     }
   ]
 }
