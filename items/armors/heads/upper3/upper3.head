@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A mask used by the richest of Kleinkloks. The filter is quite complicated, as well as containing various cleansing herbs",
-  "shortdescription" : "Plain Hood",
+  "shortdescription" : "Kleinklok Mask",
   "inspectionKind" : "armor",
 
   "maleFrames" : "head.png",

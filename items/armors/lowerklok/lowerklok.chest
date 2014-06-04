@@ -1,0 +1,43 @@
+{
+  "itemName" : "lowerklokchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The outfit of a working class Kleinklok. Not nearly as protective as the suits worn by the higher class.",
+  "shortdescription" : "Lowerclassman's Top",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : 2.5
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 7.5
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 15
+    }
+  ],
+
+  "colorOptions" : [
+    /* NONE */
+  ]
+}

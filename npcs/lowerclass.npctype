@@ -98,16 +98,16 @@
       [0, [
           {
             "head" : [ { "name" : "lower1" } ],
-            "chest" : [ { "name" : "upperklokchest" } ],
-            "legs" : [ { "name" : "upperklokpants" } ],
+            "chest" : [ { "name" : "lowerklokchest" } ],
+            "legs" : [ { "name" : "lowerklokpants" } ],
 			"sheathedprimary" : [
               { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
             ]
           },
           {
             "head" : [ { "name" : "lower2" } ],
-            "chest" : [ { "name" : "upperklokchest" } ],
-            "legs" : [ { "name" : "upperklokpants" } ],
+            "chest" : [ { "name" : "lowerklokchest" } ],
+            "legs" : [ { "name" : "lowerklokpants" } ],
 			"sheathedprimary" : [
               { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
             ]
