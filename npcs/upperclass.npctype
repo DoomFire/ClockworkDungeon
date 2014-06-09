@@ -78,7 +78,7 @@
       }
     },
 
-    "flee" : {
+    "flee2" : {
       "reactionTimeRange" : [0.2, 1.0],
       "safeDistance" : 100,
       "safeDistanceWithGuards" : 40,
@@ -107,12 +107,6 @@
             "Afraid. Leave me be! Guards!",
             "Terrified. Save me!",
             "Shocked. What have you done?!"
-          ],
-          "floran" : [
-            "Ssstabby time for me!",
-            "Floran being hurted!",
-            "Floran not ready for hunt!",
-            "Greenguard help Floran!"
           ]
         },
         "encourage" : {
@@ -127,12 +121,6 @@
             "Excitement. Avenge me!",
             "Aggressive. Strike him down!",
             "Vengeful. Don't let 'em get away!"
-          ],
-          "floran" : [
-            "Ssstabb the intruders!",
-            "Floran get revenge now!",
-            "Ssslice them!",
-            "Greenguard destroy it!"
           ]
         },
         "safe" : {
@@ -147,12 +135,6 @@
             "Wishful. If only I could afford a keep.",
             "Hopeful. Am I safe?",
             "Embarrassed. I think I leaked a little oil."
-          ],
-          "floran" : [
-            "Floran sssafe now.",
-            "Floran not get ssstabbed after all.",
-            "Them lucky Floran not have weapon.",
-            "Sssalvation!"
           ]
         }
       }
