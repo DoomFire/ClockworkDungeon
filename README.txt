@@ -62,7 +62,8 @@
  [] Create hostile NPCs.
  []	- Generic Lowerclass
  []	- Generic Upperclass
- []	- Guardian Automatons. ( shooty, stabby, slammy. )\
+		- Go for switches before attempting to escape.
+ []	- Guardian Automatons. ( shooty, stabby, slammy. )
  []  - Stop and wait when idle sometimes
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
