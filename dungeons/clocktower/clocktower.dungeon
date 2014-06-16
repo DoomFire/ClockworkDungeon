@@ -1,0 +1,2059 @@
+{
+  "metadata": {
+    "name": "template",
+    "species": "dummy",
+    "rules": [],
+    "maxRadius": 20000,
+    "maxParts": 50,
+    "anchor": [
+      "entrance"
+    ],
+    "gravity": 80
+  },
+  "tiles": [
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "DEFAULT --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "nothing",
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        0,
+        150,
+        255
+      ],
+      "comment": "empty space",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        1,
+        150,
+        255
+      ],
+      "comment": "empty space, overwriteable",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "comment": "genMustContainAirBackground, overwritable",
+      "brush": [
+        [
+          "clear"
+        ]
+      ],
+      "rules": [
+        [
+          "worldGenMustContainAirBackground"
+        ],
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "comment": "genMustContainSolidBackground, overwritable",
+      "brush": [
+        [
+          "surface"
+        ]
+      ],
+      "rules": [
+        [
+          "worldGenMustContainSolidBackground"
+        ],
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "CONNECTORS --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        255,
+        255,
+        255
+      ],
+      "comment": "Connector1",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        200,
+        200,
+        255
+      ],
+      "comment": "Connector2",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        150,
+        150,
+        255
+      ],
+      "comment": "Connector3",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        100,
+        100,
+        255
+      ],
+      "comment": "Connector4",
+      "connector": true
+    },
+    {
+      "value": [
+        0,
+        50,
+        50,
+        255
+      ],
+      "comment": "Connector5",
+      "connector": true
+    },
+    {
+      "value": [
+        125,
+        0,
+        255,
+        255
+      ],
+      "comment": "Connector6",
+      "connector": true
+    },
+    {
+      "value": [
+        100,
+        0,
+        255,
+        255
+      ],
+      "comment": "Connector7",
+      "connector": true
+    },
+    {
+      "value": [
+        75,
+        0,
+        255,
+        255
+      ],
+      "comment": "Connector8",
+      "connector": true
+    },
+    {
+      "value": [
+        50,
+        0,
+        255,
+        255
+      ],
+      "comment": "Connector9",
+      "connector": true
+    },
+    {
+      "value": [
+        25,
+        0,
+        255,
+        255
+      ],
+      "comment": "Connector10",
+      "connector": true
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "BIOME --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        0,
+        200,
+        255
+      ],
+      "comment": "biome, front",
+      "brush": [
+        [
+          "surface"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        0,
+        200,
+        255
+      ],
+      "comment": "biome, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "surfacebackground"
+        ]
+      ], 
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "MATERIALS --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        100,
+        0,
+        0,
+        255
+      ],
+      "comment": "brassblock, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "front",
+          "brassblock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        100,
+        50,
+        50,
+        255
+      ],
+      "comment": "brassblock, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        0,
+        0,
+        255
+      ],
+      "comment": "brass2, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        150,
+        50,
+        50,
+        255
+      ],
+	  "comment": "brass2, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ],
+        [
+          "front",
+          "brass2block"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        0,
+        0,
+        255
+      ],
+      "comment": "clockwork, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clockwork"
+        ],
+        [
+          "front",
+          "clockwork"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        200,
+        50,
+        50,
+        255
+      ],
+      "comment": "clockwork, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clockwork"
+        ]
+      ],
+      "rules": [
+        [
+          "allowOverdrawing"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        250,
+        0,
+        0,
+        255
+      ],
+      "comment": "brassstech, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasstech"
+        ],
+        [
+          "front",
+          "brasstech"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        250,
+        50,
+        50,
+        255
+      ],
+      "comment": "brasstech, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasstech"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        100,
+        0,
+        255
+      ],
+      "comment": "clock, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "clock"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        150,
+        0,
+        255
+      ],
+      "comment": "Books, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "bookpiles"
+        ],
+        [
+          "front",
+          "bookpiles"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        150,
+        50,
+        255
+      ],
+      "comment": "Books, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "bookpiles"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    }, 
+	{
+      "value": [
+        25,
+        100,
+        25,
+        255
+      ],
+      "comment": "Coal, Front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "front",
+          "coalblock"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+	{
+      "value": [
+        75,
+        100,
+        75,
+        255
+      ],
+      "comment": "oil pool, block1",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brassblock"
+        ],
+        [
+          "tarliquid"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        100,
+        50,
+        255
+      ],
+      "comment": "oil pool, block2",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brass2block"
+        ],
+        [
+          "tarliquid"
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        100,
+        255
+      ],
+      "comment": "Pipe Horizontal, Front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipehorizontal"
+        ],
+        [
+          "front",
+          "brasspipehorizontal"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        100,
+        255
+      ],
+      "comment": "Pipe Horizontal, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipehorizontal"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        250,
+        255
+      ],
+      "comment": "Pipe Vertical, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipevertical"
+        ],
+        [
+          "front",
+          "brasspipevertical"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        250,
+        255
+      ],
+      "comment": "Pipe Vertical, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipevertical"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        150,
+        255
+      ],
+      "comment": "Pipe ne, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipene"
+        ],
+        [
+          "front",
+          "brasspipene"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        150,
+        255
+      ],
+      "comment": "Pipe ne, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipene"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        175,
+        255
+      ],
+      "comment": "Pipe nw, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipenw"
+        ],
+        [
+          "front",
+          "brasspipenw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        175,
+        255
+      ],
+      "comment": "Pipe nw, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipenw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        200,
+        255
+      ],
+      "comment": "Pipe se, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipese"
+        ],
+        [
+          "front",
+          "brasspipese"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        200,
+        255
+      ],
+      "comment": "Pipe se, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipese"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        225,
+        255
+      ],
+      "comment": "Pipe sw, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipesw"
+        ],
+        [
+          "front",
+          "brasspipesw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        225,
+        255
+      ],
+      "comment": "Pipe sw, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipesw"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        0,
+        0,
+        125,
+        255
+      ],
+      "comment": "Pipe Middle, front",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipemiddle"
+        ],
+        [
+          "front",
+          "brasspipemiddle"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        50,
+        50,
+        125,
+        255
+      ],
+      "comment": "Pipe Middle, back",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "back",
+          "brasspipemiddle"
+        ]
+      ],
+      "rules": [],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "OBJECTS (objectLayer)--------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        255,
+        130,
+        255
+      ],
+      "comment": "copperplatform",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "front",
+          "copperplatform"
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        0,
+        255
+      ],
+      "comment": "blackboard",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "blackboard",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        5,
+        255
+      ],
+      "comment": "brassdoor1, Right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassdoor1",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        5,
+        255
+      ],
+      "comment": "brassdoor1, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassdoor1",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        10,
+        255
+      ],
+      "comment": "brassfence1, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassfence1",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        10,
+        255
+      ],
+      "comment": "brassfence1, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassfence1",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        15,
+        255
+      ],
+      "comment": "brassfence2, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassfence2",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        15,
+        255
+      ],
+      "comment": "brassfence2, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brassfence2",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        20,
+        255
+      ],
+      "comment": "brasssink, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brasssink",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        20,
+        255
+      ],
+      "comment": "brasssink, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "brasssink",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        25,
+        255
+      ],
+      "comment": "clockbed, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockbed",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        25,
+        255
+      ],
+      "comment": "clockbed, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockbed",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        30,
+        255
+      ],
+      "comment": "clockbookcase, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockbookcase",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        30,
+        255
+      ],
+      "comment": "clockbookcase, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockbookcase",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        35,
+        255
+      ],
+      "comment": "clockchair, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockchair",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        35,
+        255
+      ],
+      "comment": "clockchair, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockchair",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        40,
+        255
+      ],
+      "comment": "clockchest, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockchest",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        40,
+        255
+      ],
+      "comment": "clockchest, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockchest",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        45,
+        255
+      ],
+      "comment": "clockcupboard, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockcupboard",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        45,
+        255
+      ],
+      "comment": "clockcupboard, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockcupboard",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        50,
+        255
+      ],
+      "comment": "clockdesk, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockdesk",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        50,
+        255
+      ],
+      "comment": "clockdesk, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockdesk",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        55,
+        255
+      ],
+      "comment": "clockdoor, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockdoor",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        55,
+        255
+      ],
+      "comment": "clockdoor, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockdoor",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        60,
+        255
+      ],
+      "comment": "clockhatch, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockhatch",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        60,
+        255
+      ],
+      "comment": "clockhatch, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockhatch",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        65,
+        255
+      ],
+      "comment": "clocklamp, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklamp",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        65,
+        255
+      ],
+      "comment": "clocklamp, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklamp",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        70,
+        255
+      ],
+      "comment": "clocklantern, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklantern",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        70,
+        255
+      ],
+      "comment": "clocklantern, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklantern",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        75,
+        255
+      ],
+      "comment": "clocklever, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklever",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        75,
+        255
+      ],
+      "comment": "clocklever, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocklever",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        80,
+        255
+      ],
+      "comment": "clockpigeon, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockpigeon",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        80,
+        255
+      ],
+      "comment": "clockpigeon, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockpigeon",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        85,
+        255
+      ],
+      "comment": "clockpod, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockpod",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        85,
+        255
+      ],
+      "comment": "clockpod, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clockpod",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        90,
+        255
+      ],
+      "comment": "clocktable, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocktable",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        90,
+        255
+      ],
+      "comment": "clocktable, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "clocktable",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        95,
+        255
+      ],
+      "comment": "gramaphonesingle, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "gramaphonesingle",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        95,
+        255
+      ],
+      "comment": "gramaphonesingle, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "gramaphonesingle",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        100,
+        255
+      ],
+      "comment": "gramaphonetriple, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "gramaphonetriple",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        105,
+        255
+      ],
+      "comment": "largegear, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "largegear",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        105,
+        255
+      ],
+      "comment": "largegear, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "largegear",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        110,
+        255
+      ],
+      "comment": "organ, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "organ",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        110,
+        255
+      ],
+      "comment": "organ, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "organ",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        115,
+        255
+      ],
+      "comment": "posterwashhands",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "posterwashhands",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        120,
+        255
+      ],
+      "comment": "typewriter, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "typewriter",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        100,
+        100,
+        120,
+        255
+      ],
+      "comment": "typewriter, Left",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "typewriter",
+          {
+            "direction": "left"
+          }
+        ]
+      ],
+      "connector": false
+    },
+	{
+      "value": [
+        255,
+        255,
+        125,
+        255
+      ],
+      "comment": "walllight, right",
+      "brush": [
+        [
+          "clear"
+        ],
+        [
+          "object",
+          "walllight",
+          {
+            "direction": "right"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "NPCS all --------------------------------------------------",
+      "connector": false
+    },
+    {
+      "value": [
+        45,
+        64,
+        64,
+        255
+      ],
+      "comment": "autoguard1",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "monster",
+            "typeName": "autoguard1"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        48,
+        132,
+        64,
+        255
+      ],
+      "comment": "human wizardmerchant",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "npc",
+            "species": "human",
+            "typeName": "wizardmerchant",
+            "parameters": {
+              "dropPools": [],
+              "scriptConfig": {
+                "guard": {
+                  "patrolDistance": 1,
+                  "noticeDistance": 30,
+                  "hailDistance": -1,
+                  "stopDistance": -1,
+                  "attackDistance": 20
+                },
+                "returnToPost": {
+                  "moveTime": 20,
+                  "minDistance": 1
+                }
+              }
+            }
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        255,
+        0,
+        220,
+        255
+      ],
+      "comment": "END (3451 values) --------------------------------------------------",
+      "connector": false
+    }
+  ],
+  "parts": []
+}
