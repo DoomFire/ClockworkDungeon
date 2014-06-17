@@ -10,15 +10,16 @@
  []  tweak guard drop delay/cooldown
  [x] Ficks generation
  
- [o] Add more rooms
- []	- Garbage incinerator
- []	- Treasure horde
- [o]	- Vents
- [o]	- Library/studies
- [o]	- Mess room
- [o]	- Sleeping chambers
- [o]	- Boiler room
- []	- Medic chambers
+ [] Add more rooms
+	!!REDOING THE ENTIRE DUNGEON!!
+ []		- Garbage incinerator
+ []		- Treasure horde
+ []		- Vents
+ []		- Library/studies
+ []		- Mess room
+ []		- Sleeping chambers
+ []		- Boiler room
+ []		- Medic chambers
  
  [] Add tiles and objects
  []	- Furniture
@@ -64,7 +65,7 @@
  []	- Generic Upperclass
 		- Go for switches before attempting to escape.
  []	- Guardian Automatons. ( shooty, stabby, slammy. )
- []  - Stop and wait when idle sometimes
+ []  			- Stop and wait when idle sometimes
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
  []			- Fix ability to run left ( Currently only runs right )
