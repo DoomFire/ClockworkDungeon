@@ -324,7 +324,7 @@
         0,
         255
       ],
-      "comment": "brass2, front",
+      "comment": "brass2, back",
       "brush": [
         [
           "clear"
@@ -344,7 +344,7 @@
         50,
         255
       ],
-      "comment": "brass2, back",
+      "comment": "brass2, front",
       "brush": [
         [
           "clear"
@@ -2032,7 +2032,7 @@
                   "hailDistance" : 20,
                   "stopDistance" : 10,
                   "attackDistance" : 5,
-                  "attackSayingPercent" : -1,
+                  "attackSayingPercent" : -1
                 },
                 "returnToPost": {
                   "moveTime": 20,

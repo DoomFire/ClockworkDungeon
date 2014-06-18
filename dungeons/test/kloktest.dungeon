@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "name": "template",
+    "name": "kloktest",
     "species": "dummy",
     "rules": [],
     "maxRadius": 20000,
     "maxParts": 50,
     "anchor": [
-      "entrance"
+      "entrance1"
     ],
     "gravity": 80
   },
@@ -2046,12 +2046,12 @@
               "dropPools": [],
               "scriptConfig": {
                 "guard": {
-                  "patrolDistance" : 0,
-                  "noticeDistance" : 30,
-                  "hailDistance" : 20,
-                  "stopDistance" : 10,
-                  "attackDistance" : 5,
-                  "attackSayingPercent" : -1,
+                  "patrolDistance": 0,
+                  "noticeDistance": 30,
+                  "hailDistance": 20,
+                  "stopDistance": 10,
+                  "attackDistance": 5,
+                  "attackSayingPercent": -1
                 },
                 "returnToPost": {
                   "moveTime": 20,
@@ -2064,16 +2064,25 @@
       ],
       "connector": false
     },
-	    {
-      "value" : [40, 40, 40, 255],
-      "comment" : "Klok Upperclass",
-      "brush" : [ [ "npc",
+    {
+      "value": [
+        40,
+        40,
+        40,
+        255
+      ],
+      "comment": "Klok Upperclass",
+      "brush": [
+        [
+          "npc",
           {
-            "kind" : "npc",
-            "species" : "glitch",
-            "typeName" : "upperclass"
+            "kind": "npc",
+            "species": "glitch",
+            "typeName": "upperclass"
           }
-        ] ]
+        ]
+      ],
+      "connector": false
     },
     {
       "value": [
@@ -2091,14 +2100,12 @@
       "def": [
         "image",
         [
-          "Clock Base-backgroundtiles.png",
-          "Clock Base-foregroundtiles.png",
-          "Clock Base-objects.png",
-          "Clock Base-wires.png"
+          "entrance1-backgroundtiles.png",
+          "entrance1-objects.png"
         ]
       ],
       "rules": [],
-      "name": "Clock Base"
+      "name": "entrance1"
     }
   ]
 }
