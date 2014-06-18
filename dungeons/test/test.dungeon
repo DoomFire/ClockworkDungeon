@@ -2010,6 +2010,25 @@
     },
     {
       "value": [
+        45,
+        64,
+        64,
+        255
+      ],
+      "comment": "autoguard1",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "monster",
+            "typeName": "autoguard1"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
         30,
         30,
         30,
@@ -2067,5 +2086,19 @@
       "connector": false
     }
   ],
-  "parts": []
+  "parts": [
+    {
+      "def": [
+        "image",
+        [
+          "Clock Base-backgroundtiles.png",
+          "Clock Base-foregroundtiles.png",
+          "Clock Base-objects.png",
+          "Clock Base-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Clock Base"
+    }
+  ]
 }
