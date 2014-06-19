@@ -1,5 +1,5 @@
 {
-  "type" : "villager",
+  "type" : "klokvillager",
   
   "damageTeam" : 1,
   "levelVariance" : [0, 0],

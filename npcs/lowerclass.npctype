@@ -101,7 +101,7 @@
             "chest" : [ { "name" : "lowerklokchest" } ],
             "legs" : [ { "name" : "lowerklokpants" } ],
 			"sheathedprimary" : [
-              { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
+              { "name" : "generatedsword", "data" : { "definition" : "commonbroadsword" } }
             ]
           },
           {
@@ -109,7 +109,7 @@
             "chest" : [ { "name" : "lowerklokchest" } ],
             "legs" : [ { "name" : "lowerklokpants" } ],
 			"sheathedprimary" : [
-              { "name" : "generatedsword", "data" : { "definition" : "commonsword" } }
+              { "name" : "generatedsword", "data" : { "definition" : "commonbroadsword" } }
             ]
           }
         ] ]
