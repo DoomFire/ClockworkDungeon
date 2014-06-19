@@ -6,7 +6,7 @@
     "maxRadius": 20000,
     "maxParts": 50,
     "anchor": [
-      "entrance"
+      "EntranceA"
     ],
     "gravity": 80
   },
@@ -2027,12 +2027,12 @@
               "dropPools": [],
               "scriptConfig": {
                 "guard": {
-                  "patrolDistance" : 0,
-                  "noticeDistance" : 30,
-                  "hailDistance" : 20,
-                  "stopDistance" : 10,
-                  "attackDistance" : 5,
-                  "attackSayingPercent" : -1,
+                  "patrolDistance": 0,
+                  "noticeDistance": 30,
+                  "hailDistance": 20,
+                  "stopDistance": 10,
+                  "attackDistance": 5,
+                  "attackSayingPercent": -1
                 },
                 "returnToPost": {
                   "moveTime": 20,
@@ -2045,16 +2045,25 @@
       ],
       "connector": false
     },
-	    {
-      "value" : [40, 40, 40, 255],
-      "comment" : "Klok Upperclass",
-      "brush" : [ [ "npc",
+    {
+      "value": [
+        40,
+        40,
+        40,
+        255
+      ],
+      "comment": "Klok Upperclass",
+      "brush": [
+        [
+          "npc",
           {
-            "kind" : "npc",
-            "species" : "glitch",
-            "typeName" : "upperclass"
+            "kind": "npc",
+            "species": "glitch",
+            "typeName": "upperclass"
           }
-        ] ]
+        ]
+      ],
+      "connector": false
     },
     {
       "value": [
@@ -2067,5 +2076,32 @@
       "connector": false
     }
   ],
-  "parts": []
+  "parts": [
+    {
+      "def": [
+        "image",
+        [
+          "entrance1-backgroundtiles.png",
+          "entrance1-foregroundtiles.png",
+          "entrance1-objects.png",
+          "entrance1-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "EntranceA"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Tower-1-backgroundtiles.png",
+          "Tower-1-foregroundtiles.png",
+          "Tower-1-objects.png",
+          "Tower-1-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Tower-1"
+    }
+  ]
 }
