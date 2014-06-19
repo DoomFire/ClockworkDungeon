@@ -974,7 +974,7 @@
         5,
         255
       ],
-      "comment": "brassdoor1, Left",
+      "comment": "brassdoor1, left",
       "brush": [
         [
           "clear"
@@ -1018,7 +1018,7 @@
         10,
         255
       ],
-      "comment": "brassfence1, Left",
+      "comment": "brassfence1, left",
       "brush": [
         [
           "clear"
@@ -1062,7 +1062,7 @@
         15,
         255
       ],
-      "comment": "brassfence2, Left",
+      "comment": "brassfence2, left",
       "brush": [
         [
           "clear"
@@ -1106,7 +1106,7 @@
         20,
         255
       ],
-      "comment": "brasssink, Left",
+      "comment": "brasssink, left",
       "brush": [
         [
           "clear"
@@ -1150,7 +1150,7 @@
         25,
         255
       ],
-      "comment": "clockbed, Left",
+      "comment": "clockbed, left",
       "brush": [
         [
           "clear"
@@ -1194,7 +1194,7 @@
         30,
         255
       ],
-      "comment": "clockbookcase, Left",
+      "comment": "clockbookcase, left",
       "brush": [
         [
           "clear"
@@ -1238,7 +1238,7 @@
         35,
         255
       ],
-      "comment": "clockchair, Left",
+      "comment": "clockchair, left",
       "brush": [
         [
           "clear"
@@ -1282,7 +1282,7 @@
         40,
         255
       ],
-      "comment": "clockchest, Left",
+      "comment": "clockchest, left",
       "brush": [
         [
           "clear"
@@ -1326,7 +1326,7 @@
         45,
         255
       ],
-      "comment": "clockcupboard, Left",
+      "comment": "clockcupboard, left",
       "brush": [
         [
           "clear"
@@ -1370,7 +1370,7 @@
         50,
         255
       ],
-      "comment": "clockdesk, Left",
+      "comment": "clockdesk, left",
       "brush": [
         [
           "clear"
@@ -1414,7 +1414,7 @@
         55,
         255
       ],
-      "comment": "clockdoor, Left",
+      "comment": "clockdoor, left",
       "brush": [
         [
           "clear"
@@ -1458,7 +1458,7 @@
         60,
         255
       ],
-      "comment": "clockhatch, Left",
+      "comment": "clockhatch, left",
       "brush": [
         [
           "clear"
@@ -1502,7 +1502,7 @@
         65,
         255
       ],
-      "comment": "clocklamp, Left",
+      "comment": "clocklamp, left",
       "brush": [
         [
           "clear"
@@ -1546,7 +1546,7 @@
         70,
         255
       ],
-      "comment": "clocklantern, Left",
+      "comment": "clocklantern, left",
       "brush": [
         [
           "clear"
@@ -1590,7 +1590,7 @@
         75,
         255
       ],
-      "comment": "clocklever, Left",
+      "comment": "clocklever, left",
       "brush": [
         [
           "clear"
@@ -1634,7 +1634,7 @@
         80,
         255
       ],
-      "comment": "clockpigeon, Left",
+      "comment": "clockpigeon, left",
       "brush": [
         [
           "clear"
@@ -1678,7 +1678,7 @@
         85,
         255
       ],
-      "comment": "clockpod, Left",
+      "comment": "clockpod, left",
       "brush": [
         [
           "clear"
@@ -1722,7 +1722,7 @@
         90,
         255
       ],
-      "comment": "clocktable, Left",
+      "comment": "clocktable, left",
       "brush": [
         [
           "clear"
@@ -1766,7 +1766,7 @@
         95,
         255
       ],
-      "comment": "gramaphonesingle, Left",
+      "comment": "gramaphonesingle, left",
       "brush": [
         [
           "clear"
@@ -1832,7 +1832,7 @@
         105,
         255
       ],
-      "comment": "largegear, Left",
+      "comment": "largegear, left",
       "brush": [
         [
           "clear"
@@ -1876,7 +1876,7 @@
         110,
         255
       ],
-      "comment": "organ, Left",
+      "comment": "organ, left",
       "brush": [
         [
           "clear"
@@ -1942,7 +1942,7 @@
         120,
         255
       ],
-      "comment": "typewriter, Left",
+      "comment": "typewriter, left",
       "brush": [
         [
           "clear"
@@ -1964,14 +1964,14 @@
         125,
         255
       ],
-      "comment": "walllight, right",
+      "comment": "clocklight",
       "brush": [
         [
           "clear"
         ],
         [
           "object",
-          "walllight",
+          "clocklight",
           {
             "direction": "right"
           }
@@ -2034,7 +2034,27 @@
         30,
         255
       ],
-      "comment": "Klok Lowerclass",
+      "comment": "Klok Lowerguard Interior",
+      "brush": [
+        [
+          "npc",
+          {
+            "kind": "npc",
+            "species": "glitch",
+            "typeName": "lowerclass"
+          }
+        ]
+      ],
+      "connector": false
+    },
+    {
+      "value": [
+        35,
+        35,
+        35,
+        255
+      ],
+      "comment": "Klok Lowerclass Exterior",
       "brush": [
         [
           "npc",
@@ -2106,6 +2126,19 @@
       ],
       "rules": [],
       "name": "entrance1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "123-backgroundtiles.png",
+          "123-foregroundtiles.png",
+          "123-objects.png",
+          "123-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "123"
     }
   ]
 }

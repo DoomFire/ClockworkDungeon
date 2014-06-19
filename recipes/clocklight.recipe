@@ -3,7 +3,7 @@
     { "item" : "money", "count" : 1 }
   ],
   "output" : {
-    "item" : "walllight",
+    "item" : "clocklight",
     "count" : 1
   },
   "groups" : [ "plain", "all", "other" ]

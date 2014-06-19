@@ -1,0 +1,41 @@
+{
+  "objectName" : "clockswitch",
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Clockwork Switch",
+  "race" : "generic",
+  "objectType" : "wire",
+  "category" : "wire",
+  "price" : 300,
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockswitchicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockswitch.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/switch/switch.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+
+  "animationParts" : {
+    "switch" : "clockswitch.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inboundNodes" : [ [-1, 0] ],
+  "outboundNodes" : [ [0, -1] ]
+}

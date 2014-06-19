@@ -1,5 +1,5 @@
 {
-  "objectName" : "walllight",
+  "objectName" : "clocklight",
   "rarity" : "Common",
   "category" : "light",
   "price" : 300,
@@ -27,11 +27,11 @@
   "flickerDistance" : 0.5,
   "flickerStrength" : 0.1,
 
-  "inventoryIcon" : "walllighticon.png",
+  "inventoryIcon" : "clocklighticon.png",
   "orientations" : [
 
     {
-      "dualImage" : "walllight.png:<frame>",
+      "dualImage" : "clocklight.png:<frame>",
       "imagePosition" : [0, 0],
       "frames" : 2,
       "animationCycle" : 0.5,
