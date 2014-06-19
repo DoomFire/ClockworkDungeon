@@ -2027,21 +2027,12 @@
               "dropPools": [],
               "scriptConfig": {
                 "guard": {
-<<<<<<< HEAD
                   "patrolDistance": 0,
                   "noticeDistance": 30,
                   "hailDistance": 20,
                   "stopDistance": 10,
                   "attackDistance": 5,
                   "attackSayingPercent": -1
-=======
-                  "patrolDistance" : 0,
-                  "noticeDistance" : 30,
-                  "hailDistance" : 20,
-                  "stopDistance" : 10,
-                  "attackDistance" : 5,
-                  "attackSayingPercent" : -1
->>>>>>> origin/master
                 },
                 "returnToPost": {
                   "moveTime": 20,
