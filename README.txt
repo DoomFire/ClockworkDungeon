@@ -1,4 +1,4 @@
- An incomplete list that I copy pasted from my sticky notes. It's quite disorganised but feel free to edit and add to it as you see fit.<br/>
+ An incomplete list that I copy pasted from my sticky notes. It's quite disorganised but feel free to edit and add to it as you see fit.
 
 ~~~~~~~~~~] KEY [~~~~~~~~~~
  [x] : Done
@@ -144,5 +144,3 @@ Player spawned Automatons:
            Only a single automaton can be spawned at a time. and will remain in the vacinity of the spawner
          - Perhaps return to the spawner after a certain time idle (?)
          - could easily be linked to an in-game motion sensor to come out when monsters are around, automtatically.
-         
-test
