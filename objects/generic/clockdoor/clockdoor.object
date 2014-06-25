@@ -19,9 +19,9 @@
   "inventoryIcon" : "clockdooricon.png",
   "orientations" : [
     {
-      "image" : "clockdoor.png:default",
-      "imagePosition" : [-3, 0],
-	  "spaces" : [  [1, 0], [1, 1], [1, 2], [1, 3], [1, 4] ],
+      "dualImage" : "clockdoor.png:default",
+      "imagePosition" : [-12, 0],
+	  "spaces" : [  [0, 0], [0, 1], [0, 2], [0, 3], [0, 4] ],
       "anchors" : [ "bottom", "top" ]
     }
   ],
@@ -33,8 +33,8 @@
   "animationParts" : {
     "door" : "clockdoor.png"
   },
-  "animationPosition" : [-4, 0],
+  "animationPosition" : [-12, 0],
 
-  "inboundNodes" : [ [1, 4] ],
-  "outboundNodes" : [ [1, 0] ]
+  "inboundNodes" : [ [ 0, 4] ],
+  "outboundNodes" : [ [0, 0] ]
 }
