@@ -19,11 +19,10 @@
   "inventoryIcon" : "brassdoor1icon.png",
   "orientations" : [
     {
-      "dualImage" : "brassdoor1.png:default",
-      "imagePosition" : [ -20, 0],
+      "image" : "brassdoor1.png:default",
+      "imagePosition" : [ -12, 0],
 
-        "spaces" : [  [0, 0], [0, 1], [0, 2], [0, 3], [0, 4],
-					  [1, 0], [1, 1], [1, 2], [1, 3], [1, 4]],
+      "spaceScan" : 0.1,
       "anchors" : [ "bottom", "top" ]
     }
   ],
@@ -35,7 +34,7 @@
   "animationParts" : {
     "door" : "brassdoor1.png"
   },
-  "animationPosition" : [-20, 0],
+  "animationPosition" : [-12, 0],
 
   "inboundNodes" : [ [1, 4] ],
   "outboundNodes" : [ [1, 0] ]

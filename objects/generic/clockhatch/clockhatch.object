@@ -15,30 +15,22 @@
     "humanDescription": "...",
     "hylotlDescription": "...",
 	
-    "inventoryIcon": "clockhatchsideicon.png",
+    "inventoryIcon": "clockhatchicon.png",
 	
     "orientations": [
         {
-            "image": "clockhatchside.png:default",
-            "imagePosition": [ -12, 0 ],
-			"spaces" : [  [0, 0], [0, 1] ],
-            "anchors": ["bottom","top"],
-			"animationParts" : { "door" : "clockhatchside.png" },
-			"animationPosition": [ -12,0 ]
-        },
-        {
-            "image": "clockhatchup.png:default",
-            "imagePosition": [ 0, -12 ],
-			"spaces" : [  [0, 0], [1, 0] ],
-            "anchors": ["left","right"],
-			"animationParts" : { "door" : "clockhatchup.png" },
-			"animationPosition": [ 0,-12 ]
+            "image": "clockhatch.png:default",
+            "imagePosition": [ -4, 0 ],
+			"spaces" : [  [1, 0], [1, 1] ],
+            "anchors": ["bottom","top"]
         }
     ],
 	
     "scripts": [ "/objects/wired/door/door.lua"],
     "scriptDelta": 5,
     "animation": "/objects/wired/door/door.animation",
-	"inboundNodes": [[0,2 ]],
-	"outboundNodes": [[ 0,0 ]]
+	"animationParts" : { "door" : "clockhatch.png" },
+    "animationPosition": [ -4,0 ],
+    "inboundNodes": [[1,2 ]],
+    "outboundNodes": [[ 1,0 ]]
 }
