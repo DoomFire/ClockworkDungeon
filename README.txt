@@ -7,11 +7,10 @@
 
 
 ~~~~~~~~~~] CHECK LIST [~~~~~~~~~~
- []  tweak guard drop delay/cooldown
- [x] Ficks generation
  
- [] Add more rooms
+    Rooms
 	!!REDOING THE ENTIRE DUNGEON!!
+ []		- Mosaic room
  []		- Garbage incinerator
  []		- Treasure horde
  []		- Vents
@@ -21,46 +20,48 @@
  []		- Boiler room
  []		- Medic chambers
  
- [] Add tiles and objects
- []	- Furniture
- [x]	- gears
- []	- Large Furnace
- []	- Metal statues
- [x]		- Pigeons
- []		- Other animals?
- [o]		- Automaton podium
- [x]	- Doors
- [o]	- Posters
- []		- Bacteria information
- []		- remember to wear your protective suit
- [x]	- tap with basin
- []	- shower head
- [x]	- piping hatches
- [x]	- bookshelf
- []	- metal pots
- []	- Storage shelves
- []	- metal crates
- [x]	- Simple table
- []	- Simple chair
- []	- consoles
- []		- wall mounted button
- []		- wall mounted lever
- [x]		- Large lever
- []		- valve
- []	- hung up towels
- [x]	- lamps
- [x]	- gramaphone intercom
- [o]	- Blackboard with chalk
- []		- Interacting will draw something then scrub it off.
- [x]	- Typewriter
- []	- Food vendor
- []	- metal bucket and cleaning equipment
- [x]	- Kleinklok in a pod.
- []	- Change clockchair descriptions
- 
- [] FIX OBJECT DESCRIPTIONS
- 
- [] Create hostile NPCs.
+    Tiles and objects
+	!! DESCRIPTIONS NEED TO BE DONE FOR ALL !!
+	!! ADD SOUNDS TO ALL APPICABLE OBJECTS !!
+ []		- Furniture
+ [x]		- gears
+ []		- Large Furnace
+ []		- Metal statues
+ [x]			- Pigeons
+ []			- Other animals?
+ [o]			- Automaton podium
+ [x]		- Doors
+ [o]		- Posters
+ []			- Bacteria information
+ []			- remember to wear your protective suit
+ [x]		- tap with basin
+ []		- shower head
+ [x]		- piping hatches
+ [x]		- bookshelf
+ []		- metal pots
+ []		- Storage shelves
+ []		- metal crates
+ [x]		- Simple table
+ []		- Simple chair
+ []		- consoles
+ []			- wall mounted button
+ []			- wall mounted lever
+ [x]			- Large lever
+ []			- valve
+ []		- hung up towels
+ [x]		- lamps
+ [x]		- gramaphone intercom
+ [o]		- Blackboard with chalk
+ []			- Interacting will draw something then scrub it off.
+ [x]		- Typewriter
+ []		- Food vendor
+ []		- metal bucket and cleaning equipment
+ [x]		- Kleinklok in a pod
+ []		- Port hole
+ []		- Inner-wall Kleinklok in a pod
+ []		- Inner-wall Jail Cell
+
+    Hostile NPCs
  []	- Generic Lowerclass
  []	- Generic Upperclass
 		- Go for switches before attempting to escape.
@@ -112,14 +113,26 @@
  []			- Landing on walls or ceiling
  []			- Staying a certain distance from the player
 
- [] Add loot
+    Weapons
+ []	- Tool Type
+ []		- Monkey wrench
+ []		- Wrench
+ []		- Construction Hammer
+ []		- Saw
+ []		- Crowbar
+ []		- Danger Sign
+    
+    Loot
  []	- Helicopter / wings back item
+		- Tech, activating will unfold helicopter and allow unlimited hover, and limited flight.
  []	- Centurian ball tech
+		- Tech, activating will change player into a ball mode, they will move faster than normal and jump higher, though jumping will cost energy.
  []	- Centurian Collosus tech
+		- Tech, activating will change player into a mech mode, they will have more health and have the abilities of the Engineer Boss.
  []	- Ore -> coal machine
+		- Will Convert and Ore into Coal with varying outputs.
  []	- Chalk (?)
  
- [] ADD SOUNDS TO, LIKE, EVERYTHING.
 
 
 ~~~~~~~~~~] IDEAS [~~~~~~~~~~
