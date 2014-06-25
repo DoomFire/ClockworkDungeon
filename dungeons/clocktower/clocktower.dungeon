@@ -129,7 +129,7 @@
         255,
         255
       ],
-      "comment": "Connector1",
+      "comment": "Entrance-Tower",
       "connector": true
     },
     {
@@ -209,7 +209,7 @@
         255,
         255
       ],
-      "comment": "Connector9",
+      "comment": "HubRoom-Corridor(A/B)",
       "connector": true
     },
     {
@@ -219,7 +219,7 @@
         255,
         255
       ],
-      "comment": "Connector10",
+      "comment": "Entrance-UpperHall",
       "connector": true
     },
     {
@@ -2102,6 +2102,71 @@
       ],
       "rules": [],
       "name": "Tower-1"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Upper Hall-backgroundtiles.png",
+          "Upper Hall-foregroundtiles.png",
+          "Upper Hall-objects.png",
+          "Upper Hall-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Upper Hall"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "CorridorA-backgroundtiles.png",
+          "CorridorA-foregroundtiles.png",
+          "CorridorA-objects.png",
+          "CorridorA-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Corridor(A)"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Corridor(-A)-backgroundtiles.png",
+          "Corridor(-A)-foregroundtiles.png",
+          "Corridor(-A)-objects.png",
+          "Corridor(-A)-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Corridor(-A)"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Corridor(B)-backgroundtiles.png",
+          "Corridor(B)-foregroundtiles.png",
+          "Corridor(B)-objects.png",
+          "Corridor(B)-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Corridor(B)"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Corridor(-B)-backgroundtiles.png",
+          "Corridor(-B)-foregroundtiles.png",
+          "Corridor(-B)-objects.png",
+          "Corridor(-B)-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Corridor(-B)"
     }
   ]
 }
