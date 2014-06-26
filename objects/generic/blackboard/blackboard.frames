@@ -2,9 +2,14 @@
 
   "frameGrid" : {
     "size" : [80, 48],
-    "dimensions" : [1, 1],
+    "dimensions" : [22, 2],
     "names" : [
-      [ "default" ]
+      [ "draw1.1", "draw1.2", "draw1.3", "draw1.4", "draw1.5", "draw1.6", "draw1.7", "draw1.8", "draw1.9", "draw1.10", "draw1.11", "draw1.12", "draw1.13", "draw1.14", "draw1.15", "draw1.16", "draw1.17", "draw1.18", "draw1.19", "draw1.20", "draw1.21", "draw1.22" ],
+	  [ "draw2.1", "draw2.2", "draw2.3", "draw2.4", "draw2.5", "draw2.6", "draw2.7", "draw2.8", "draw2.9", "draw2.10", "draw2.11", "draw2.12", "draw2.13", "draw2.14", "draw2.15", "draw2.16", "draw2.17", "draw2.18", "draw2.19", "draw2.20", "draw2.21", "draw2.22" ]
     ]
+  },
+  
+  "aliases" : {
+    "default.default" : "draw1.1"
   }
 }

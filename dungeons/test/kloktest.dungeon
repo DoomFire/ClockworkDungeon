@@ -2126,19 +2126,6 @@
       ],
       "rules": [],
       "name": "entrance1"
-    },
-    {
-      "def": [
-        "image",
-        [
-          "123-backgroundtiles.png",
-          "123-foregroundtiles.png",
-          "123-objects.png",
-          "123-wires.png"
-        ]
-      ],
-      "rules": [],
-      "name": "123"
     }
   ]
 }

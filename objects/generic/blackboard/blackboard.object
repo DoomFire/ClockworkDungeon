@@ -18,14 +18,31 @@
   "inventoryIcon" : "blackboardicon.png",
   "orientations" : [
     {
-      "image" : "blackboard.png:<color>",
-      "imagePosition" : [-24, -16],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "image" : "blackboard.png.<frame>",
+      "imagePosition" : [-40, -8],
+      "frames" : 22,
+      "animationCycle" : 1.0,
 
-      "spaceScan" : 0.1,
-      "bgAnchors" : [  [0, 0]  ]
+      "spaces" : [ [-5, -1], [-5, -0], [-5, 1], [-5, 2], [-5, 3], [-5, 4],
+					[-4, -1], [-4, -0], [-4, 1], [-4, 2], [-4, 3], [-4, 4],
+					[-3, -1], [-3, -0], [-3, 1], [-3, 2], [-3, 3], [-3, 4],
+					[-2, -1], [-2, -0], [-2, 1], [-2, 2], [-2, 3], [-2, 4],
+					[-1, -1], [-1, -0], [-1, 1], [-1, 2], [-1, 3], [-1, 4],
+					[0, -1], [0, -0], [0, 1], [0, 2], [0, 3], [0, 4],
+					[1, -1], [1, -0], [1, 1], [1, 2], [1, 3], [1, 4],
+					[2, -1], [2, -0], [2, 1], [2, 2], [2, 3], [2, 4],
+					[3, -1], [3, -0], [3, 1], [3, 2], [3, 3], [3, 4],
+					[4, -1], [4, -0], [4, 1], [4, 2], [4, 3], [4, 4] ],
+      "anchors" : [ "background" ]
 
-    }
-  ]
+    } ],
+	
+  "animation" : "/objects/generic/blackboard/blackboard.animation",
+  "animationParts" : {
+    "blackboard" : "blackboard.png"
+  },
+  "animationPosition" : [-40, -8],
+
+  "scripts" : [ "/objects/generic/blackboard/blackboard.lua" ],
+  "scriptDelta" : 5
 }
