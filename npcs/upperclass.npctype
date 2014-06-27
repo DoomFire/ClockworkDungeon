@@ -78,7 +78,7 @@
       }
     },
 
-    "flee2" : {
+    "lever" : {
       "reactionTimeRange" : [0.2, 1.0],
       "safeDistance" : 100,
       "safeDistanceWithGuards" : 40,

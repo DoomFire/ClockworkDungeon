@@ -1,23 +1,23 @@
-flee2State = {}
+leverState = {}
 
-function flee22State.enterWith(args)
+function leverState.enterWith(args)
   if args.attackTargetId == nil then return nil end
-  if stateName() == "flee2State" then return nil end
+  if stateName() == "leverState" then return nil end
 
   return {
-    reactionTimer = entity.randomizeParameterRange("flee2.reactionTimeRange"),
+    reactionTimer = entity.randomizeParameterRange("lever.reactionTimeRange"),
     targetId = args.attackTargetId,
     sourceId = args.attackSourceId,
     wasSourceEntity = wasSourceEntity,
-    safeTimer = entity.configParameter("flee2.safeTimer"),
-    dialogTimer = entity.randomizeParameterRange("flee2.dialogTimeRange"),
+    safeTimer = entity.configParameter("lever.safeTimer"),
+    dialogTimer = entity.randomizeParameterRange("lever.dialogTimeRange"),
     foundProtector = false,
     lastPosition = entity.position(),
     stuckTimer = 0,
   }
 end
 
-function flee2State.update(dt, stateData)
+function leverState.update(dt, stateData)
   local targetPosition = world.entityPosition(stateData.targetId)
   if targetPosition == nil then
     return true
@@ -35,9 +35,9 @@ function flee2State.update(dt, stateData)
       -- than if they were attacked themself
       local wasSourceEntity = stateData.sourceId == entity.id()
       if wasSourceEntity then
-        sayToTarget("flee2.dialog.helpme", stateData.targetId)
+        sayToTarget("lever.dialog.helpme", stateData.targetId)
       else
-        sayToTarget("flee2.dialog.helpthem", stateData.targetId)
+        sayToTarget("lever.dialog.helpthem", stateData.targetId)
       end
     else
       return false
@@ -47,9 +47,9 @@ function flee2State.update(dt, stateData)
   -- Try to move a safe distance away
   local safeDistance
   if stateData.foundProtector then
-    safeDistance = entity.configParameter("flee2.safeDistanceWithGuards")
+    safeDistance = entity.configParameter("lever.safeDistanceWithGuards")
   else
-    safeDistance = entity.configParameter("flee2.safeDistance")
+    safeDistance = entity.configParameter("lever.safeDistance")
   end
 
   local safe = not entity.entityInSight(stateData.targetId) or world.magnitude(fromTarget) > safeDistance
@@ -60,19 +60,19 @@ function flee2State.update(dt, stateData)
       return true
     end
   else
-    moveTo(targetPosition, dt, { run = true, flee2Distance = safeDistance })
+    moveTo(targetPosition, dt, { run = true, leverDistance = safeDistance })
 
     -- Don't stay stuck running against a wall
     if position[1] == stateData.lastPosition[1] then
       stateData.stuckTimer = stateData.stuckTimer + dt
-      if stateData.stuckTimer >= entity.configParameter("flee2.stuckTime") then
-        return true, entity.configParameter("flee2.stuckCooldown")
+      if stateData.stuckTimer >= entity.configParameter("lever.stuckTime") then
+        return true, entity.configParameter("lever.stuckCooldown")
       end
     else
       stateData.stuckTimer = 0
     end
 
-    stateData.safeTimer = entity.configParameter("flee2.safeTimer")
+    stateData.safeTimer = entity.configParameter("lever.safeTimer")
   end
   stateData.lastPosition = position
 
@@ -89,14 +89,14 @@ function flee2State.update(dt, stateData)
     stateData.dialogTimer = stateData.dialogTimer - dt
     if stateData.dialogTimer <= 0 then
       if stateData.foundProtectors then
-        sayToTarget("flee2.dialog.encourage", stateData.sourceId)
+        sayToTarget("lever.dialog.encourage", stateData.sourceId)
       elseif safe then
-        sayToTarget("flee2.dialog.safe", stateData.sourceId)
+        sayToTarget("lever.dialog.safe", stateData.sourceId)
       else
-        sayToTarget("flee2.dialog.help", stateData.sourceId)
+        sayToTarget("lever.dialog.help", stateData.sourceId)
       end
 
-      stateData.dialogTimer = entity.randomizeParameterRange("flee2.dialogTimeRange")
+      stateData.dialogTimer = entity.randomizeParameterRange("lever.dialogTimeRange")
     end
   end
 
