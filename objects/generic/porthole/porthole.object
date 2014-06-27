@@ -19,7 +19,7 @@
   "orientations" : [
     {
       "image" : "porthole.png",
-      "imagePosition" : [-8, -8],
+      "imagePosition" : [-16, -16],
       "frames" : 1,
       "animationCycle" : 0.5,
 
