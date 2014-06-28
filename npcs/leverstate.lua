@@ -49,13 +49,12 @@ function leverState.update(dt, stateData)
   local entityId = leverState.findLever()
   local leverPosition = world.entityPosition(entityId)
 
-  if leverId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
+  if entityId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
 	leverPosition[2] = leverPosition[2] + 1.0
-	local position = entity.position()
     local toLever = world.distance(leverPosition, position)
 	
     if world.magnitude(toLever) < entity.configParameter("lever.leverRadius") and not world.lineCollision(position, leverPosition, true) then
-      entity. -- !!ACTIVATE!!(entityId)
+      world.callScriptedEntity(entityId, "onInteraction")
 	  stateData.activatedALever = true
     else
 	  moveTo(leverPosition, dt)
@@ -122,7 +121,7 @@ function leverState.update(dt, stateData)
 end
 
 function leverState.findLever
-	local entityIds = world.objectQuery(storage.spawnPosition, entity.configParameter("lever.searchRadius"), { callScript = "onInteraction", callScriptArgs = { "entity.setAllOutboundNodes" }, order = "nearest" })
+	local entityIds = world.objectQuery(storage.spawnPosition, entity.configParameter("lever.searchRadius"), { callScript = "onInteraction", callScriptArgs = { "switch" }, order = "nearest" })
 	for _, entityId in pairs(entityIds) do
 		if not entity.setAllOutboundNodes(true) then
 			return entityId

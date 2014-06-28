@@ -22,7 +22,7 @@
 
     "/npcs/chatState.lua",
     "/npcs/converseState.lua",
-    "/npcs/flee2State.lua",
+    "/npcs/leverState.lua",
     "/npcs/sitState.lua",
     "/npcs/sleepState.lua",
     "/npcs/standingIdleState.lua",
@@ -1637,10 +1637,12 @@
       }
     },
 
-    "flee" : {
+    "lever" : {
       "reactionTimeRange" : [0.2, 1.0],
       "safeDistance" : 100,
       "safeDistanceWithGuards" : 40,
+	  "dangerDistance" : 10,
+	  "leverRadius" : 3,
       "safeTimer" : 10,
       "stuckTime" : 4,
       "stuckCooldown" : 10,
