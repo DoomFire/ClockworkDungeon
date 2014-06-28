@@ -14,6 +14,7 @@ function leverState.enterWith(args)
     foundProtector = false,
     lastPosition = entity.position(),
     stuckTimer = 0,
+	activatedALever = false,
   }
 end
 
@@ -44,11 +45,22 @@ function leverState.update(dt, stateData)
     end
   end
   
-  -- If you can find a lever to flip and you're relatively safe, try and activate the alarm
-local entityId = leverState.findLever()
-if leverId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") then
+  -- If you can find a lever to flip and you're relatively safe, try and activate the alarm  
+  local entityId = leverState.findLever()
+  local leverPosition = world.entityPosition(entityId)
 
-
+  if leverId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
+	leverPosition[2] = leverPosition[2] + 1.0
+	local position = entity.position()
+    local toLever = world.distance(leverPosition, position)
+	
+    if world.magnitude(toLever) < entity.configParameter("lever.leverRadius") and not world.lineCollision(position, leverPosition, true) then
+      entity. -- !!ACTIVATE!!(entityId)
+	  stateData.activatedALever = true
+    else
+	  moveTo(leverPosition, dt)
+	end
+  else 
   -- Try to move a safe distance away
   local safeDistance
   if stateData.foundProtector then
@@ -79,6 +91,7 @@ if leverId == not nil and world.magnitude(fromTarget) > entity.configParameter("
 
     stateData.safeTimer = entity.configParameter("lever.safeTimer")
   end
+ end
   stateData.lastPosition = position
 
   if stateData.wasSourceEntity then
