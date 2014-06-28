@@ -82,6 +82,7 @@
       "reactionTimeRange" : [0.2, 1.0],
       "safeDistance" : 100,
       "safeDistanceWithGuards" : 40,
+	  "dangerDistance" : 10'
       "safeTimer" : 10,
       "stuckTime" : 4,
       "stuckCooldown" : 10,

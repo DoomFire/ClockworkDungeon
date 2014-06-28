@@ -43,6 +43,11 @@ function leverState.update(dt, stateData)
       return false
     end
   end
+  
+  -- If you can find a lever to flip and you're relatively safe, try and activate the alarm
+local entityId = leverState.findLever()
+if leverId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") then
+
 
   -- Try to move a safe distance away
   local safeDistance
@@ -101,4 +106,15 @@ function leverState.update(dt, stateData)
   end
 
   return false
+end
+
+function leverState.findLever
+	local entityIds = world.objectQuery(storage.spawnPosition, entity.configParameter("lever.searchRadius"), { callScript = "onInteraction", callScriptArgs = { "entity.setAllOutboundNodes" }, order = "nearest" })
+	for _, entityId in pairs(entityIds) do
+		if not entity.setAllOutboundNodes(true) then
+			return entityId
+		end
+	end
+	
+return nil
 end
