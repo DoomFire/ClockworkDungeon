@@ -1,0 +1,27 @@
+{
+  "objectName" : "clockpodinnerwall3",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 750,
+  "description" : "...",
+  "shortdescription" : "Innerwall Kleinklok Pod Broken",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockpodinnerwallicon.png",
+  "orientations" : [
+    {
+      "image" : "clockpodinnerwall3.png:<color>",
+
+      "imagePosition" : [-16, -32],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

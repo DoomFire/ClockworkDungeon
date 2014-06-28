@@ -1,0 +1,27 @@
+{
+  "objectName" : "clockpodinnerwall2",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 750,
+  "description" : "...",
+  "shortdescription" : "Innerwall Kleinklok Pod Empty",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockpodinnerwallicon.png",
+  "orientations" : [
+    {
+      "image" : "clockpodinnerwall2.png:<color>",
+
+      "imagePosition" : [-16, -32],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}
