@@ -122,8 +122,7 @@ end
 
 function leverState.findLever()
 	local doorIds = world.objectQuery(storage.spawnPoint, entity.configParameter("lever.searchRadius"), { callScript = "hasCapability", callScriptArgs = { "closedDoor" } })
-	local entityIds = world.objectQuery(storage.spawnPosition, entity.configParameter("lever.searchRadius"), { withoutEntityId = doorIds, callScript = "onInteraction", order = "nearest" })
-	for _, entityId in pairs(entityIds) do
+	for _, entityId in pairs(doorIds) do
 		if not entity.setAllOutboundNodes(true) then
 			return entityId
 		end
