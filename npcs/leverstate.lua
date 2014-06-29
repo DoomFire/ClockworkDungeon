@@ -47,18 +47,28 @@ function leverState.update(dt, stateData)
   
   -- If you can find a lever to flip and you're relatively safe, try and activate the alarm  
   local entityId = leverState.findLever()
-  local leverPosition = world.entityPosition(entityId)
-
-  if entityId == not nil and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
-	leverPosition[2] = leverPosition[2] + 1.0
-    local toLever = world.distance(leverPosition, position)
+  world.logInfo("testing: " .. tostring(entityId))
 	
-    if world.magnitude(toLever) < entity.configParameter("lever.leverRadius") and not world.lineCollision(position, leverPosition, true) then
-      world.callScriptedEntity(entityId, "onInteraction")
-	  stateData.activatedALever = true
-    else
-	  moveTo(leverPosition, dt)
-	end
+  if entityId
+  --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever 
+  then
+	world.logInfo("")
+	world.logInfo("Testing")
+	world.logInfo("")
+	moveTo(entityId,dt)
+	
+	
+--	local leverPosition = world.entityPosition(entityId)
+--	leverPosition[2] = leverPosition[2] + 1.0
+--    local toLever = world.distance(leverPosition, position)
+--	
+--    if world.magnitude(toLever) < entity.configParameter("lever.leverRadius") and not world.lineCollision(position, leverPosition, true) then
+--      world.callScriptedEntity(entityId, "onInteraction")
+--	  stateData.activatedALever = true
+    
+--	else
+--	  moveTo(leverPosition, dt)
+--	end
   else 
   -- Try to move a safe distance away
   local safeDistance
@@ -76,7 +86,7 @@ function leverState.update(dt, stateData)
       return true
     end
   else
-    moveTo(targetPosition, dt, { run = true, leverDistance = safeDistance })
+    moveTo(targetPosition, dt, { run = true, fleeDistance = safeDistance })
 
     -- Don't stay stuck running against a wall
     if position[1] == stateData.lastPosition[1] then
@@ -120,13 +130,35 @@ function leverState.update(dt, stateData)
   return false
 end
 
+
 function leverState.findLever()
-	local doorIds = world.objectQuery(storage.spawnPoint, entity.configParameter("lever.searchRadius"), { callScript = "hasCapability", callScriptArgs = { "closedDoor" } })
-	for _, entityId in pairs(doorIds) do
-		if not entity.setAllOutboundNodes(true) then
-			return entityId
-		end
-	end
+	world.logInfo("")
+	world.logInfo("---------------------------------------------------------------------")
 	
-return nil
+	world.logInfo("position= ".. tostring(entity.position()))
+	world.logInfo("configParameter= ".. tostring(entity.configParameter("lever.searchDistance")))
+	world.logInfo("query test= "..tostring(world.objectQuery(entity.position(), entity.configParameter("lever.searchDistance"), {name = "upperclass"})))
+ 	local leverIds = world.objectQuery(entity.position(), entity.configParameter("lever.searchDistance"), {order = "nearest", name = "upperclass"})
+
+--	 for _, leverIds in pairs(leverIds) do
+ --         world.callScriptedEntity(doorId, "closeDoor")
+--        end
+
+	world.logInfo("leverIds= "..tostring(leverIds))
+	world.logInfo("---------------------------------------------------------------------")
+	world.logInfo("")
+	
+
+
+
+	if leverIds and leverIds[1] then		
+			-- entity.position() returns bottom-left of the entity. We need to adjust
+			local location = world.entityPosition(leverIds[1])
+			location = {location[1], location[2]+2}
+			return location
+	end
+	return leverIds
+
+	
+	
 end
