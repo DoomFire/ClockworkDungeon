@@ -58,7 +58,7 @@ function leverState.update(dt, stateData)
 	
 	end
 	
-entity.say("last button= "..tostring(stateData.lastButton).."          button id= "..tostring(buttonID[1]))	
+--entity.say("last button= "..tostring(stateData.lastButton).."          button id= "..tostring(buttonID[1]))	
   if buttonLocation and (not stateData.activatedSwitch or (world.magnitude(ButtonDistance)<10 and not(stateData.lastButton==buttonID[1]) )) then 
   --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
 	
