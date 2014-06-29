@@ -1,0 +1,36 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "morphball" : {
+        "default" : "default",
+        "states" : {
+          "default" : { }
+        }
+      }
+    },
+
+    "parts" : {
+      "morphball" : {
+        "partStates" : {
+          "morphball" : {
+            "default" : {
+              "properties" : {
+                "centered" : true,
+                "image" : "ball.png:<rotationFrame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "morphballActivateParticles" : {
+      "particles" : [ ]
+    },
+    "morphballDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}

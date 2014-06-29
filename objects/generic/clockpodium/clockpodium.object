@@ -1,0 +1,31 @@
+{
+  "objectName" : "clockpodium",
+  "rarity" : "Common",
+  "price" : 2500,
+  "description" : "...",
+  "shortdescription" : "Automaton Podium",
+  "race" : "generic",
+  "category" : "decorative",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockpodiumicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockpodium.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+
+}

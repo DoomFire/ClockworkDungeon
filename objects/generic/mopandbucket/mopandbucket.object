@@ -1,0 +1,30 @@
+{
+  "objectName" : "mopandbucket",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 800,
+  "description" : "...",
+  "shortdescription" : "Mop and Bucket",
+  "race" : "generic",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "mopandbucketicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "mopandbucket.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

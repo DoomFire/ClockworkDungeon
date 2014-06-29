@@ -1,0 +1,10 @@
+{
+  "itemName" : "morphballTech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/morphball.png",
+  "description" : "Press 'F' to stop, drop and roll with this incredible Morphball tech!",
+  "shortdescription" : "Morphball",
+  "inspectionKind" : "tech",
+
+  "techModule" : "morphball.tech"
+}

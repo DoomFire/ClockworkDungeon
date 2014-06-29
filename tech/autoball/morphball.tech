@@ -1,0 +1,43 @@
+{
+  "script" : "morphball.lua",
+  "actions" : [ "morphballActivate", "morphballDeactivate", "morphballBomb" ],
+  "animator" : "morphball.animation",
+
+  "ballCustomMovementParameters" : {
+    "standingPoly" : [ [-0.75, -0.75], [0.75, -0.75], [0.75, 0.75], [-0.75, 0.75] ],
+    "crouchingPoly" : [ [-0.75, -0.75], [0.75, -0.75], [0.75, 0.75], [-0.75, 0.75] ],
+
+    "groundForce" : 200.0,
+    "normalGroundFriction" : 1.5,
+    "ambulatingGroundFriction" : 0.2,
+
+    "airJumpProfile" : {
+      "jumpSpeed" : 10.0,
+      "jumpControlForce" : 400.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.1
+    },
+
+    "liquidJumpProfile" : {
+      "jumpSpeed" : 6.0,
+      "jumpControlForce" : 400.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.1
+    },
+
+    "slopeSlidingFactor" : 3.0
+  },
+
+  "energyCostPerSecond" : 35,
+
+  // These are specific to Humanoid, could store the collision volume before
+  // transformation instead and figure it out.
+  "ballTransformHeightChange" : -1.7,
+  "ballDeactivateCollisionTest" : [-0.75, -0.75, 0.75, 2.97],
+
+  "ballRadius" : 1,
+  "ballFrames" : 8,
+  // Change to some projectile that doesn't hurt the player but does lots of
+  // localized terrain damage
+  "ballBombProjectile" : "bomb"
+}
