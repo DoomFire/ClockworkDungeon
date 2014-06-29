@@ -16,7 +16,8 @@ function leverState.enterWith(args)
     stuckTimer = 0,
 	activatedSwitch=false,
 	wittyRemark=false,
-	buttonDelay=0
+	buttonDelay=0,
+	lastButton=0
   }
 end
 
@@ -48,17 +49,17 @@ function leverState.update(dt, stateData)
   end
   
   -- If you can find a lever to flip and you're relatively safe, try and activate the alarm  
-  local entityId = leverState.findLever()
+  local buttonLocation,buttonID = leverState.findLever()
   local ButtonDistance=nil
 --	entity.say(tostring(stateData.activatedSwitch), nil)
-    if entityId then
---	entity.say("entityId = "..tostring(entityId[1]))
-	ButtonDistance =world.distance(entityId, entity.position())
+    if buttonLocation then
+--	entity.say("buttonLocation = "..tostring(buttonLocation[1]))
+	ButtonDistance =world.distance(buttonLocation, entity.position())
 	
 	end
 	
-	
-  if entityId and (not stateData.activatedSwitch )then --or world.magnitude(ButtonDistance)<10) then 
+entity.say("last button= "..tostring(stateData.lastButton).."          button id= "..tostring(buttonID[1]))	
+  if buttonLocation and (not stateData.activatedSwitch or (world.magnitude(ButtonDistance)<10 and not(stateData.lastButton==buttonID[1]) )) then 
   --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
 	
 
@@ -72,22 +73,22 @@ function leverState.update(dt, stateData)
 			stateData.activatedSwitch=true
 			stateData.buttonDelay=0
 			stateData.wittyRemark=false
-			world.callScriptedEntity(entityId,"onInteraction")
-
+			world.callScriptedEntity(buttonID[1], "onInteraction")
+			stateData.lastButton=buttonID[1]
 		else
 			stateData.buttonDelay= stateData.buttonDelay+1
 		end
 	else 
 	
-	moveTo(entityId,dt,{ run = true})
+	moveTo(buttonLocation,dt,{ run = true})
 	end
 --	entity.say(to
---	local leverPosition = world.entityPosition(entityId)
+--	local leverPosition = world.entityPosition(buttonLocation)
 --	leverPosition[2] = leverPosition[2] + 1.0
 --    local toLever = world.distance(leverPosition, position)
 --	
 --    if world.magnitude(toLever) < entity.configParameter("lever.leverRadius") and not world.lineCollision(position, leverPosition, true) then
---      world.callScriptedEntity(entityId, "onInteraction")
+--      world.callScriptedEntity(buttonLocation, "onInteraction")
 --	  stateData.activatedALever = true
     
 --	else
@@ -163,13 +164,14 @@ function leverState.findLever()
 
 	if leverIds and leverIds[1] then		
 			-- entity.position() returns bottom-left of the entity. We need to adjust
-			entity.say("findlever = "..tostring(leverIds[1]))
+			
 --					world.callScriptedEntity(leverIds[1], "onInteraction")
 			local location = world.entityPosition(leverIds[1])
 			location = {location[1], location[2]+2}
-			return location
+--			entity.say("findlever = "..tostring(leverIds[1]).."        return location: "..tostring(location[1]))
+			return location,leverIds
 	end
-	return nill
+	return nill,nill
 
 	
 	
