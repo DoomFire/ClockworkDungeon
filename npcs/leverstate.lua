@@ -14,7 +14,9 @@ function leverState.enterWith(args)
     foundProtector = false,
     lastPosition = entity.position(),
     stuckTimer = 0,
-	activatedALever = false,
+	activatedSwitch=false,
+	wittyRemark=false,
+	buttonDelay=0
   }
 end
 
@@ -47,17 +49,39 @@ function leverState.update(dt, stateData)
   
   -- If you can find a lever to flip and you're relatively safe, try and activate the alarm  
   local entityId = leverState.findLever()
-  world.logInfo("testing: " .. tostring(entityId))
+  local ButtonDistance=nil
+--	entity.say(tostring(stateData.activatedSwitch), nil)
+    if entityId then
+--	entity.say("entityId = "..tostring(entityId[1]))
+	ButtonDistance =world.distance(entityId, entity.position())
 	
-  if entityId
-  --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever 
-  then
-	world.logInfo("")
-	world.logInfo("Testing")
-	world.logInfo("")
-	moveTo(entityId,dt)
+	end
 	
 	
+  if entityId and (not stateData.activatedSwitch )then --or world.magnitude(ButtonDistance)<10) then 
+  --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
+	
+
+	--	entity.say(tostring(world.magnitude(ButtonDistance)),nil)
+	if world.magnitude(ButtonDistance) < 3 then
+		
+		if not stateData.wittyRemark then
+			stateData.wittyRemark=true
+			entity.say("Automatons, roll out!!", nil)
+		elseif stateData.buttonDelay>=50*dt then
+			stateData.activatedSwitch=true
+			stateData.buttonDelay=0
+			stateData.wittyRemark=false
+			world.callScriptedEntity(entityId,"onInteraction")
+
+		else
+			stateData.buttonDelay= stateData.buttonDelay+1
+		end
+	else 
+	
+	moveTo(entityId,dt,{ run = true})
+	end
+--	entity.say(to
 --	local leverPosition = world.entityPosition(entityId)
 --	leverPosition[2] = leverPosition[2] + 1.0
 --    local toLever = world.distance(leverPosition, position)
@@ -69,6 +93,8 @@ function leverState.update(dt, stateData)
 --	else
 --	  moveTo(leverPosition, dt)
 --	end
+
+
   else 
   -- Try to move a safe distance away
   local safeDistance
@@ -132,32 +158,18 @@ end
 
 
 function leverState.findLever()
-	world.logInfo("")
-	world.logInfo("---------------------------------------------------------------------")
 	
-	world.logInfo("position= ".. tostring(entity.position()))
-	world.logInfo("configParameter= ".. tostring(entity.configParameter("lever.searchDistance")))
-	world.logInfo("query test= "..tostring(world.objectQuery(entity.position(), entity.configParameter("lever.searchDistance"), {name = "upperclass"})))
- 	local leverIds = world.objectQuery(entity.position(), entity.configParameter("lever.searchDistance"), {order = "nearest", name = "upperclass"})
-
---	 for _, leverIds in pairs(leverIds) do
- --         world.callScriptedEntity(doorId, "closeDoor")
---        end
-
-	world.logInfo("leverIds= "..tostring(leverIds))
-	world.logInfo("---------------------------------------------------------------------")
-	world.logInfo("")
-	
-
-
+	local leverIds = world.objectQuery(entity.position(), entity.configParameter("lever.searchDistance"), {order = "nearest", name = "clockbutton"})
 
 	if leverIds and leverIds[1] then		
 			-- entity.position() returns bottom-left of the entity. We need to adjust
+			entity.say("findlever = "..tostring(leverIds[1]))
+--					world.callScriptedEntity(leverIds[1], "onInteraction")
 			local location = world.entityPosition(leverIds[1])
 			location = {location[1], location[2]+2}
 			return location
 	end
-	return leverIds
+	return nill
 
 	
 	

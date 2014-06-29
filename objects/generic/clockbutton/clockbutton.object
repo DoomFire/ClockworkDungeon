@@ -27,7 +27,7 @@
   ],
 
   "scripts" : [ "/objects/wired/momentaryswitch/momentaryswitch.lua" ],
-  "scriptDelta" : 5,
+  "scriptDelta" : 50,
 
   "animation" : "/objects/wired/switch/switchtoggle.animation",
 

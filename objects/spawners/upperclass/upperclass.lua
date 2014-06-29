@@ -10,7 +10,7 @@ function onInboundNodeChange(args)
   local npcParameter = entity.randomizeParameter("spawner.npcParameterOptions")
   npcParameter.scriptConfig = { spawnedBy = entity.position() }
   world.spawnNpc(entity.toAbsolutePosition({ 0.0, 2.0 }), npcSpecies, npcType, entity.level(), 0, npcParameter);
-  entity.smash()
+  --entity.smash()
 end
 
 function onInteraction(args)
@@ -19,5 +19,5 @@ function onInteraction(args)
   local npcParameter = entity.randomizeParameter("spawner.npcParameterOptions")
   npcParameter.scriptConfig = { spawnedBy = entity.position() }
   world.spawnNpc(entity.toAbsolutePosition({ 0.0, 2.0 }), npcSpecies, npcType, entity.level(), 0, npcParameter);
-  entity.smash()
+ -- entity.smash()
 end
