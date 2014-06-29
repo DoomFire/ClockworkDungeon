@@ -1,6 +1,6 @@
 {
   "type" : "upperclass",
-  "baseType" : "villager",
+  "baseType" : "klokvillager",
 
   "damageTeam" : 1,
   "levelVariance" : [0, 0],
