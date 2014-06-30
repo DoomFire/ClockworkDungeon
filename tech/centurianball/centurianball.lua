@@ -6,6 +6,7 @@ function init()
   data.active = false
   tech.setVisible(false)
   data.superJumpTimer = 0
+  data.animationDelay = 1
 end
 
 function uninit()
@@ -61,17 +62,22 @@ function update(args)
     ballDeactivateCollisionTest[4] = ballDeactivateCollisionTest[4] + tech.position()[2]
     if not world.rectCollision(ballDeactivateCollisionTest) then
 	  tech.setAnimationState("morphball", "deactivate")
-	  -- Timer
+	  if data.animationDelay <= 0 then
       tech.setVisible(false)
       tech.translate({0, -ballTransformHeightChange})
       tech.setParentAppearance("normal")
       tech.setToolUsageSuppressed(false)
       data.angle = 0
       data.active = false
+	  data.animationDelay = 1
+	  else
+	  data.animationDelay = data.animationDelay - dt
+	  end
     else
       -- Make some kind of error noise if not auto-deactivating
     end
   end
+
 
   if data.active then
     tech.applyMovementParameters(ballCustomMovementParameters)
