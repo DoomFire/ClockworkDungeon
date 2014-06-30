@@ -1,0 +1,10 @@
+{
+  "itemName" : "centurianballTech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/morphball.png",
+  "description" : "Press 'F' to enter Ball mode.",
+  "shortdescription" : "Centurian Ball",
+  "inspectionKind" : "tech",
+
+  "techModule" : "centurianball.tech"
+}
