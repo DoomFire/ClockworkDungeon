@@ -6,7 +6,8 @@ function init()
   data.active = false
   tech.setVisible(false)
   data.superJumpTimer = 0
-  data.animationDelay = 1
+  data.animationDelay = 0.5
+  data.deactivating=false
 end
 
 function uninit()
@@ -60,19 +61,11 @@ function update(args)
     ballDeactivateCollisionTest[2] = ballDeactivateCollisionTest[2] + tech.position()[2]
     ballDeactivateCollisionTest[3] = ballDeactivateCollisionTest[3] + tech.position()[1]
     ballDeactivateCollisionTest[4] = ballDeactivateCollisionTest[4] + tech.position()[2]
-    if not world.rectCollision(ballDeactivateCollisionTest) then
+    
+	if not world.rectCollision(ballDeactivateCollisionTest) then
+	  --start the deactivation animation and the timer
 	  tech.setAnimationState("morphball", "deactivate")
-	  if data.animationDelay <= 0 then
-      tech.setVisible(false)
-      tech.translate({0, -ballTransformHeightChange})
-      tech.setParentAppearance("normal")
-      tech.setToolUsageSuppressed(false)
-      data.angle = 0
-      data.active = false
-	  data.animationDelay = 1
-	  else
-	  data.animationDelay = data.animationDelay - dt
-	  end
+	  data.deactivating=true
     else
       -- Make some kind of error noise if not auto-deactivating
     end
@@ -81,7 +74,23 @@ function update(args)
 
   if data.active then
     tech.applyMovementParameters(ballCustomMovementParameters)
-
+	-- if we have to turn off, then count down the timer
+	if data.deactivating then
+	  if data.animationDelay <= 0 then
+      tech.setVisible(false)
+      tech.translate({0, -ballTransformHeightChange})
+      tech.setParentAppearance("normal")
+      tech.setToolUsageSuppressed(false)
+      data.angle = 0
+      data.active = false
+	  data.animationDelay = 0.5
+	  data.deactivating=false
+	  else
+	  data.animationDelay = data.animationDelay - args.dt
+	  end
+    end
+	
+	
     if tech.onGround() then
       -- If we are on the ground, assume we are rolling without slipping to
       -- determine the angular velocity
