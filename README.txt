@@ -85,9 +85,12 @@
  []		- Charging Automaton
  []			- Charge attack state
  []			- Lance drop
- []		- Slam Automaton
- []			- decide on the look. ( snake? flying? )
- []			- decide on attached item ( hammer? )
+ []		- Shield Automaton
+ []			- Slaterbug design
+ []			- Shield item drop
+			- Defend state. Stand between hostile and friendly NPC
+				- when in defend state, will move very slowly to stay inbetween hostile and friendly NPC
+			- If health >= 50% then break armour and change look to be more fitting. ( bits of metal blowing off )
  []	- Engineer Boss ( Boiler Room Boss )
  [] 		- Create sprites
  []			- Large mech-like body with exposed gears and motor at the back
