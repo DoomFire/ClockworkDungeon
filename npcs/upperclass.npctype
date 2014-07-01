@@ -90,6 +90,15 @@
       "dialogTimeRange" : [4, 10],
 
       "dialog" : {
+	     "taunt" : {
+          "default" : [
+            "Help me at once!",
+            "Get this filthy demon off me!",
+            "Don't let it touch me!",
+			"Activate the Automatons! Quickly!",
+			"Oh god it breathed on me!"
+          ]
+        },
         "helpme" : {
           "default" : [
             "Help me at once!",

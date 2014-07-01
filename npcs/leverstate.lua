@@ -34,7 +34,10 @@ function leverState.update(dt, stateData)
     setFacingDirection(-fromTarget[1])
 
     stateData.reactionTimer = stateData.reactionTimer - dt
-    if stateData.reactionTimer <= 0 then
+	world.logInfo("targetid1= "..tostring(stateData.targetId))
+			
+  
+	if stateData.reactionTimer <= 0 then
       -- If this npc just saw another npc get attacked, they'll behave differently
       -- than if they were attacked themself
       local wasSourceEntity = stateData.sourceId == entity.id()
@@ -60,7 +63,7 @@ function leverState.update(dt, stateData)
 	
 --entity.say("last button= "..tostring(stateData.lastButton).."          button id= "..tostring(buttonID[1]))	
   if buttonLocation and (not stateData.activatedSwitch or (world.magnitude(ButtonDistance)<10 and not(stateData.lastButton==buttonID[1]) )) then 
-  --and world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
+  --osand world.magnitude(fromTarget) > entity.configParameter("lever.dangerDistance") and not stateData.activatedALever then
 	
 
 	--	entity.say(tostring(world.magnitude(ButtonDistance)),nil)
@@ -68,7 +71,12 @@ function leverState.update(dt, stateData)
 		
 		if not stateData.wittyRemark then
 			stateData.wittyRemark=true
-			entity.say("Automatons, roll out!!", nil)
+			
+        sayToTarget("test", stateData.targetId)
+			world.logInfo("targetid= "..tostring(stateData.targetId))
+			world.logInfo(tostring("lever.dialog"))
+			world.logInfo("---------------------------------------------------------")
+			
 		elseif stateData.buttonDelay>=50*dt then
 			stateData.activatedSwitch=true
 			stateData.buttonDelay=0
