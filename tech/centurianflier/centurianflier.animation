@@ -1,0 +1,102 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "flight" : {
+        "default" : "default",
+        "states" : {
+		
+		  "activate" : {
+		    "frames" : 11,
+            "mode" : "transition",
+            "transition" : "default",
+            "cycle" : 0.5
+			},
+			
+		  "deactivate" : {
+		    "frames" : 11,
+            "mode" : "end",
+            "cycle" : 0.5
+			},
+			
+          "default" : {
+		  	"frames" : 1,
+            "mode" : "loop",
+            "cycle" : 0.5
+          },
+		  
+          "hover" : {
+            "properties" : {
+		  	"frames" : 1,
+            "mode" : "loop",
+            "cycle" : 0.5
+            }
+          },
+		  
+		  "crouch" : {             
+		    "properties" : {
+		  	"frames" : 1,
+            "mode" : "loop",
+            "cycle" : 0.5
+			}
+        }
+      }
+    }
+  },
+  
+    "parts" : {
+      "flight" : {
+        "partStates" : {
+		
+		
+          "activate" : {
+            "default" : {
+              "properties" : {
+                "centered" : true,
+                "image" : "activate.png:<frame>"
+              }
+            },
+			
+		    "deactivate" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "deactivate.png:<frame>"
+              }
+            },
+			
+		    "hover" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "hover.png:<frame>"
+              }
+            },
+			
+		    "default" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "default.png:<frame>"
+              }
+            },
+			
+		    "crouch" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "crouch.png:<frame>"
+              }
+            }
+          }
+        }
+      }	
+    }
+  },
+
+  "particleEmitters" : {
+    "boostParticles" : {
+      "emissionRate" : 10.0,
+      "particles" : [
+        {
+          "particle" : "bubbleboost"
+        }
+      ]
+    }
+  }
+}

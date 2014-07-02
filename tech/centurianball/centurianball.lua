@@ -1,6 +1,6 @@
 function init()
   data.specialLast = false
-  data.jumpLast =false
+  data.jumpLast = false
   data.angularVelocity = 0
   data.angle = 0
   data.active = false

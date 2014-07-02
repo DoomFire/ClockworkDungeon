@@ -11,11 +11,12 @@
            "mode" : "transition",
            "transition" : "default",
            "cycle" : 0.5
-			}, 
+			},
+			
 		  "deactivate" : {		   
-		  "frames" : 11,
-          "mode" : "end",
-          "cycle" : 0.5
+		    "frames" : 11,
+            "mode" : "end",
+            "cycle" : 0.5
 		   }
         }
       }	  
@@ -33,6 +34,7 @@
                 "image" : "ball.png:<rotationFrame>"
               }
             },
+			
 		    "activate" : {              
 				"properties" : {
                 "centered" : true,

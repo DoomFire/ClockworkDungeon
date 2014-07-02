@@ -1,0 +1,10 @@
+{
+  "itemName" : "centurianflierTech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/bubbleboost.png",
+  "description" : "Press and hold Jump in the air to float around.",
+  "shortdescription" : "Centurian Flier",
+  "inspectionKind" : "tech",
+
+  "techModule" : "centurianflier.tech"
+}

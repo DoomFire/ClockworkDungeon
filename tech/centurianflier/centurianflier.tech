@@ -1,0 +1,12 @@
+{
+  "script" : "booster.lua",
+  "actions" : [ "boostRightUp", "boostRightDown", "boostLeftUp", "boostLeftDown", "boostRight", "boostDown", "boostLeft", "boostUp", "jetpack", "deactivate", "activate" ],
+  "animator" : "bubbleboost.animation",
+
+  "boostControlForce" : 300,
+  "boostSpeed" : 40,
+  "energyUsagePerSecond" : 140,
+  
+    "jetpackSpeed" : 0.0,
+  "jetpackControlForce" : 100.0,
+}
