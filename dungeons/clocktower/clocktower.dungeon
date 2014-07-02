@@ -2167,6 +2167,19 @@
       ],
       "rules": [],
       "name": "Corridor(-B)"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "The Library-backgroundtiles.png",
+          "The Library-foregroundtiles.png",
+          "The Library-objects.png",
+          "The Library-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "The Library"
     }
   ]
 }
