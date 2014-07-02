@@ -26,14 +26,14 @@
  []		- Furniture
  [x]		- gears
  []		- Large Furnace
- []		- Metal statues
- [x]			- Pigeons
- []			- Other animals?
- [o]			- Automaton podium
+ [o]		- Metal statues
+   [x]			- Pigeons
+   [x]			- Other animals?
+   [x]			- Automaton podium
  [x]		- Doors
  [o]		- Posters
- []			- Bacteria information
- []			- remember to wear your protective suit
+   []			- Bacteria information
+   []			- remember to wear your protective suit
  [x]		- tap with basin
  []		- shower head
  [x]		- piping hatches
@@ -43,53 +43,56 @@
  []		- metal crates
  [x]		- Simple table
  []		- Simple chair
- []		- consoles
- []			- wall mounted button
- []			- wall mounted lever
- [x]			- Large lever
- []			- valve
+ [o]		- consoles
+   [x]			- wall mounted button
+   [x]			- wall mounted lever
+   [x]			- Large lever
+   []			- valve
  []		- hung up towels
  [x]		- lamps
  [x]		- gramaphone intercom
  [o]		- Blackboard with chalk
- []			- Interacting will draw something then scrub it off.
+   [o]			- Interacting will draw something then scrub it off.
  [x]		- Typewriter
- []		- Food vendor
- []		- metal bucket and cleaning equipment
+ [x]		- Food vendor
+ [x]		- metal bucket and cleaning equipment
  [x]		- Kleinklok in a pod
- []		- Port hole
- []		- Inner-wall Kleinklok in a pod
+ [x]		- Port hole
+ [o]		- Inner-wall Kleinklok in a pod
  []		- Inner-wall Jail Cell
+ []		- Keyhole
+ []		- Large mechinism ( Ask Doom for Explination )
+ []		- HUGE door ( See above )
 
     Hostile NPCs
- []	- Generic Lowerclass
- []	- Generic Upperclass
-		- Go for switches before attempting to escape.
+ [o]	- Generic Lowerclass
+ [x]	- Generic Upperclass
+  [x]		- Go for switches before attempting to escape.
  []	- Guardian Automatons. ( shooty, stabby, slammy. )
  []  			- Stop and wait when idle sometimes
  []		- Long Ranged Automaton
- []			- Fix his ability to tansverse obstacles
- []			- Fix ability to run left ( Currently only runs right )
- []			- Glitch with animation, causing attackdown to skip
- [x]			- Make his collision box smaller ( 2 x 2 tiles )
- []			- adjust other numbers in monstertype file
- []			- Make him chase you up stairs
- []			- Figure out why he can see you through the ground
- []			- change the projectile he fires
- [x]			- Make him able to be spawned from activating an object
- []				- Make the drop spawner only work during the idle animation
- []			- fix him not running while chasing you.
- []			- fix him firing at where you were after you go around a corner
- []			- Change treasure pool to be more fitting
- []			- create ball tech as well as attached armour
+   []			- Fix his ability to tansverse obstacles
+   []			- Fix ability to run left ( Currently only runs right )
+   []			- Glitch with animation, causing attackdown to skip
+   [x]			- Make his collision box smaller ( 2 x 2 tiles )
+   []			- adjust other numbers in monstertype file
+   []			- Make him chase you up stairs
+   []			- Figure out why he can see you through the ground
+   []			- change the projectile he fires
+   [x]			- Make him able to be spawned from activating an object
+     []				- Make the drop spawner only work during the idle animation
+   []			- fix him not running while chasing you.
+   []			- fix him firing at where you were after you go around a corner
+   []			- Change treasure pool to be more fitting
+   []			- create ball tech as well as attached armour
  []		- Charging Automaton
- []			- Charge attack state
- []			- Lance drop
+   []			- Charge attack state
+   []			- Lance drop
  []		- Shield Automaton
- []			- Slaterbug design
- []			- Shield item drop
-			- Defend state. Stand between hostile and friendly NPC
-				- when in defend state, will move very slowly to stay inbetween hostile and friendly NPC
+   			- Slaterbug design
+ 			- Shield item drop
+   			- Defend state. Stand between hostile and friendly NPC
+ 				- when in defend state, will move very slowly to stay inbetween hostile and friendly NPC
 			- If health >= 50% then break armour and change look to be more fitting. ( bits of metal blowing off )
  []	- Engineer Boss ( Boiler Room Boss )
  [] 		- Create sprites
@@ -124,14 +127,21 @@
  []		- Saw
  []		- Crowbar
  []		- Danger Sign
+	- Long Ranged Tool Type
+ []		- Nail gun
+ []		- Flame(n) thrower(werfer) (?)
+ []		- Glue gun
+ []		- Screw gun (?)
+ []		- 
     
     Loot
  []	- Helicopter / wings back item
 		- Tech, activating will unfold helicopter and allow unlimited hover, and limited flight.
- []	- Centurian ball tech
+ [x]	- Centurian ball tech
 		- Tech, activating will change player into a ball mode, they will move faster than normal and jump higher, though jumping will cost energy.
  []	- Centurian Collosus tech
 		- Tech, activating will change player into a mech mode, they will have more health and have the abilities of the Engineer Boss.
+			- crouch + shovel will dig
  []	- Ore -> coal machine
 		- Will Convert and Ore into Coal with varying outputs.
  []	- Chalk (?)
@@ -147,3 +157,10 @@ Player spawned Automatons:
            Only a single automaton can be spawned at a time. and will remain in the vacinity of the spawner
          - Perhaps return to the spawner after a certain time idle (?)
          - could easily be linked to an in-game motion sensor to come out when monsters are around, automtatically.
+
+Enterance to the boiler room:
+	- Large opening with a huge door.
+	- Large mechinism which opens the door
+	- mechinism requires a key to open
+	- Player must find the key then hold it out to activate the mechinism.
+	- once mechinism is activated, it will play a grand animation as it unlocks the door.
