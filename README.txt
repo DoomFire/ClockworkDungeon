@@ -164,3 +164,8 @@ Enterance to the boiler room:
 	- mechinism requires a key to open
 	- Player must find the key then hold it out to activate the mechinism.
 	- once mechinism is activated, it will play a grand animation as it unlocks the door.
+	
+
+~~~~~~~~~~] Extra (posibly other mod) idea [~~~~~~~~~~
+	planetside 2 style jumppads, that launch you to a "landing" pad using world.object query,
+		(look into gravity mod for landing pads)
