@@ -1,0 +1,41 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "beaconState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "active" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "beacon" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "beaconState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "upperclass.png"
+              }
+            },
+
+            "active" : {
+              "properties" : {
+                "image" : "upperclass.png"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "objectName" : "jumppad-launch",
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Clockwork Button",
+  "race" : "generic",
+  "objectType" : "wire",
+  "category" : "wire",
+  "price" : 300,
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "jumppad-launchicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "jumppad-launch.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/momentaryswitch/momentaryswitch.lua" ],
+  "scriptDelta" : 50,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+
+  "animationParts" : {
+    "switch" : "jumppad-launch.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inboundNodes" : [ [-1, 0] ],
+  "outboundNodes" : [ [0, -1] ],
+  
+    "interval" : 13
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 0	}
+  ],
+  "output" : {
+    "item" : "jumppad-stop",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all", "other" ]
+}

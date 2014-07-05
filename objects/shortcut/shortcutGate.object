@@ -1,0 +1,31 @@
+{
+  "objectName" : "shortcutGate",
+  "rarity" : "Common",
+  "category" : "wire",
+  "description" : "A wall grate. Great.",
+  "shortdescription" : "Sewer Wall Grate",
+  "race" : "generic",
+  "printable" : false,
+  
+  "apexDescription" : "A wall grate.",
+  "avianDescription" : "A grate.",
+  "floranDescription" : "Bars.",
+  "glitchDescription" : "Statement. A grate.",
+  "humanDescription" : "Just grate.",
+  "hylotlDescription" : "A grate.",
+
+  "inventoryIcon" : "shortcutGateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "shortcutGate.png:default",
+      "imagePosition" : [-24, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/shortcut/shortcutGate.lua"],
+  "scriptDelta" : 5
+  
+}

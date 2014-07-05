@@ -1,0 +1,2 @@
+I can't find a way to move the player to a position through objects but you might be able to make the gates give you a "shortcut gate" tech, that telepors you to a random gate (? IF you are in front of one?)
+Or just make it so that the gates always spawn with a chest that contains the tech, so once players find one they will also find the tech
