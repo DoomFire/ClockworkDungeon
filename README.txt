@@ -19,64 +19,48 @@
  []		- Sleeping chambers
  []		- Boiler room
  []		- Medic chambers
+
  
     Tiles and objects
-	!! DESCRIPTIONS NEED TO BE DONE FOR ALL !!
-	!! ADD SOUNDS TO ALL APPICABLE OBJECTS !!
- []		- Furniture
- [x]		- gears
+ []	!! DESCRIPTIONS NEED TO BE DONE FOR ALL !!
+ []	!! ADD SOUNDS TO ALL APPICABLE OBJECTS !!
+
  []		- Large Furnace
- []		- Metal statues
+
+ [o]		- Metal statues
  [x]			- Pigeons
  []			- Other animals?
- [o]			- Automaton podium
- [x]		- Doors
- [x]		- Posters
+ [x]			- Automaton podium
+
+ [o]		- Posters
  [x]			- Bacteria information
  [x]			- remember to wear your protective suit
- [x]		- tap with basin
+ []			- etc
+
  []		- shower head
- [x]		- piping hatches
- [x]
  []		- metal pots
  []		- Storage shelves
  []		- metal crates
- [x]		- Simple table
  []		- Simple chair
- []		- consoles
- [x]			- wall mounted button
- [x]			- wall mounted lever
- [x]			- Large lever
- []			- valve
  []		- hung up towels
- [x]		- lamps
- [x]		- gramaphone intercom
  [o]		- Blackboard with chalk
  []			- Interacting will draw something then scrub it off.
- [x]		- Typewriter
- []		- Food vendor
- [x]		- metal bucket and cleaning equipment
- [x]		- Kleinklok in a pod
- [x]		- Port hole
- [x]		- Inner-wall Kleinklok in a pod
- []		- Inner-wall Jail Cell
+ [o]		- Inner-wall Jail Cell
+
 
     Hostile NPCs
- []	- Generic Lowerclass
- []	- Generic Upperclass
-		- Go for switches before attempting to escape.
  []	- Guardian Automatons. ( shooty, stabby, slammy. )
  []  			- Stop and wait when idle sometimes
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
  []			- Fix ability to run left ( Currently only runs right )
  []			- Glitch with animation, causing attackdown to skip
- [x]			- Make his collision box smaller ( 2 x 2 tiles )
+ []			- Make his collision box smaller ( 2 x 2 tiles )
  []			- adjust other numbers in monstertype file
  []			- Make him chase you up stairs
  []			- Figure out why he can see you through the ground
  []			- change the projectile he fires
- [x]			- Make him able to be spawned from activating an object
+ []			- Make him able to be spawned from activating an object
  []				- Make the drop spawner only work during the idle animation
  []			- fix him not running while chasing you.
  []			- fix him firing at where you were after you go around a corner
@@ -113,6 +97,7 @@
  []			- Landing on walls or ceiling
  []			- Staying a certain distance from the player
 
+
     Weapons
  []	- Tool Type
  []		- Monkey wrench
@@ -121,18 +106,57 @@
  []		- Saw
  []		- Crowbar
  []		- Danger Sign
-    
+
+ []    	- Long ranged
+ []		- Nail Gun
+ []		- screw gun
+ []		- glue gun
+ []		- rivet gun
+ []		- etc
+
     Loot
  []	- Helicopter / wings back item
 		- Tech, activating will unfold helicopter and allow unlimited hover, and limited flight.
- []	- Centurian ball tech
-		- Tech, activating will change player into a ball mode, they will move faster than normal and jump higher, though jumping will cost energy.
  []	- Centurian Collosus tech
 		- Tech, activating will change player into a mech mode, they will have more health and have the abilities of the Engineer Boss.
  []	- Ore -> coal machine
 		- Will Convert and Ore into Coal with varying outputs.
- []	- Chalk (?)
  
+~~~~~~~~~~] COMPLETE [~~~~~~~~~~
+
+    Tiles and objects
+ [x]		- gears
+ [x]		- Doors
+ [x]		- tap with basin
+ [x]		- piping hatches
+ [x]		- Simple table
+
+ [x]		- consoles
+ [x]			- wall mounted button
+ [x]			- wall mounted lever
+ [x]			- Large lever
+ [x]			- valve
+
+ [x]		- lamps
+ [x]		- gramaphone intercom
+ [x]		- Typewriter
+ [x]		- Food vendor
+ [x]		- metal bucket and cleaning equipment
+ [x]		- Kleinklok in a pod
+ [x]		- Port hole
+ [x]		- Inner-wall Kleinklok in a pod
+
+
+    Hostile NPCs
+ [x]	- Generic Lowerclass
+ [x]	- Generic Upperclass
+
+   Loot
+ [x]	- Centurian ball tech
+		- Tech, activating will change player into a ball mode, they will move faster than normal and jump higher, though jumping will cost energy.
+
+
+
 
 
 ~~~~~~~~~~] IDEAS [~~~~~~~~~~
