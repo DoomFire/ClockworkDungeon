@@ -1,0 +1,41 @@
+{
+  "objectName" : "redvalve",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "A red valve. It's had a funny turn.",
+  "shortdescription" : "Red Valve",
+  "race" : "generic",
+  "category" : "wire",
+  "price" : 300,
+
+  "apexDescription" : "A valve.",
+  "avianDescription" : "A valve.",
+  "floranDescription" : "Ssspinny wheel.",
+  "glitchDescription" : "Statement. A valve.",
+  "humanDescription" : "A valve.",
+  "hylotlDescription" : "A valve.",
+
+  "inventoryIcon" : "redvalveicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "redvalve.png:<color>.off",
+      "imagePosition" : [-8, -8],
+      "frames" : 4,
+      "animationCycle" : 1,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/switch/switch.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle4.animation",
+  "animationParts" : {
+    "switch" : "redvalve.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outboundNodes" : [ [0, 0] ]
+}
+
