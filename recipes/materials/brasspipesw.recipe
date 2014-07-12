@@ -6,5 +6,5 @@
     "item" : "brasspipesw",
     "count" : 1000
   },
-  "groups" : [ "plain", "all", "other" ]
+  "groups" : [ "clockcheattable", "all", "clockblocks" ]
 }

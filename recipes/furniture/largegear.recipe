@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "largegear",
+    "count" : 1
+  },
+  "groups" : [ "clockcheattable", "all", "clockfurniture" ]
+}
