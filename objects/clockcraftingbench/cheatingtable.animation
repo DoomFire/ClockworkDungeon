@@ -5,7 +5,7 @@
         "default" : "animate",
         "states" : {
           "animate" : {
-            "frames" : 13,
+            "frames" : 10,
             "cycle" : 1.0,
             "mode" : "loop"
           }

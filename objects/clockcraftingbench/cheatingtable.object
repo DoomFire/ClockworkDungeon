@@ -48,7 +48,7 @@
     {
       "dualImage" : "cheatingtable.png:<color>.<frame>",
       "imagePosition" : [0, 0],
-      "frames" : 14,
+      "frames" : 10,
       "animationCycle" : 3.5,
       
       "spaceScan" : 0.1,
