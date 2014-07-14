@@ -1,0 +1,36 @@
+{
+  "objectName" : "clockjaildoor",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 750,
+  "description" : "It's locked... I think it's also just a picture.",
+  "shortdescription" : "Jail Door",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+
+  "inventoryIcon" : "clockjaildooricon.png",
+  
+  "unlit" : true,
+  "lightColor" : [104, 89, 73],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 2,
+  
+  "orientations" : [
+    {
+      "image" : "clockjaildoor.png:default.<frame>",
+
+      "imagePosition" : [-16, -32],
+      "frames" : 2,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}
