@@ -25,6 +25,15 @@
  []	!! DESCRIPTIONS NEED TO BE DONE FOR ALL !!
  []	!! ADD SOUNDS TO ALL APPICABLE OBJECTS !!
 
+	!! SOME ICONS NEED TO BE REDONE SMALLER / DONE !!
+		- lantern
+		- jail door
+		- crate
+		- button
+		- fence ( both )
+
+
+
  []		- Large Furnace
 
  [o]		- Metal statues
@@ -40,16 +49,14 @@
  []		- shower head
  []		- metal pots
  []		- Storage shelves
- []		- metal crates
  []		- Simple chair
  []		- hung up towels
  [o]		- Blackboard with chalk
  []			- Interacting will draw something then scrub it off.
- [o]		- Inner-wall Jail Cell
 
 
     Hostile NPCs
- []	- Guardian Automatons. ( shooty, stabby, slammy. )
+ []	- Guardian Automatons. ( shooty, stabby, shieldy)
  []  			- Stop and wait when idle sometimes
  []		- Long Ranged Automaton
  []			- Fix his ability to tansverse obstacles
@@ -69,9 +76,9 @@
  []		- Charging Automaton
  []			- Charge attack state
  []			- Lance drop
- []		- Slam Automaton
- []			- decide on the look. ( snake? flying? )
- []			- decide on attached item ( hammer? )
+ []		- Shield Automaton
+ []			- Slaterbug like thingy that folds out.
+ []			- Possibly Shield drop?
  []	- Engineer Boss ( Boiler Room Boss )
  [] 		- Create sprites
  []			- Large mech-like body with exposed gears and motor at the back
@@ -114,6 +121,7 @@
  []		- rivet gun
  []		- etc
 
+
     Loot
  []	- Helicopter / wings back item
 		- Tech, activating will unfold helicopter and allow unlimited hover, and limited flight.
@@ -121,7 +129,19 @@
 		- Tech, activating will change player into a mech mode, they will have more health and have the abilities of the Engineer Boss.
  []	- Ore -> coal machine
 		- Will Convert and Ore into Coal with varying outputs.
- 
+  
+
+   Dialogue and Lore
+
+ [] Finish Diaglogue for NPCS.
+ [] Finish Lore
+ [] figure out more on how and why they're there.
+ [] etc?
+
+
+
+
+
 ~~~~~~~~~~] COMPLETE [~~~~~~~~~~
 
     Tiles and objects
@@ -145,6 +165,8 @@
  [x]		- Kleinklok in a pod
  [x]		- Port hole
  [x]		- Inner-wall Kleinklok in a pod
+ [x]		- Inner-wall Jail Cell
+ [x]		- metal crates
 
 
     Hostile NPCs

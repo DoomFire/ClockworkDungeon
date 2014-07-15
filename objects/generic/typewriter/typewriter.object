@@ -4,28 +4,40 @@
   "description" : "Am I hip now?",
   "shortdescription" : "Typewriter",
   "race" : "generic",
-  "category" : "decorative",
+  "objectType" : "wire",
+  "category" : "wire",
   "price" : 200,
 
   "apexDescription" : "...",
   "avianDescription" : "...",
   "floranDescription" : "...",
-  "glitchDescription" : "....",
-  "humanDescription" : "....",
-  "hylotlDescription" : "....",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
 
   "inventoryIcon" : "typewritericon.png",
   "orientations" : [
     {
-      "dualImage" : "typewriter.png:<color>",
-
+      "dualImage" : "typewriter.png:<color>.off",
       "imagePosition" : [-8, 0],
-      "frames" : 1,
-      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
 
     }
-  ]
+  ],
+  
+    "scripts" : [ "/objects/wired/switch/switch.lua" ],
+  "scriptDelta" : 5,
+  
+    "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationParts" : {
+    "switch" : "typewriter.png"
+	  },
+  "animationPosition" : [-8, 0],
+
+  "outboundNodes" : [ [0, 0] ],
+
+  "onSounds" : [ "/sfx/objects/typewriter_interact.wav" ],
+  "offSounds" : [ "/sfx/objects/typewriter_interact.wav" ]
 }
