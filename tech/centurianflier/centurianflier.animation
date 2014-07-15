@@ -70,12 +70,7 @@
               }
             },
 			
-		    "default" : {              
-				"properties" : {
-                "centered" : true,
-                "image" : "default.png:<frame>"
-              }
-            },
+		    
 			
 		    "crouch" : {              
 				"properties" : {
@@ -86,17 +81,6 @@
           }
         }
       }	
-    }
-  },
-
-  "particleEmitters" : {
-    "boostParticles" : {
-      "emissionRate" : 10.0,
-      "particles" : [
-        {
-          "particle" : "bubbleboost"
-        }
-      ]
     }
   }
 }

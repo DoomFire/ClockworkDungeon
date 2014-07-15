@@ -6,12 +6,12 @@
     "config" : "/interface/windowconfig/clockBox.config",
     "filter" : ["clockBox","clockcheattable" ]
   },
-
   "printable" : false,
-  "description" : "An ultimate box for ultimate purposes.",
-  "shortdescription" : "Clockwork Box",
+  "description" : "A clockwork box, best not to shake it too hard",
+  "shortdescription" : "The eliacube",
   "race" : "generic",
   "category" : "crafting",
+  "price" : 200,
 
   "apexDescription" : "For testing!",
   "avianDescription" : "For testing!",
@@ -24,6 +24,7 @@
   "orientations" : [
     {
       "dualImage" : "clockBox.png:<color>.<frame>",
+	  
       "imagePosition" : [0, 0],
       "frames" : 10,
       "animationCycle" : 3.5,
