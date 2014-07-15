@@ -2180,6 +2180,19 @@
       ],
       "rules": [],
       "name": "The Library"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "The Dormitories-backgroundtiles.png",
+          "The Dormitories-foregroundtiles.png",
+          "The Dormitories-objects.png",
+          "The Dormitories-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "The Dormitories"
     }
   ]
 }

@@ -36,6 +36,10 @@
 
  []		- Large Furnace
 
+ []		- Lowerclass Bed
+ []		- Sink with larger basin and multiple heads
+ []		- Simple chair
+
  [o]		- Metal statues
  [x]			- Pigeons
  []			- Other animals?
@@ -49,7 +53,6 @@
  []		- shower head
  []		- metal pots
  []		- Storage shelves
- []		- Simple chair
  []		- hung up towels
  [o]		- Blackboard with chalk
  []			- Interacting will draw something then scrub it off.
