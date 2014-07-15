@@ -1,0 +1,37 @@
+{
+  "objectName" : "clockBox",
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/clockBox.config",
+    "filter" : ["clockBox","clockcheattable" ]
+  },
+
+  "printable" : false,
+  "description" : "An ultimate box for ultimate purposes.",
+  "shortdescription" : "Clockwork Box",
+  "race" : "generic",
+  "category" : "crafting",
+
+  "apexDescription" : "For testing!",
+  "avianDescription" : "For testing!",
+  "floranDescription" : "For testing!",
+  "glitchDescription" : "For testing!",
+  "humanDescription" : "For testing!",
+  "hylotlDescription" : "For testing!",
+
+  "inventoryIcon" : "clockBoxicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockBox.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 3.5,
+      
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+
+    }
+  ] 
+}
