@@ -1,0 +1,55 @@
+Somewhere to explain what you want done with specific rooms.
+
+~~~~~~~~~~] KEY [~~~~~~~~~~
+
+ [MAX]   "maxSpawnCount" - Spawn room Max (x) times.
+means that the generator will place this part maximal x times (just to mention it : it can still be placed less than x times)
+!!! Don't mix up "doNotCombineWith" and "doNotConnectToPart" !!!
+
+-----
+
+ [DNCOMB]    "doNotCombineWith" - If room(x) spawns, don't spawn room(y).
+for example if you got "room1a" and "room1b" and room1b is the same as room1a but mirrored. It may be a bit boring to have both rooms in the generated dungeon, so with "....Combine..." you can tell the game to only use one of them. Or with other words: Dear generator, if you place this part, do not place the parts "castlebase2", "castlebase3", "castlebase4", "castlebase5" .... too! THX =)
+
+-----
+
+ [DNCONN]    "doNotConnectToPart" - Do not connect room(x) with room(y).
+For example we want "room2" to be able to appear multiple times in our dungeon, but we don't want that its copies appear right next to each other. So "...Connect..." can prevent this, if we tell the generator not to connect "room2" to "room2".
+Or there may be parts which simply don't fit very well to each other, while they got the same connectors. With "...Connect..." we can add a special rule to them... guess you got it? Fine^^
+
+-----
+
+ [~MAX]    "ignorePartMaximumRule" - Ignores max count and max room count
+At the very top section of the .dungeon code we can define how many parts the generated dungeon can hold: "maxParts" : 100
+So the generator will stop to add parts as soon as there are 100.
+
+This rule "ignore...." is used for endpieces. In combination with the "chance 0.0" (bottom of the snippet)
+The combination says, that whenever there could be placed an endpiece, it wont happen, because they got a chance of 0.0 to be placed.
+But in sooner or later the partMaximum will be reached, while there may be still some ugly "open ends".
+So now the combination becomes active, because we told the generator to ignore the maxParts limit for this special part.
+Don't ask me why it suddenly ignores the "chance 0", but it is doin so and a i am very thankfull for this :)
+
+
+
+
+~~~~~~~~~~] RULES [~~~~~~~~~~
+
+Enterance(A):
+
+	Rules:
+	  [MAX] 1
+	  [DNCOMB]: Enterance(B)
+	  [DNCONN]: Corridor(A), Corridor(B)
+
+	Notes:
+	  - This will spawn a maximum of 1 Enterance, will not spawn if enterance B spawns and will never connect to Corridor A or B.
+	
+
+End(A):
+
+	Rules:
+	  [DNCONN]: The Library, The Dormitories, Enterance(A)
+	  [~MAX]
+	
+	Notes:
+	  - Will never connect to Libarary, Dorms or Enternace A and will ignore any max spawn rules.
