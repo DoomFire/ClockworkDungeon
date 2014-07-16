@@ -31,6 +31,7 @@
 		- crate
 		- button
 		- fence ( both )
+		- Red Valve
 
 
 
@@ -39,6 +40,9 @@
  []		- Lowerclass Bed
  []		- Sink with larger basin and multiple heads
  []		- Simple chair
+ []		- Filing Cabinet
+ []		- Bench / Couch
+ []		- Coffee table
 
  [o]		- Metal statues
  [x]			- Pigeons

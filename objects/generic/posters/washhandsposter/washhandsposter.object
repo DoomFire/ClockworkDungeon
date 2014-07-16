@@ -1,11 +1,11 @@
 {
-  "objectName" : "posterwashhands",
+  "objectName" : "washhandsposter",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : 1000,
+  "price" : 100,
 
   "description" : "A poster demanding that you wash your hands",
-  "shortdescription" : "WASH YOUR HANDS poster",
+  "shortdescription" : "Hygiene Poster",
   "race" : "generic",
 
   "apexDescription" : "The poster looks to have been cleaned thoroughly.",
@@ -15,24 +15,15 @@
   "humanDescription" : "Maybe I should wash my hands...",
   "hylotlDescription" : "I think I wash myself enough as it is.",
 
-  "inventoryIcon" : "posterwashhandsicon.png",
+  "inventoryIcon" : "washhandspostericon.png",
   "orientations" : [
     {
-	  "image" : "posterwashhands.png:state1",
+	  "image" : "washhandsposter.png",
       "imagePosition" : [-16, -12],
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
 
     }
-  ],
-  
-    "animation" : "/objects/wired/posterwashhands/posterwashhands.animation",
-  "animationParts" : {
-    "switch" : "posterwashhands.png"
-  },
-  "animationPosition" : [-16, -12],
-
-  "scripts" : [ "/objects/wired/posterwashhands/posterwashhands.lua" ],
-  "scriptDelta" : 5  
+  ]
   
 }
