@@ -19,7 +19,7 @@
   "orientations" : [
     {
       "image" : "bacteriaposter.png:<color>",
-      "imagePosition" : [-8, -12],
+      "imagePosition" : [-8, -16],
       "frames" : 1,
       "animationCycle" : 0.5,
 

@@ -44,11 +44,6 @@
  []		- Bench / Couch
  []		- Coffee table
 
- [o]		- Metal statues
- [x]			- Pigeons
- []			- Other animals?
- [x]			- Automaton podium
-
  [o]		- Posters
  [x]			- Bacteria information
  [x]			- remember to wear your protective suit
@@ -163,6 +158,10 @@
  [x]			- wall mounted lever
  [x]			- Large lever
  [x]			- valve
+
+ [x]		- Metal statues
+ [x]			- Pigeons
+ [x]			- Automaton podium
 
  [x]		- lamps
  [x]		- gramaphone intercom

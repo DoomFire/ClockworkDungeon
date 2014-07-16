@@ -19,7 +19,7 @@
   "orientations" : [
     {
 	  "image" : "washhandsposter.png",
-      "imagePosition" : [-16, -12],
+      "imagePosition" : [-16, -16],
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
 
