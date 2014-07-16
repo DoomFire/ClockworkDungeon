@@ -1,0 +1,38 @@
+{
+  "objectName" : "clockBox",
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/clockBox.config",
+    "filter" : ["clockBox","clockcheattable" ]
+  },
+  "printable" : false,
+  "description" : "A clockwork box, best not to shake it too hard",
+  "shortdescription" : "The eliacube",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 200,
+
+  "apexDescription" : "For testing!",
+  "avianDescription" : "For testing!",
+  "floranDescription" : "For testing!",
+  "glitchDescription" : "For testing!",
+  "humanDescription" : "For testing!",
+  "hylotlDescription" : "For testing!",
+
+  "inventoryIcon" : "clockBoxicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "clockBox.png:<color>.<frame>",
+	  
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 3.5,
+      
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+
+    }
+  ] 
+}
