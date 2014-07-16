@@ -6,5 +6,5 @@
     "item" : "upperclass",
     "count" : 1
   },
-  "groups" : [ "clockcheattable", "all", "clockfurniture" ]
+  "groups" : [ "clockcheattable", "all", "clockspawners" ]
 }
