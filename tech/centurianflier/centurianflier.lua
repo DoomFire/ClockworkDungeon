@@ -8,6 +8,7 @@ function init()
   data.specialLast = false
   data.animationDelay = 0.5
   data.testing = false
+
 end
 
 function uninit()
@@ -18,10 +19,13 @@ function uninit()
 end
 
 function input(args)
+ 
+ 
   local currentJump = args.moves["jump"]
   local currentBoost = nil
   
-    if args.moves["special"] == 1 and not data.specialLast then
+ 
+	if args.moves["special"] == 1 and not data.specialLast then
       if data.active then 
         return "deactivate"
       else
@@ -54,6 +58,8 @@ function input(args)
     end
   end
 
+  ---------------------------
+  
   data.lastJump = currentJump
   data.lastBoost = currentBoost
   data.specialLast = args.moves["special"] == 1
@@ -61,14 +67,33 @@ function input(args)
   return currentBoost
 end
 
+--gets run every "frame"/tick
 function update(args)
   local boostControlForce = tech.parameter("boostControlForce")
   local boostSpeed = tech.parameter("boostSpeed")
   local energyUsagePerSecond = tech.parameter("energyUsagePerSecond")
   local energyUsage = energyUsagePerSecond * args.dt
 
-  if not data.active and not tech.inLiquid and args.actions["activate"] then
+
+  	  world.logInfo("tech inliquid= "..tostring(tech.inLiquid))
+	  world.logInfo("actions[activate]= "..tostring(args.actions["activate"]))
+	  world.logInfo("------------------------------------------")
+
+	  -- The problem is that args.actions["activate"] never becomes true
+	  -- It should probably happen when the player presses F but I'm not sure how
+	  
+	  
+
+	if not data.active and not tech.inLiquid and args.actions["activate"] then
   	  --start the activation animation and the timer
+
+	  world.logInfo("active= "..tostring(data.active))
+	  world.logInfo("delay= "..tostring(data.animationDelay))
+	  world.logInfo("activating= "..tostring(data.activating))
+	  world.logInfo("actions[activate]= "..tostring(args.actions["activate"]))
+	  world.logInfo("------------------------------------------")
+	  world.logInfo("------------------------------------------")
+
 	  tech.setVisible(true)
 	  tech.setAnimationState("flight", "activate")
 	  data.activating = true
@@ -81,6 +106,7 @@ function update(args)
 	    data.animationDelay = data.animationDelay - args.dt
 	  end
     end
+--so: if active or tech.inLiquid
   else
   	  --start the deactivation animation and the timer
 	  tech.setAnimationState("flight", "deactivate")
@@ -96,52 +122,68 @@ function update(args)
 	  end
     end
   end
-  
-  if args.availableEnergy < energyUsage then
-    data.ranOut = true
-  elseif tech.onGround() then
-    data.ranOut = false
-  end
+  --------------------------------------------------------
+
+
+  ----------------------
+  ---- energy update? --
+  ----------------------
+
+--  if args.availableEnergy < energyUsage then
+--    data.ranOut = true
+--  elseif tech.onGround() then
+--    data.ranOut = false
+--  end
 
   local boosting = false
   local diag = 1 / math.sqrt(2)
 
-  if not data.ranOut then
-    boosting = true
-    if args.actions["boostRightUp"] then
-      tech.control({boostSpeed * diag, boostSpeed * diag}, boostControlForce, true, true)
-    elseif args.actions["boostRightDown"] then
-      tech.control({boostSpeed * diag, -boostSpeed * diag}, boostControlForce, true, true)
-    elseif args.actions["boostLeftUp"] then
-      tech.control({-boostSpeed * diag, boostSpeed * diag}, boostControlForce, true, true)
-    elseif args.actions["boostLeftDown"] then
-      tech.control({-boostSpeed * diag, -boostSpeed * diag}, boostControlForce, true, true)
-    elseif args.actions["boostRight"] then
-      tech.control({boostSpeed, 0}, boostControlForce, true, true)
-    elseif args.actions["boostDown"] then
-      tech.control({0, -boostSpeed}, boostControlForce, true, true)
-    elseif args.actions["boostLeft"] then
-      tech.control({-boostSpeed, 0}, boostControlForce, true, true)
-    elseif args.actions["boostUp"] then
-      tech.control({0, boostSpeed}, boostControlForce, true, true)
-    elseif args.actions["jetpack"] then	
-	  tech.control({0, 0}, boostControlForce, true, true)
-	else
-      boosting = false
-    end
-  end
+  
+  ---------------------
+  --- I have no clue --
+  ---------------------
+  
+--  if not data.ranOut then
+--   boosting = true
+--    if args.actions["boostRightUp"] then
+--      tech.control({boostSpeed * diag, boostSpeed * diag}, boostControlForce, true, true)
+--    elseif args.actions["boostRightDown"] then
+--      tech.control({boostSpeed * diag, -boostSpeed * diag}, boostControlForce, true, true)
+--    elseif args.actions["boostLeftUp"] then
+--      tech.control({-boostSpeed * diag, boostSpeed * diag}, boostControlForce, true, true)
+--    elseif args.actions["boostLeftDown"] then
+--      tech.control({-boostSpeed * diag, -boostSpeed * diag}, boostControlForce, true, true)
+--    elseif args.actions["boostRight"] then
+--      tech.control({boostSpeed, 0}, boostControlForce, true, true)
+--    elseif args.actions["boostDown"] then
+--      tech.control({0, -boostSpeed}, boostControlForce, true, true)
+--    elseif args.actions["boostLeft"] then
+--      tech.control({-boostSpeed, 0}, boostControlForce, true, true)
+--    elseif args.actions["boostUp"] then
+--      tech.control({0, boostSpeed}, boostControlForce, true, true)
+--    elseif args.actions["jetpack"] then	
+--	  tech.control({0, 0}, boostControlForce, true, true)
+--	else
+--      boosting = false
+--    end
+--  end
 
-  if boosting then
-    tech.setAnimationState("flight", "hover")
-    tech.setParticleEmitterActive("boostParticles", true)
-    return energyUsage
-  elseif tech.onGround() and data.testing then
-	tech.setAnimationState("flight", "crouch")
-	tech.setParticleEmitterActive("exhaustParticles", false)
-	return 0
-  else
-    tech.setAnimationState("flight", "default")
-    tech.setParticleEmitterActive("boostParticles", false)
-    return 0
-  end
+
+-----------------------
+-------boosting--------
+-----------------------
+
+--  if boosting then
+--    tech.setAnimationState("flight", "hover")
+--    tech.setParticleEmitterActive("boostParticles", true)
+--    return energyUsage
+--  elseif tech.onGround() and data.testing then
+--	tech.setAnimationState("flight", "crouch")
+--	tech.setParticleEmitterActive("exhaustParticles", false)
+--	return 0
+--  else
+--    tech.setAnimationState("flight", "default")
+--    tech.setParticleEmitterActive("boostParticles", false)
+--    return 0
+--  end
 end
