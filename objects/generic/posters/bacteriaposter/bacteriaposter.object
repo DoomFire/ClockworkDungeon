@@ -4,16 +4,16 @@
   "category" : "decorative",
   "price" : 100,
 
-  "description" : "...",
+  "description" : "A poster desctibing the effects of Bacteria.",
   "shortdescription" : "Bacteria Poster",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A poster outlining the dangers of Bacteria",
+  "avianDescription" : "This poster seems to be warning of a microscopic bug.",
+  "floranDescription" : "Floran not understand ssssign.",
+  "glitchDescription" : "Curious. I wonder what affect such a Bacteria would have on me?",
+  "humanDescription" : "This sounds a lot worse than the cold.",
+  "hylotlDescription" : "I should be weary of this.",
 
   "inventoryIcon" : "bacteriapostericon.png",
   "orientations" : [

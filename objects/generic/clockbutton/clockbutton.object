@@ -1,19 +1,19 @@
 {
   "objectName" : "clockbutton",
   "rarity" : "Common",
-  "description" : "...",
   "shortdescription" : "Clockwork Button",
   "race" : "generic",
   "objectType" : "wire",
   "category" : "wire",
   "price" : 300,
-
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "description" : "The biggest, reddest of buttons.",
+  
+  "apexDescription" : "It'd probably be best if I didn't touch the button...",
+  "avianDescription" : "I don't like the look of this button...",
+  "floranDescription" : "Floran think red button bad.",
+  "glitchDescription" : "Sceptical. This button doesn't look safe to press.",
+  "humanDescription" : "It'Iss like it's asking me to press it.",
+  "hylotlDescription" : "It's obviously a trap.",
 
   "inventoryIcon" : "clockbuttonicon.png",
   "orientations" : [

@@ -1,18 +1,18 @@
 {
   "objectName" : "clockchair",
   "rarity" : "Common",
-  "description" : "Why would you need cogs for a chair?",
   "shortdescription" : "A clockwork chair",
   "race" : "generic",
   "category" : "furniture",
   "price" : 1200,
-
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "description" : "Why would you need cogs for a chair?",
+  
+  "apexDescription" : "The wheels appear to be for decoration.",
+  "avianDescription" : "This chair is a painful feather pluck waiting to happen.",
+  "floranDescription" : "Floran think moving bits in chair too noissssy.",
+  "glitchDescription" : "Observation. This chair seems far too complicated for it's purpose.",
+  "humanDescription" : "An office chair I can't spin around. Pretty much useless.",
+  "hylotlDescription" : "A pointless contraption.",
 
   "inventoryIcon" : "clockchairicon.png",
   "orientations" : [

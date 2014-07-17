@@ -8,12 +8,12 @@
   "category" : "wire",
   "price" : 200,
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A very old fashioned console",
+  "avianDescription" : "I don't think this is just any old Typewriter.",
+  "floranDescription" : "Little machine make wordsss on paper.",
+  "glitchDescription" : "Fascinated. The paper seems to just serve as a display for what the machine is really doing.",
+  "humanDescription" : "These things used to be so cool back on Earth.",
+  "hylotlDescription" : "A very outdated note taking device.",
 
   "inventoryIcon" : "typewritericon.png",
   "orientations" : [

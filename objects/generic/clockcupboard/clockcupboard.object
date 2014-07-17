@@ -4,16 +4,15 @@
   "objectType" : "container",
   "category" : "storage",
   "price" : 1500,
-  "description" : "...",
-  "shortdescription" : "Clockwork Cupboard",
+  "description" : "A wardrobe with an unfamiliar face on it.",
+  "shortdescription" : "Clockwork Wardrobe",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "The mask serves as handles to open the wardrobe.",
+  "avianDescription" : "Who would put a face on a wardrobe...?",
+  "floranDescription" : "Floran Laugh at ssssilly mask.",
+  "glitchDescription" : "Uneasy. The face seems to be staring at me...",
+  "humanDescription" : "One rebellious wardrobe.",
 
   "inventoryIcon" : "clockcupboardicon.png",
   "orientations" : [

@@ -4,16 +4,16 @@
   "category" : "decorative",
   "price" : 300,
 
-  "description" : "...",
+  "description" : "A large fence.",
   "shortdescription" : "Brass Fence",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A large fence.",
+  "avianDescription" : "A large fence.",
+  "floranDescription" : "A large fence.",
+  "glitchDescription" : "Statement. A large fence.",
+  "humanDescription" : "A large fence.",
+  "hylotlDescription" : "A large fence.",
 
   "inventoryIcon" : "brassfence2icon.png",
   "orientations" : [

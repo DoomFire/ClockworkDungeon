@@ -4,16 +4,16 @@
   "category" : "furniture",
   "objectType" : "container",
   "price" : 800,
-  "description" : "If you wind the key at the back, it throws books at you!",
+  "description" : "A bookcase with machinery throughout it. I wonder what it all does?",
   "shortdescription" : "Clockwork Bookcase",
   "race" : "generic",
 
-  "apexDescription" : "Most of the books seem to be stuck down somehow.",
-  "avianDescription" : "Why does a bookcase need machinery?.",
-  "floranDescription" : "Floran spin thing, book with Floran fall out.",
-  "glitchDescription" : "Amazement. When turning the key, a book of my exact model fell out!",
+  "apexDescription" : "These shelves seem to rearrange books as you place them down.",
+  "avianDescription" : "What use could gears be in a bookcase?",
+  "floranDescription" :  "Metal Shelf with bookssss.",
+  "glitchDescription" : "Intrigued. The books are being moved back to their original positions as I move them around.",
   "humanDescription" : "There are some pretty boring looking books in there.",
-  "hylotlDescription" : "This seems to posses a vast amount of information on the Hylotl How did they manage to gather all this?",
+  "hylotlDescription" : "The books don't seem to be organized alphabetically or numerically.",
 
   "inventoryIcon" : "clockbookcaseicon.png",
   "orientations" : [

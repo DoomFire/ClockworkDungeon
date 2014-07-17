@@ -6,16 +6,16 @@
 
   "category" : "storage",
   "price" : 250,
-  "description" : "A Clockwork Crate.",
+  "description" : "A complicated looking crate.",
   "shortdescription" : "Clockwork Crate",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "I wonder what's inside?",
+  "avianDescription" : "It's bigger on the inside!? Oh wait no it isn't...",
+  "floranDescription" : "Box make small noisessss. pointless noisessss.",
+  "glitchDescription" : "Amazed. These people DO make everything out of machinery.",
+  "humanDescription" : "This looks like it'd eat up a crowbar. Dang.",
+  "hylotlDescription" : "The only purpose I can see the gears having is theft prevention.",
 
   "inventoryIcon" : "clockcrateicon.png",
   "orientations" : [

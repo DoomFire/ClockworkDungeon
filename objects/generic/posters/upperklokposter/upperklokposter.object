@@ -4,16 +4,16 @@
   "category" : "decorative",
   "price" : 100,
 
-  "description" : "...",
+  "description" : "A poster depicting the anatomy of a Kleinklok",
   "shortdescription" : "Upperclass Poster",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "It appears they use complex metal suits to keep them alive.",
+  "avianDescription" : "Without their armour they're brittle and weak.",
+  "floranDescription" : "Metal on outssside. Meat on inssside.",
+  "glitchDescription" : "Empathic. Their race seems very weak.",
+  "humanDescription" : "Men in metal suits. I remember a Sci-Fi like this.",
+  "hylotlDescription" : "These creatures are very brittle.",
 
   "inventoryIcon" : "upperklokpostericon.png",
   "orientations" : [
