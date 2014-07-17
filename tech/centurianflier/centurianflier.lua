@@ -75,9 +75,9 @@ function update(args)
   local energyUsage = energyUsagePerSecond * args.dt
 
 
-  	  world.logInfo("tech inliquid= "..tostring(tech.inLiquid))
-	  world.logInfo("actions[activate]= "..tostring(args.actions["activate"]))
-	  world.logInfo("------------------------------------------")
+--  	  world.logInfo("tech inliquid= "..tostring(tech.inLiquid))
+--	  world.logInfo("actions[activate]= "..tostring(args.actions["activate"]))
+--	  world.logInfo("------------------------------------------")
 
 	  -- The problem is that args.actions["activate"] never becomes true
 	  -- It should probably happen when the player presses F but I'm not sure how

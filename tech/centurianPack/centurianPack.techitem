@@ -1,0 +1,10 @@
+{
+  "itemName" : "centurianPackTech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/centurianPack/centurianPackIcon.png",
+  "description" : "Press 'F' to activate the hoverpack",
+  "shortdescription" : "Centurian Ball",
+  "inspectionKind" : "tech",
+
+  "techModule" : "centurianPack.tech"
+}

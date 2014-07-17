@@ -1,0 +1,64 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "morphball" : {
+        "default" : "default",
+        "states" : {
+          "default" : { },
+		  
+		  "activate" : {
+		   "frames" : 11,
+           "mode" : "transition",
+           "transition" : "default",
+           "cycle" : 0.5
+			},
+			
+		  "deactivate" : {		   
+		    "frames" : 11,
+            "mode" : "end",
+            "cycle" : 0.5
+		   }
+        }
+      }	  
+    },
+	
+    "parts" : {
+      "morphball" : {
+        "partStates" : {
+		
+		
+          "morphball" : {
+            "default" : {
+              "properties" : {
+                "centered" : true,
+                "image" : "ball.png:<rotationFrame>"
+              }
+            },
+			
+		    "activate" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "activate.png:<frame>"
+              } 
+			},
+		    "deactivate" : {              
+				"properties" : {
+                "centered" : true,
+                "image" : "deactivate.png:<frame>"
+              }
+            }
+          }
+        }
+      }	
+    }
+  },
+
+  "particleEmitters" : {
+    "morphballActivateParticles" : {
+      "particles" : [ ]
+    },
+    "morphballDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}
