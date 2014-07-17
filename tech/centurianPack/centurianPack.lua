@@ -14,7 +14,7 @@ function uninit()
   if data.active then
     tech.setVisible(false)
     tech.translate({0, -tech.parameter("ballTransformHeightChange")})
-    tech.setParentAppearance("normal")
+--    tech.setParentAppearance("normal")
     tech.setToolUsageSuppressed(false)
     data.active = false
   end
@@ -53,7 +53,7 @@ function update(args)
     tech.setAnimationState("morphball", "activate")
     tech.setVisible(true)
     tech.translate({0, ballTransformHeightChange})
-    tech.setParentAppearance("hidden")
+   -- tech.setParentAppearance("hidden")
     tech.setToolUsageSuppressed(true)
     data.active = true
   elseif data.active and (args.actions["morphballDeactivate"] or energyCostPerSecond * args.dt > args.availableEnergy) then
@@ -79,7 +79,7 @@ function update(args)
 	  if data.animationDelay <= 0 then
       tech.setVisible(false)
       tech.translate({0, -ballTransformHeightChange})
-      tech.setParentAppearance("normal")
+--      tech.setParentAppearance("normal")
       tech.setToolUsageSuppressed(false)
       data.angle = 0
       data.active = false
