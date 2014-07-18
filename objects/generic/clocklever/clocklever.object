@@ -1,19 +1,19 @@
 {
   "objectName" : "clocklever",
   "rarity" : "Common",
-  "description" : "...",
+  "description" : "A clockwork lever. What does it control?",
   "shortdescription" : "Clockwork Lever",
   "race" : "generic",
   "objectType" : "wire",
   "category" : "wire",
   "price" : 300,
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "The second lever appears to be stuck in place.",
+  "avianDescription" : "I can't seem to budge one of the levers.",
+  "floranDescription" : "Two sticksss. One uselessss.",
+  "glitchDescription" : "Betrayed. I thought for sure this second lever would do something.",
+  "humanDescription" : "Reminds me of the trains from home.",
+  "hylotlDescription" : "One of the levers are broken.",
 
   "inventoryIcon" : "clocklevericon.png",
   "orientations" : [

@@ -1,16 +1,16 @@
 {
   "objectName" : "clocklamp",
   "rarity" : "Common",
-  "description" : "...",
+  "description" : "A lamp with gears throughout it.",
   "shortdescription" : "Clockwork Lamp",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A complicated looking lamp.",
+  "avianDescription" : "The lamp glows a deep yellow.",
+  "floranDescription" : "Light with ticking.",
+  "glitchDescription" : "Puzzled. Wouldn't a more efficient lamp design be more suitable?",
+  "humanDescription" : "I am worried about getting my fingers caught in all this machinery.",
+  "hylotlDescription" : "The lights at home are far more interesting and efficient.",
 
   "category" : "light",
   "price" : 400,

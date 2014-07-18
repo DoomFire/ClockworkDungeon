@@ -7,12 +7,12 @@
   "category" : "other",
   "price" : 2000,
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A large gear.",
+  "avianDescription" : "A large gear. It seems important.",
+  "floranDescription" : "Slow sssspinning wheel.",
+  "glitchDescription" : "Observation. A large gear.",
+  "humanDescription" : "That thing is HUUGE.",
+  "hylotlDescription" : "A large metal gear.",
 
   "inventoryIcon" : "largegearicon.png",
   "orientations" : [

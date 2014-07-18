@@ -8,12 +8,12 @@
   "category" : "decorative",
   "price" : 500,
   
-  "apexDescription" : "These appear to be system diagnostics. I don't understand them.",
-  "avianDescription" : "This screen describes the state of nearby crystals. Only stargazers understand it.",
-  "floranDescription" : "Birdman technology. Floran not understand.",
+  "apexDescription" : "A small metal bird. I can hear a distinct ticking coming from it..",
+  "avianDescription" : "A metal Pigeon. I don't think it does anything other than tick.",
+  "floranDescription" : "Little metal bird.",
   "glitchDescription" : "Nostalgia. This reminds me of the bird life back home.",
-  "humanDescription" : "This looks like complex stuff. Perhaps it describes the state of Avian tech.",
-  "hylotlDescription" : "The Hylotl can not read these. They appear to be system stats. ",
+  "humanDescription" : "This thing is pretty cool. Though winding the key doesn't do anything.",
+  "hylotlDescription" : "Some kind of paperweight?.",
 
   "inventoryIcon" : "clockpigeonicon.png",
   "orientations" : [

@@ -1,19 +1,15 @@
 {
   "objectName" : "clockswitch",
   "rarity" : "Common",
-  "description" : "...",
+  "description" : "Flippin' awesome.",
   "shortdescription" : "Clockwork Switch",
   "race" : "generic",
   "objectType" : "wire",
   "category" : "wire",
   "price" : 300,
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "floranDescription" : "Ssswitch!",
+  "glitchDescription" : "Statement. A small switch.",
 
   "inventoryIcon" : "clockswitchicon.png",
   "orientations" : [

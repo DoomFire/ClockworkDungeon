@@ -8,12 +8,12 @@
     "shortdescription": "Pipe Organ",
     "race": "generic",
 	
-    "apexDescription": "...",
-    "avianDescription": "...",
-    "floranDescription": "...",
-    "glitchDescription": "...",
-    "humanDescription": "...",
-    "hylotlDescription": "...",
+    "apexDescription": "A pipe organ. This one seems almost pristine. ",
+    "avianDescription": "An organ! I love the sound these make.",
+    "floranDescription": "Box with music buttonsssss.",
+    "glitchDescription": "Delighted. Pipe organs make a wonderful noise.",
+    "humanDescription": "I feel like a vampire.",
+    "hylotlDescription": "I quite enjoy the sound pipe organs make.",
 	
     "inventoryIcon": "organicon.png",
     "orientations": [

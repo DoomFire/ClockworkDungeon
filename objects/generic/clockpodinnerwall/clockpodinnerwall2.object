@@ -3,15 +3,15 @@
   "rarity" : "Common",
   "category" : "decorative",
   "price" : 750,
-  "description" : "...",
+  "description" : "An empty pod.",
   "shortdescription" : "Innerwall Kleinklok Pod Empty",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "Another stasis pod. This one seems to be empty.",
+  "avianDescription" : "An empty pod with a black liquid inside.",
+  "floranDescription" : "Floran not like black water.",
+  "glitchDescription" : "Optimistic. Maybe he got better...?",
+  "humanDescription" : "A pod thing. An empty one.",
+  "hylotlDescription" : "An empty pod. I'm not sure what the black liquid is.",
 
   "inventoryIcon" : "clockpodinnerwallicon.png",
   "orientations" : [

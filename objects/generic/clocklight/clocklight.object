@@ -4,17 +4,13 @@
   "category" : "light",
   "price" : 300,
 
-  "description" : "...",
+  "description" : "A small electric light.",
   "shortdescription" : "Wall-mounted Light",
   "race" : "generic",
   "hydrophobic" : true,
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "floranDescription" : "Sssmall light.",
+  "glitchDescription" : "Statement. A small electric light.",
 
   "statusEffects" : [
     {

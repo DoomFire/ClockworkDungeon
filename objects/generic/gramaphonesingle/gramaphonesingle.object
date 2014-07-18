@@ -3,17 +3,16 @@
   "rarity" : "Common",
   "category" : "decorative",
   "price" : 400,
-
   "description" : "A great way to speak to dirty lowerclass without being anywhere near them!",
-  "shortdescription" : "Gramaphone Intercom",
+  "shortdescription" : "Gramophone Intercom",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "It looks like it's used for communication. Similar to a PA system.",
+  "avianDescription" : "It looks like some sort of speaker.",
+  "floranDescription" : "Floran think tube for voice.",
+  "glitchDescription" : "Statement. Some sort of Intercom.",
+  "humanDescription" : "Some sort of Gramaphone.",
+  "hylotlDescription" : "Used for the higher-ups to talk to others with ease.",
 
   "inventoryIcon" : "gramaphonesingleicon.png",
   "orientations" : [

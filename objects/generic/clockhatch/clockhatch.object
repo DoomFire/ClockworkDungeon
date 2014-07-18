@@ -4,16 +4,16 @@
     "objectType": "wire",
     "category": "door",
     "price": 750,
-    "description": "A clockwork hatch",
+    "description": "A small hatch.",
     "shortdescription": "Clockwork Hatch",
     "race": "generic",
 	
-    "apexDescription": "...",
-    "avianDescription": "...",
-    "floranDescription": "...",
-    "glitchDescription": "...",
-    "humanDescription": "...",
-    "hylotlDescription": "...",
+    "apexDescription": "A small hatch. I won't be able to fit through here.",
+    "avianDescription": "I am too big to get through here...",
+    "floranDescription": "Floran too big for ssssmall door.",
+    "glitchDescription": "Frustrated. I will not fit through here in my current state.",
+    "humanDescription": "I'd have to be a lot smaller to get into there.",
+    "hylotlDescription": "The way beyond here is too small for me.",
 	
     "inventoryIcon": "clockhatchsideicon.png",
 	

@@ -3,16 +3,16 @@
   "rarity" : "Common",
   "category" : "decorative",
   "price" : 750,
-  "description" : "...",
+  "description" : "Is he okay...?",
   "shortdescription" : "Innerwall Kleinklok Pod",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
-
+  "apexDescription" : "This fellow looks a little thin... actually all of these guys do.",
+  "avianDescription" : "He looks very sick...",
+  "floranDescription" : "Floran don't need to ssstab weak naked man.",
+  "glitchDescription" : "Alarmed. This man is rapidly deteriorating from a disease. He would be dead if not for this pod.",
+  "humanDescription" : "These guys are so creepy...",
+  "hylotlDescription" : "Ugly as well as crude.",
+  
   "inventoryIcon" : "clockpodinnerwallicon.png",
   "orientations" : [
     {

@@ -8,12 +8,12 @@
   "shortdescription" : "Porthole",
   "race" : "generic",
 
-  "apexDescription" : "A very primitive drawing board. We posses much better ways of storing notes now.",
-  "avianDescription" : "So much space to doodle!",
-  "floranDescription" : "Sssmall white ssstick make drawing.",
-  "glitchDescription" : "Curious. Do organic beings not posses the ability to store data efficiently within themselves?",
-  "humanDescription" : "My old professor used to constantly pick me out to dust his blackboard... I don't think he liked me.",
-  "hylotlDescription" : "I would much prefer to use a White Board.",
+  "apexDescription" : "It's hard to see what's on the other side.",
+  "avianDescription" : "A porthole. I can't see through it.",
+  "floranDescription" : "Round window hard to ssssee through.",
+  "glitchDescription" : "Observation. The inside of the glass seems to be very clean, though the outside has been ignored. Why even have windows?",
+  "humanDescription" : "A port hole. I think I can see movement on the other side...",
+  "hylotlDescription" : "I can't see very well through this porthole.",
 
   "inventoryIcon" : "portholeicon.png",
   "orientations" : [

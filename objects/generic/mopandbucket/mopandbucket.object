@@ -3,16 +3,16 @@
   "rarity" : "Common",
   "category" : "decorative",
   "price" : 800,
-  "description" : "...",
+  "description" : "Nothing cleans better than a mop and bucket!",
   "shortdescription" : "Mop and Bucket",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "A mop and bucket. They look thoroughly used.",
+  "avianDescription" : "A basic mop and bucket.",
+  "floranDescription" : "Ssstick and bucket.",
+  "glitchDescription" : "Observation. These seem to be used a lot.",
+  "humanDescription" : "A mop and bucket. I hate mopping.",
+  "hylotlDescription" : "No gears? No machinery? Just a mop and bucket...?",
 
   "inventoryIcon" : "mopandbucketicon.png",
   "orientations" : [

@@ -5,16 +5,16 @@
 
   "category" : "door",
   "price" : 2000,
-  "description" : "...",
+  "description" : "A sliding door powered by complex clockwork.",
   "shortdescription" : "Clockwork Door",
   "race" : "generic",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "An interesting door.",
+  "avianDescription" : "I can see some gears moving as this opens and closes.",
+  "floranDescription" : "Ssssliding door make loud noisssse.",
+  "glitchDescription" : "Statement. A sliding door powered by clockwork.",
+  "humanDescription" : "A pretty cool sliding door.",
+  "hylotlDescription" : "A sliding door.",
 
   "inventoryIcon" : "clockdooricon.png",
   "orientations" : [

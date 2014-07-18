@@ -6,12 +6,12 @@
   "description" : "It's locked... I think it's also just a picture.",
   "shortdescription" : "Jail Door",
 
-  "apexDescription" : "...",
-  "avianDescription" : "...",
-  "floranDescription" : "...",
-  "glitchDescription" : "...",
-  "humanDescription" : "...",
-  "hylotlDescription" : "...",
+  "apexDescription" : "It's locked and mostly empty.",
+  "avianDescription" : "The cell beyond doesn't look like it has been used in a long time.",
+  "floranDescription" : "Sssmall room locked.",
+  "glitchDescription" : "sceptical. I don't believe this is a real cell.",
+  "humanDescription" : "I don't want to end up in there.",
+  "hylotlDescription" : "A dank cell.",
 
   "inventoryIcon" : "clockjaildooricon.png",
   
