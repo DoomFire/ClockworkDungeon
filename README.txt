@@ -109,12 +109,13 @@
 
     Weapons
  []	- Tool Type
- []		- Monkey wrench
- []		- Wrench
+ [x]		- Monkey wrench
+ [x]		- Wrench
  []		- Construction Hammer
- []		- Saw
- []		- Crowbar
+ [x]		- Saw
+ [x]		- Crowbar
  []		- Danger Sign
+ [x]		- traffic cone
 
  []    	- Long ranged
  []		- Nail Gun
