@@ -1,7 +1,0 @@
-{
-  "frames" : "penguingeneralspawn.png",
-  "variants" : 1,
-  "frameNumber" : 11,
-  "animationCycle" : 1.0,
-  "offset" : [0, 1]
-}
