@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "template",
+    "name": "clocktower",
     "species": "dummy",
     "rules": [],
     "maxRadius": 20000,
@@ -2082,9 +2082,7 @@
         "image",
         [
           "entrance1-backgroundtiles.png",
-          "entrance1-foregroundtiles.png",
-          "entrance1-objects.png",
-          "entrance1-wires.png"
+          "entrance1-objects.png"
         ]
       ],
       "rules": [],
@@ -2095,9 +2093,7 @@
         "image",
         [
           "Tower-1-backgroundtiles.png",
-          "Tower-1-foregroundtiles.png",
-          "Tower-1-objects.png",
-          "Tower-1-wires.png"
+          "Tower-1-objects.png"
         ]
       ],
       "rules": [],
@@ -2108,9 +2104,7 @@
         "image",
         [
           "Upper Hall-backgroundtiles.png",
-          "Upper Hall-foregroundtiles.png",
-          "Upper Hall-objects.png",
-          "Upper Hall-wires.png"
+          "Upper Hall-objects.png"
         ]
       ],
       "rules": [],
@@ -2121,9 +2115,7 @@
         "image",
         [
           "CorridorA-backgroundtiles.png",
-          "CorridorA-foregroundtiles.png",
-          "CorridorA-objects.png",
-          "CorridorA-wires.png"
+          "CorridorA-objects.png"
         ]
       ],
       "rules": [],
@@ -2134,9 +2126,7 @@
         "image",
         [
           "Corridor(-A)-backgroundtiles.png",
-          "Corridor(-A)-foregroundtiles.png",
-          "Corridor(-A)-objects.png",
-          "Corridor(-A)-wires.png"
+          "Corridor(-A)-objects.png"
         ]
       ],
       "rules": [],
@@ -2147,9 +2137,7 @@
         "image",
         [
           "Corridor(B)-backgroundtiles.png",
-          "Corridor(B)-foregroundtiles.png",
-          "Corridor(B)-objects.png",
-          "Corridor(B)-wires.png"
+          "Corridor(B)-objects.png"
         ]
       ],
       "rules": [],
@@ -2160,9 +2148,7 @@
         "image",
         [
           "Corridor(-B)-backgroundtiles.png",
-          "Corridor(-B)-foregroundtiles.png",
-          "Corridor(-B)-objects.png",
-          "Corridor(-B)-wires.png"
+          "Corridor(-B)-objects.png"
         ]
       ],
       "rules": [],
@@ -2173,9 +2159,7 @@
         "image",
         [
           "The Library-backgroundtiles.png",
-          "The Library-foregroundtiles.png",
-          "The Library-objects.png",
-          "The Library-wires.png"
+          "The Library-objects.png"
         ]
       ],
       "rules": [],
@@ -2186,9 +2170,7 @@
         "image",
         [
           "The Dormitories-backgroundtiles.png",
-          "The Dormitories-foregroundtiles.png",
-          "The Dormitories-objects.png",
-          "The Dormitories-wires.png"
+          "The Dormitories-objects.png"
         ]
       ],
       "rules": [],
@@ -2199,9 +2181,7 @@
         "image",
         [
           "Pipes - Entrance (R)-backgroundtiles.png",
-          "Pipes - Entrance (R)-foregroundtiles.png",
-          "Pipes - Entrance (R)-objects.png",
-          "Pipes - Entrance (R)-wires.png"
+          "Pipes - Entrance (R)-objects.png"
         ]
       ],
       "rules": [],
@@ -2212,9 +2192,7 @@
         "image",
         [
           "Mosaic Room-backgroundtiles.png",
-          "Mosaic Room-foregroundtiles.png",
-          "Mosaic Room-objects.png",
-          "Mosaic Room-wires.png"
+          "Mosaic Room-objects.png"
         ]
       ],
       "rules": [],
@@ -2225,9 +2203,7 @@
         "image",
         [
           "-The Dormitories-backgroundtiles.png",
-          "-The Dormitories-foregroundtiles.png",
-          "-The Dormitories-objects.png",
-          "-The Dormitories-wires.png"
+          "-The Dormitories-objects.png"
         ]
       ],
       "rules": [],
@@ -2238,9 +2214,7 @@
         "image",
         [
           "Pipes - Entrace (L)-backgroundtiles.png",
-          "Pipes - Entrace (L)-foregroundtiles.png",
-          "Pipes - Entrace (L)-objects.png",
-          "Pipes - Entrace (L)-wires.png"
+          "Pipes - Entrace (L)-objects.png"
         ]
       ],
       "rules": [],
