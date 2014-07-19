@@ -13,9 +13,9 @@ end
 function uninit()
   if data.active then
     tech.setVisible(false)
-    tech.translate({0, -tech.parameter("ballTransformHeightChange")})
+--    tech.translate({0, -tech.parameter("ballTransformHeightChange")})
 --    tech.setParentAppearance("normal")
-    tech.setToolUsageSuppressed(false)
+--    tech.setToolUsageSuppressed(false)
     data.active = false
   end
 end
@@ -52,10 +52,12 @@ function update(args)
   if not data.active and args.actions["morphballActivate"] then
     tech.setAnimationState("morphball", "activate")
     tech.setVisible(true)
-    tech.translate({0, ballTransformHeightChange})
-   -- tech.setParentAppearance("hidden")
-    tech.setToolUsageSuppressed(true)
-    data.active = true
+--    tech.translate({0, ballTransformHeightChange})
+--    tech.setParentAppearance("hidden")
+   
+--    tech.setToolUsageSuppressed(true)
+
+   data.active = true
   elseif data.active and (args.actions["morphballDeactivate"] or energyCostPerSecond * args.dt > args.availableEnergy) then
     ballDeactivateCollisionTest[1] = ballDeactivateCollisionTest[1] + tech.position()[1]
     ballDeactivateCollisionTest[2] = ballDeactivateCollisionTest[2] + tech.position()[2]
@@ -73,12 +75,12 @@ function update(args)
 
 
   if data.active then
-    tech.applyMovementParameters(ballCustomMovementParameters)
-	-- if we have to turn off, then count down the timer
+--    tech.applyMovementParameters(ballCustomMovementParameters)
+-- 	  if we have to turn off, then count down the timer
 	if data.deactivating then
 	  if data.animationDelay <= 0 then
       tech.setVisible(false)
-      tech.translate({0, -ballTransformHeightChange})
+--      tech.translate({0, -ballTransformHeightChange})
 --      tech.setParentAppearance("normal")
       tech.setToolUsageSuppressed(false)
       data.angle = 0
