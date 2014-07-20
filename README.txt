@@ -23,7 +23,7 @@
  
     Tiles and objects
  []	!! DESCRIPTIONS NEED TO BE DONE FOR ALL !!
- []	!! ADD SOUNDS TO ALL APPICABLE OBJECTS !!
+ []	!! ADD SOUNDS TO ALL APPLICABLE OBJECTS !!
 
 	!! SOME ICONS NEED TO BE REDONE SMALLER / DONE !!
 		- lantern
@@ -37,9 +37,6 @@
 
  []		- Large Furnace
 
- []		- Lowerclass Bed
- []		- Sink with larger basin and multiple heads
- []		- Simple chair
  []		- Filing Cabinet
  []		- Bench / Couch
  []		- Coffee table
@@ -54,7 +51,7 @@
  []		- Storage shelves
  []		- hung up towels
  [o]		- Blackboard with chalk
- []			- Interacting will draw something then scrub it off.
+ [x]			- Interacting will draw something then scrub it off.
 
 
     Hostile NPCs
