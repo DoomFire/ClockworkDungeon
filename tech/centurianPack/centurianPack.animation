@@ -30,10 +30,10 @@
           "morphball" : {
             "default" : {
               "properties" : {
-                				"centered" : true,
+                "centered" : true,
 				"zLevel" : 3.5,
 				"back" : true,
-                "image" : "ball.png:<rotationFrame>"
+                "image" : "default.png:<frame>"
               }
             },
 			

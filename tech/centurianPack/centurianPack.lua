@@ -58,21 +58,11 @@ function update(args)
 --    tech.setToolUsageSuppressed(true)
 
    data.active = true
-  elseif data.active and (args.actions["morphballDeactivate"] or energyCostPerSecond * args.dt > args.availableEnergy) then
-    ballDeactivateCollisionTest[1] = ballDeactivateCollisionTest[1] + tech.position()[1]
-    ballDeactivateCollisionTest[2] = ballDeactivateCollisionTest[2] + tech.position()[2]
-    ballDeactivateCollisionTest[3] = ballDeactivateCollisionTest[3] + tech.position()[1]
-    ballDeactivateCollisionTest[4] = ballDeactivateCollisionTest[4] + tech.position()[2]
-    
-	if not world.rectCollision(ballDeactivateCollisionTest) then
+  elseif data.active and (args.actions["morphballDeactivate"]) then
 	  --start the deactivation animation and the timer
 	  tech.setAnimationState("morphball", "deactivate")
 	  data.deactivating=true
-    else
-      -- Make some kind of error noise if not auto-deactivating
-    end
   end
-
 
   if data.active then
 --    tech.applyMovementParameters(ballCustomMovementParameters)
@@ -91,21 +81,7 @@ function update(args)
 	  data.animationDelay = data.animationDelay - args.dt
 	  end
     end
-	
-	
-    if tech.onGround() then
-      -- If we are on the ground, assume we are rolling without slipping to
-      -- determine the angular velocity
-      data.angularVelocity = -tech.measuredVelocity()[1] / ballRadius
-    end
 
-    data.angle = math.fmod(math.pi * 2 + data.angle + data.angularVelocity * args.dt, math.pi * 2)
-
-    -- Rotation frames for the ball are given as one *half* rotation so two
-    -- full cycles of each of the ball frames completes a total rotation.
-    local rotationFrame = math.floor(data.angle / math.pi * ballFrames) % ballFrames
-    tech.setGlobalTag("rotationFrame", rotationFrame)
-	
 	-- Super Jump
   local energyUsage = tech.parameter("energyUsage")
   local superJumpSpeed = tech.parameter("superjumpSpeed")

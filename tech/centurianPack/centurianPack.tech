@@ -28,7 +28,7 @@
     "slopeSlidingFactor" : 3.0
   },
 
-  "energyCostPerSecond" : 35,
+  "energyCostPerSecond" : 0,
 
   // These are specific to Humanoid, could store the collision volume before
   // transformation instead and figure it out.
@@ -42,7 +42,7 @@
   "ballBombProjectile" : "bomb",
   
   // Superjump stuff
-  "energyUsage" : 30.0,
+  "energyUsage" : 0.0,
   "superjumpSpeed" : 250,
   "superjumpControlForce" : 400,
   "superjumpTime" : 0.1,
