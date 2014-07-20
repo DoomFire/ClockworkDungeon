@@ -30,20 +30,26 @@
           "morphball" : {
             "default" : {
               "properties" : {
-                "centered" : true,
+                				"centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
                 "image" : "ball.png:<rotationFrame>"
               }
             },
 			
 		    "activate" : {              
 				"properties" : {
-                "centered" : true,
+				"centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
                 "image" : "activate.png:<frame>"
               } 
 			},
 		    "deactivate" : {              
 				"properties" : {
                 "centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
                 "image" : "deactivate.png:<frame>"
               }
             }
