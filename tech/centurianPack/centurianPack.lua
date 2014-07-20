@@ -45,8 +45,7 @@ function input(args)
 	
 -- if F isn't pressed then ...	
 	elseif data.active then
-
-		
+	
 		if  args.moves["up"] and not tech.onGround() then 	--		and args.moves["jump"] then-- 
 --			world.logInfo("DoubleJump")
 --			return "superjump"
@@ -54,7 +53,19 @@ function input(args)
 		else
 			 data.hovering = false
 		end
-  end
+
+		--hover stuff
+		if  data.hovering then
+	
+			if args.moves["jump"] then
+				
+			return "superjump"
+			end
+	
+		end
+		
+
+end
  
   data.specialLast = args.moves["special"] == 1
   data.jumpLast = args.moves["jump"]
