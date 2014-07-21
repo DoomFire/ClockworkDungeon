@@ -5,6 +5,7 @@
         "default" : "default",
         "states" : {
           "default" : { },
+		  "nonDefault" : { },
 		  
 		  "activate" : {
 		   "frames" : 11,
@@ -15,7 +16,8 @@
 			
 		  "deactivate" : {		   
 		    "frames" : 11,
-            "mode" : "end",
+           "mode" : "transition",
+           "transition" : "nonDefault",
             "cycle" : 0.5
 		   }
         }
@@ -34,6 +36,15 @@
 				"zLevel" : 3.5,
 				"back" : true,
                 "image" : "default.png:<frame>"
+              }
+            },
+			
+			 "nonDefault" : {
+              "properties" : {
+                "centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
+                "image" : "nonDefault.png:<frame>"
               }
             },
 			

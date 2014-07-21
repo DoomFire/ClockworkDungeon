@@ -2,7 +2,7 @@
   "itemName" : "centurianPackTech",
   "rarity" : "Legendary",
   "inventoryIcon" : "/tech/centurianPack/centurianPackIcon.png",
-  "description" : "Press 'F' to activate the hoverpack",
+  "description" : "Activate: F\nSteamJump: Spacebar\nHover: Up\nSwitch power: Down+F (wip)",
   "shortdescription" : "Centurian Ball",
   "inspectionKind" : "tech",
 
