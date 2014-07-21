@@ -33,7 +33,9 @@ function input(args)
   if args.moves["special"] == 1 and not data.specialLast then
     
 	if data.active then
-    
+    	if  args.moves["jump"] and not tech.onGround() then
+		  data.hovering = false
+		end
 		data.hovering = false
 		return "morphballDeactivate"
     
@@ -46,24 +48,15 @@ function input(args)
 -- if F isn't pressed then ...	
 	elseif data.active then
 	
-		if  args.moves["up"] and not tech.onGround() then 	--		and args.moves["jump"] then-- 
---			world.logInfo("DoubleJump")
---			return "superjump"
+		if  args.moves["jump"] and not tech.onGround() then
 			data.hovering = true	
 		else
 			 data.hovering = false
 		end
-
-		--hover stuff
-		if  data.hovering then
-	
-			if args.moves["jump"] then
-				
-			return "superjump"
-			end
-	
-		end
 		
+		if args.moves["up"] and data.hovering then
+		  return "superjump"			
+		end
 
 end
  
@@ -118,9 +111,6 @@ function update(args)
 	  if data.animationDelay <= 0 then
       tech.setVisible(false)
 
---	  can we use Items while flying?
-      tech.setToolUsageSuppressed(false)
-
       data.angle = 0
       data.active = false
 	  data.animationDelay = 0.5
@@ -131,7 +121,7 @@ function update(args)
     end
 	
 	
-	-- grounc check
+	-- ground check
 	
 	
 	
