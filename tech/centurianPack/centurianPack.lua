@@ -1,12 +1,12 @@
 function init()
 	data.specialLast = false
 	data.jumpLast = false
-	data.angularVelocity = 0
-	data.angle = 0
 	data.active = false
 	tech.setVisible(true)
 	data.superJumpTimer = 0
 	data.animationDelay = 0.5
+
+	
 	data.deactivating=false
 	data.jumping = false
 	data.hovering = false
@@ -31,9 +31,7 @@ function input(args)
 
 	
 	local move = nil
- 
--- look if F is pressed
-		--"special" == pressing F
+
 	if args.moves["special"] == 1 and args.moves["down"] and  data.active then
 		world.logInfo("test")
 		
@@ -45,14 +43,12 @@ function input(args)
 		end
 		data.hovering = false
 		return "morphballDeactivate"
-    
 	else
 		data.hovering = false
       return "centurainPackActivate"
     end
 	
 	
--- if F isn't pressed then ...	
 	elseif data.active then
 	
 		if  args.moves["up"] and not tech.onGround() then
@@ -76,7 +72,6 @@ end
 function update(args)
 
 	if not data.active then
---	      tech.setVisible(true)
     tech.setAnimationState("morphball", "nonDefault")
 	end
 
@@ -133,21 +128,13 @@ function update(args)
 	  else
 	  data.animationDelay = data.animationDelay - args.dt
 	  end
-    end
-	
+    end	
 	
 	-- ground check
-	
-	
-	
+
 	if tech.onGround() then
 		data.jumping=false
 	end
-	
-	
-
-	
-	
 	
 	-- Super Jump
   local energyUsage = tech.parameter("energyUsage")
@@ -166,9 +153,6 @@ function update(args)
     tech.yControl(superJumpSpeed, superJumpControlForce)
     data.superJumpTimer = data.superJumpTimer - args.dt
   end
-  
-
-
   
   if usedEnergy ~= 0 then
     return usedEnergy
