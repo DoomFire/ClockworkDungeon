@@ -1,0 +1,81 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "morphball" : {
+        "default" : "default",
+        "states" : {
+          "default" : { },
+		  "nonDefault" : { },
+		  
+		  "activate" : {
+		   "frames" : 11,
+           "mode" : "transition",
+           "transition" : "default",
+           "cycle" : 0.5
+			},
+			
+		  "deactivate" : {		   
+		    "frames" : 11,
+           "mode" : "transition",
+           "transition" : "nonDefault",
+            "cycle" : 0.5
+		   }
+        }
+      }	  
+    },
+	
+    "parts" : {
+      "morphball" : {
+        "partStates" : {
+		
+		
+          "morphball" : {
+            "default" : {
+              "properties" : {
+                "centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
+                "image" : "default.png:<frame>"
+              }
+            },
+			
+			 "nonDefault" : {
+              "properties" : {
+                "centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
+                "image" : "nonDefault.png:<frame>"
+              }
+            },
+			
+		    "activate" : {              
+				"properties" : {
+				"centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
+                "image" : "activate.png:<frame>"
+              } 
+			},
+		    "deactivate" : {              
+				"properties" : {
+                "centered" : true,
+				"zLevel" : 3.5,
+				"back" : true,
+                "image" : "deactivate.png:<frame>"
+              }
+            }
+          }
+        }
+      }	
+    }
+  },
+
+  "particleEmitters" : {
+    "morphballActivateParticles" : {
+      "particles" : [ ]
+    },
+    "morphballDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}

@@ -5,6 +5,7 @@ function init()
 	data.active = false
 	tech.setVisible(true)
 	data.superJumpTimer = 0
+	data.hoverTimer = 0
 	data.animationDelay = 0.5
 
 	
@@ -25,44 +26,41 @@ end
 
 function input(args)
 
-	ui.input(args)
+--	ui.input(args)
 
-
+	
 	local move = nil
- 
--- look if F is pressed
-		--"special" == pressing F
+
 	if args.moves["special"] == 1 and args.moves["down"] and  data.active then
 		world.logInfo("test")
-
+		
 	elseif args.moves["special"] == 1 and not data.specialLast then
     
-	
 	if data.active then
-    	data.hovering = false
+    	if  args.moves["jump"] and not tech.onGround() then
+		  data.hovering = false
+		end
+		data.hovering = false
 		return "morphballDeactivate"
-    
 	else
 		data.hovering = false
-		return "centurainPackActivate"
-    
-	end
-
-
--- if F isn't pressed then ...	
+      return "centurainPackActivate"
+    end
+	
+	
 	elseif data.active then
-
-		if args.moves["jump"] and args.moves["up"] and not tech.onGround() then
-		  return "superjump"			
-		end
-		
-		if  args.moves["jump"] and not tech.onGround() then
+	
+		if  args.moves["jump"] and not data.hovering  and  data.hoverTimer <= 0 and not tech.onGround() then
+			data.hoverTimer = 0.5
 			data.hovering = true	
-		else
+		elseif  args.moves["jump"] and data.hovering and data.hoverTimer <= 0 then
+			 data.hoverTimer = 0.5
 			 data.hovering = false
 		end
-
 		
+		if args.moves["up"] and not tech.onGround() then
+		  return "superjump"			
+		end
 
 end
  
@@ -71,6 +69,8 @@ end
   
   return move
 end
+
+
 -- a way for ingame debugging just spawn a upperclas closeby
 leverState = {}
 function leverState.clockDebug(text)
@@ -88,7 +88,7 @@ end
 function update(args)
 
 
---	leverState.clockDebug( "hoverTimer= "..tostring(data.hoverTimer).."\n hover= "..tostring(data.hovering))
+	leverState.clockDebug( "hoverTimer= "..tostring(data.hoverTimer).."\n hover= "..tostring(data.hovering))
 	
 	
 	if not data.active then
@@ -96,6 +96,10 @@ function update(args)
 	end
 
 --	ui.update(args)
+	
+	if data.hoverTimer >= 0 then
+	  data.hoverTimer = data.hoverTimer - args.dt
+	  end
 	
   local energyCostPerSecond = tech.parameter("energyCostPerSecond")
   

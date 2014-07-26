@@ -1,0 +1,10 @@
+{
+  "itemName" : "centurianPack2Tech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/centurianPack2/centurianPack2Icon.png",
+  "description" : "Timer hover version",
+  "shortdescription" : "Centurian hover pack V2",
+  "inspectionKind" : "tech",
+
+  "techModule" : "centurianPack2.tech"
+}

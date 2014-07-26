@@ -8,7 +8,7 @@
   },
   "printable" : false,
   "description" : "A clockwork box, best not to shake it too hard",
-  "shortdescription" : "The eliacube",
+  "shortdescription" : "clockBox",
   "race" : "generic",
   "category" : "crafting",
   "price" : 200,
