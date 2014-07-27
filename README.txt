@@ -10,11 +10,11 @@
  
     Rooms
 	!!REDOING THE ENTIRE DUNGEON!!
- []		- Mosaic room
+ [o]		- Mosaic room
  []		- Garbage incinerator
  []		- Treasure horde
- []		- Vents
- []		- Library/studies
+ [o]		- Vents
+ [x]		- Library/studies
  []		- Mess room
  []		- Sleeping chambers
  []		- Boiler room

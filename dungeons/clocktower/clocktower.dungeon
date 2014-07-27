@@ -2219,6 +2219,58 @@
       ],
       "rules": [],
       "name": "Pipes - Entrace (L)"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Endcap - Collapsed-backgroundtiles.png",
+          "Endcap - Collapsed-foregroundtiles.png",
+          "Endcap - Collapsed-objects.png",
+          "Endcap - Collapsed-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Endcap - Intact"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Endcap - Destroyed-backgroundtiles.png",
+          "Endcap - Destroyed-foregroundtiles.png",
+          "Endcap - Destroyed-objects.png",
+          "Endcap - Destroyed-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Endcap - Destroyed"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Upside Down T Connection-backgroundtiles.png",
+          "Upside Down T Connection-foregroundtiles.png",
+          "Upside Down T Connection-objects.png",
+          "Upside Down T Connection-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Upside Down T Connection"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Broken Vents Corridor-backgroundtiles.png",
+          "Broken Vents Corridor-foregroundtiles.png",
+          "Broken Vents Corridor-objects.png",
+          "Broken Vents Corridor-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Broken Vents Corridor"
     }
   ]
 }
