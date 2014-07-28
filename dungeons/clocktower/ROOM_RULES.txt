@@ -52,4 +52,4 @@ End(A):
 	  [~MAX]
 	
 	Notes:
-	  - Will never connect to Libarary, Dorms or Enternace A and will ignore any max spawn rules.
+	  - Will never connect to Libarary, Dorms or Enterance A and will ignore any max spawn rules.
