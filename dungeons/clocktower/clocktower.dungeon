@@ -139,7 +139,7 @@
         200,
         255
       ],
-      "comment": "Connector2",
+      "comment": "Vents Connector",
       "connector": true
     },
     {
@@ -149,7 +149,7 @@
         150,
         255
       ],
-      "comment": "Connector3",
+      "comment": "Super Special Force Spawn Connector",
       "connector": true
     },
     {
@@ -2271,6 +2271,32 @@
       ],
       "rules": [],
       "name": "Broken Vents Corridor"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Vents - Layout A-backgroundtiles.png",
+          "Vents - Layout A-foregroundtiles.png",
+          "Vents - Layout A-objects.png",
+          "Vents - Layout A-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Vents - Layout A"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Test Tower-backgroundtiles.png",
+          "Test Tower-foregroundtiles.png",
+          "Test Tower-objects.png",
+          "Test Tower-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Test Tower"
     }
   ]
 }
