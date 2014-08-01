@@ -2297,6 +2297,19 @@
       ],
       "rules": [],
       "name": "Test Tower"
+    },
+    {
+      "def": [
+        "image",
+        [
+          "Medical Ward-backgroundtiles.png",
+          "Medical Ward-foregroundtiles.png",
+          "Medical Ward-objects.png",
+          "Medical Ward-wires.png"
+        ]
+      ],
+      "rules": [],
+      "name": "Medical Ward"
     }
   ]
 }

@@ -14,7 +14,7 @@
  []		- Garbage incinerator
  []		- Treasure horde
  [o]		- Vents
- [x]		- Library/studies
+ [o]		- Library/studies
  []		- Mess room
  []		- Sleeping chambers
  []		- Boiler room
