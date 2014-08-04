@@ -2191,17 +2191,6 @@
       "def": [
         "image",
         [
-          "Mosaic Room-backgroundtiles.png",
-          "Mosaic Room-objects.png"
-        ]
-      ],
-      "rules": [],
-      "name": "Mosaic Room"
-    },
-    {
-      "def": [
-        "image",
-        [
           "-The Dormitories-backgroundtiles.png",
           "-The Dormitories-objects.png"
         ]
@@ -2257,7 +2246,7 @@
         ]
       ],
       "rules": [],
-      "name": "Upside Down T Connection"
+      "name": "Upside Down T Connection to Mosaic Room"
     },
     {
       "def": [
