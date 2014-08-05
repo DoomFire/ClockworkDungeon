@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "shooty",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "autoguard.png"
+  }
+}

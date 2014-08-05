@@ -1,0 +1,9 @@
+{
+  "name" : "arm",
+  "category" : "shooty",
+  "type" : "arm",
+
+  "frames" : {
+    "arm" : "autoguard.png"
+  }
+}
