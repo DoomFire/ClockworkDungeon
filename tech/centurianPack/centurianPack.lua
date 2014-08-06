@@ -52,11 +52,11 @@ function input(args)
 -- if F isn't pressed then ...	
 	elseif data.active then
 
-		if args.moves["jump"] and args.moves["up"] and not tech.onGround() then
+		if args.moves["jump"] and not tech.onGround() then
 		  return "superjump"			
 		end
 		
-		if  args.moves["jump"] and not tech.onGround() then
+		if  args.moves["up"] and not tech.onGround() then
 			data.hovering = true	
 		else
 			 data.hovering = false

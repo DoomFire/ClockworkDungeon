@@ -2,7 +2,7 @@
   "itemName" : "centurianPackTech",
   "rarity" : "Legendary",
   "inventoryIcon" : "/tech/centurianPack/centurianPackIcon.png",
-  "description" : "Activate: F\nSteamJump: Spacebar\nHover: Up\nSwitch power: Down+F (wip)",
+  "description" : "Activate: F\nSteamJump: Spacebar\nHover: Up",
   "shortdescription" : "Centurian hover pack",
   "inspectionKind" : "tech",
 

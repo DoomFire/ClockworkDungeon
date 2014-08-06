@@ -1,9 +1,0 @@
-{
-  "name" : "arm",
-  "category" : "autoguard",
-  "type" : "arm",
-
-  "frames" : {
-    "arm" : "autoguard.png"
-  }
-}

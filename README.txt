@@ -132,6 +132,25 @@
  []	- Ore -> coal machine
 		- Will Convert and Ore into Coal with varying outputs.
   
+	techs
+
+[] Centurian ball
+	[x] basics
+	[] energy costs
+	[] movement parameters (jump height/speed)
+
+[] Centurian pack
+	[x] hover basics
+	[] sprites
+	[] energy consumption
+ 
+[] automaton remote
+	[] Select closest "idle" automaton
+	[] move automaton
+	[] "aim" with automaton?
+	[] make automaton atack/shoot
+
+
 
    Dialogue and Lore
 

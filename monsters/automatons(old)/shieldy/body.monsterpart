@@ -1,9 +1,0 @@
-{
-  "name" : "body",
-  "category" : "autoguards",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "autoguard.png"
-  }
-}
