@@ -1,11 +1,11 @@
 {
   "type" : "shooty",
 
-  "categories" : [ "autoguard" ],
+  "categories" : [ "shooty" ],
   "parts" : [ "body", "arm" ],
 
   "animation" : "autoguard.animation",
-  "projectiles" : "/monsters/automaton/shooty/projectiles.config",
+  "projectiles" : "/monsters/automatons/shooty/projectiles.config",
   "colors" : "/monsters/colors.config",
   "reversed" : true,
 
@@ -13,8 +13,7 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/automaton/autobase.lua",
-      "/monsters/automaton/shootyattack.lua",
+      "/monsters/automatons/shooty/behavior.lua",
       "/scripts/sensors.lua",
       "/scripts/stateMachine.lua",
       "/scripts/util.lua",
@@ -51,8 +50,8 @@
       "airForce" : 50.0
     },
 	
-    "blockedSensors" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
-    "fallSensors" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
+    "blockedSensors" : [ [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
+    "fallSensors" : [ [-1.5625, -1.375], [1.5625, -1.375], [1.5625, 1.375], [-1.5625, 1.375] ],
 	
     "knockoutTime" : 1,
     "knockoutEffect" : "blink",
@@ -72,7 +71,7 @@
     "statusParameters" : {
       "baseMaxHealth" : 22,
       "bodyMaterialKind" : "robotic",
-      "damageConfig" : "/monsters/automaton/shooty/damage.config"
+      "damageConfig" : "/monsters/automatons/shooty/damage.config"
     },
 
     "inateStatusEffects" : [
@@ -85,7 +84,7 @@
     "mouthOffset" : [0, 0],
     "feetOffset" : [0, -8],
 
-    "collisionSensors" : [ [1.0, -1.0], [1.0, 1.0] ],
+    "collisionSensors" : [ [1.5625, -1.375], [1.5625, 1.375] ],
 
     "nearGroundSensor" : [ [0.0, -4.0] ],
     "midGroundSensor" : [ [0.0, -7.0] ],

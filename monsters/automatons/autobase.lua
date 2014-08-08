@@ -48,9 +48,6 @@ end
 
 --------------------------------------------------------------------------------
 function damage(args)
-  if capturepod ~= nil and capturepod.onDamage(args) then
-    return
-  end
 
   self.exhaustionCooldownTimer = 0
 
@@ -81,14 +78,6 @@ function damage(args)
       callScriptArgs = { entityId, entity.seed(), args.sourceId }
     }
   )
-end
-
---------------------------------------------------------------------------------
--- Called when a nearby monster has been damaged (by anything)
-function monsterDamaged(entityId, entitySeed, damageSourceId)
-  if entitySeed == entity.seed() then
-    self.state.pickState({ familyMemberDamagedBy = damageSourceId })
-  end
 end
 
 --------------------------------------------------------------------------------
