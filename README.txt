@@ -37,9 +37,9 @@
 
  []		- Large Furnace
 
- []		- Filing Cabinet
- []		- Bench / Couch
- []		- Coffee table
+ [x]		- Filing Cabinet
+ [x]		- Bench / Couch
+ [x]		- Coffee table
 
  [o]		- Posters
  [x]			- Bacteria information
@@ -49,7 +49,7 @@
  []		- shower head
  []		- metal pots
  []		- Storage shelves
- []		- hung up towels
+ [x]		- hung up towels
  [o]		- Blackboard with chalk
  [x]			- Interacting will draw something then scrub it off.
 
